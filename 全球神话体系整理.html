@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>全球古神话｜起源、演化与文明脉络</title>
+<style>
+:root{color-scheme:light dark;--bg:light-dark(#f7f2e9,#171923);--panel:light-dark(#fffdf8,#222532);--ink:light-dark(#282a35,#f3efe7);--muted:light-dark(#6d6b72,#b7b5c0);--line:light-dark(#d9cfbd,#45485a);--gold:light-dark(#9a6b22,#e8c477);--blue:light-dark(#476d8d,#91badb);--rose:light-dark(#a84f62,#e9a2ad);--green:light-dark(#4d806b,#8fc5ad)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:ui-serif,Georgia,"Noto Serif SC",serif}.app{min-height:100vh;background:var(--bg)}header{padding:30px clamp(18px,5vw,64px) 22px;border-bottom:1px solid var(--line);background:linear-gradient(115deg,light-dark(#efe2c9,#272536),var(--bg))}.eyebrow{font:700 11px/1.4 system-ui;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}h1{font-size:clamp(30px,4vw,52px);font-weight:600;letter-spacing:.02em;margin:10px 0 8px}header p{max-width:760px;color:var(--muted);line-height:1.7;margin:0;font-family:system-ui,sans-serif;font-size:14px}.layout{display:grid;grid-template-columns:270px minmax(0,1fr);gap:18px;padding:20px clamp(12px,3vw,40px) 38px;max-width:1600px;margin:auto}.side,.mainpanel{background:var(--panel);border:1px solid var(--line);border-radius:16px}.side{padding:18px;height:max-content;position:sticky;top:12px}.section-label{font:700 11px system-ui;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin:4px 0 12px}.search{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink);font-size:14px;margin-bottom:16px}.filters{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:20px}.chip,button{font:600 12px system-ui;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--ink);padding:8px 11px;cursor:pointer}.chip.active,button.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}.person-list{display:flex;flex-direction:column;gap:4px;max-height:46vh;overflow:auto}.person-row{border:0;border-radius:8px;text-align:left;padding:9px 10px;display:flex;align-items:center;gap:9px;font:14px system-ui}.person-row:hover,.person-row.selected{background:light-dark(#f1e6d3,#303446)}.dot{width:9px;height:9px;border-radius:50%;flex:none;background:var(--gold)}.person-row small{display:block;color:var(--muted);font-size:11px;margin-top:2px}.hint{font:12px/1.6 system-ui;color:var(--muted);margin-top:14px;border-top:1px solid var(--line);padding-top:12px}.mainpanel{overflow:hidden}.toolbar{padding:15px 18px;display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap;border-bottom:1px solid var(--line)}.toolbar strong{font-size:15px}.toolbar span{font:12px system-ui;color:var(--muted)}.legend{display:flex;gap:13px;flex-wrap:wrap;padding:12px 18px;border-bottom:1px solid var(--line);font:11px system-ui;color:var(--muted)}.legend i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px}.graphwrap{overflow:auto;padding:20px;min-height:510px;background:radial-gradient(ellipse at center,light-dark(#fffaf0,#242736),var(--panel))}.graph{position:relative;min-width:780px;height:560px;margin:auto}.edges{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}.edge{stroke:var(--line);stroke-width:1.6;fill:none;opacity:.85}.edge.marriage{stroke:var(--rose);stroke-dasharray:5 4}.edge.highlight{stroke:var(--gold);stroke-width:2.8;opacity:1}.edge-label{font:10px system-ui;fill:var(--muted)}.node{position:absolute;transform:translate(-50%,-50%);width:112px;min-height:53px;border:1px solid var(--line);border-radius:11px;padding:8px 6px;background:var(--panel);color:var(--ink);cursor:pointer;text-align:center;box-shadow:0 3px 12px #0000000a;transition:transform .15s,border-color .15s}.node:hover{transform:translate(-50%,-50%) scale(1.04);border-color:var(--gold);z-index:3}.node.selected{border:2px solid var(--gold);box-shadow:0 0 0 3px light-dark(#ead7ad66,#e8c47725);z-index:2}.node.dim{opacity:.23}.node .greek{font:600 14px ui-serif,serif}.node .desc{font:10px system-ui;color:var(--muted);margin-top:3px}.node.primordial{border-top:3px solid var(--green)}.node.titan{border-top:3px solid var(--blue)}.node.olympian{border-top:3px solid var(--gold)}.node.hero{border-top:3px solid var(--rose)}.details{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,.8fr);gap:0;border-top:1px solid var(--line)}.detail-main,.detail-rel{padding:20px}.detail-rel{border-left:1px solid var(--line);background:light-dark(#faf6ed,#202330)}.detail-kicker{font:700 10px system-ui;letter-spacing:.14em;color:var(--gold)}h2{font-size:27px;margin:7px 0 8px}.detail-main p{font:14px/1.8 system-ui;color:var(--muted);margin:0}.tag{display:inline-block;font:11px system-ui;padding:5px 8px;border-radius:6px;background:light-dark(#f0e5d1,#353346);margin:10px 5px 0 0}.relation{font:13px/1.6 system-ui;padding:8px 0;border-bottom:1px solid var(--line)}.relation b{color:var(--gold);font-weight:600}.relation:last-child{border:0}.foot{font:11px/1.7 system-ui;color:var(--muted);padding:15px 20px;border-top:1px solid var(--line)}.mobile-note{display:none}
+@media(max-width:850px){.layout{grid-template-columns:1fr}.side{position:static}.person-list{max-height:180px}.graphwrap{min-height:440px}.graph{height:510px}.details{grid-template-columns:1fr}.detail-rel{border-left:0;border-top:1px solid var(--line)}.mobile-note{display:block;font:11px system-ui;color:var(--muted);padding:0 18px 10px}}
+</style>
+<style>
+.layout{display:none!important}.global-intro{padding:24px clamp(14px,4vw,48px) 10px;max-width:1500px;margin:auto}.global-intro p{font:14px/1.9 system-ui,sans-serif;color:var(--muted);max-width:1050px}.global-wrap{max-width:1500px;margin:auto;padding:8px clamp(14px,4vw,48px) 48px;font-family:system-ui,sans-serif}.global-nav{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 22px}.global-nav button{font-size:13px;border-radius:9px}.global-nav button.active{background:var(--ink);color:var(--bg)}.global-panel{border:1px solid var(--line);border-radius:15px;background:var(--panel);padding:clamp(14px,2.5vw,26px);margin:14px 0}.global-panel h2{font-size:24px;margin:0 0 10px}.global-panel h3{font-size:16px;margin:0 0 8px}.global-panel p,.global-panel li{font-size:13px;line-height:1.8;color:var(--muted)}.global-panel p{margin:7px 0}.global-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.myth-card{border:1px solid var(--line);border-radius:12px;padding:15px;background:var(--bg)}.myth-card .era{font-size:11px;color:var(--gold);font-weight:700;letter-spacing:.04em}.myth-card h3{margin-top:7px}.myth-card .pill{display:inline-block;font-size:10px;border:1px solid var(--line);border-radius:99px;padding:3px 7px;margin:4px 4px 0 0;color:var(--muted)}.timeline{border-left:2px solid var(--line);margin:16px 0 0 8px;padding-left:20px}.time-item{position:relative;padding:0 0 18px}.time-item:before{content:'';position:absolute;left:-27px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--gold)}.time-item strong{font-size:13px}.time-item p{margin:4px 0}.matrix{width:100%;border-collapse:collapse;font-size:12px}.matrix th,.matrix td{text-align:left;vertical-align:top;padding:10px;border-bottom:1px solid var(--line);line-height:1.7}.matrix th{color:var(--gold)}.matrix td{color:var(--muted)}.global-note{border-left:3px solid var(--gold);padding:10px 14px;background:light-dark(#f5eddf,#292938);border-radius:0 8px 8px 0;font-size:12px;line-height:1.8;color:var(--muted);margin:14px 0}.hide-card{display:none!important}.global-search{width:min(100%,440px);padding:11px 12px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink);margin:4px 0 14px;font-size:13px}.region-label{font-size:11px;font-weight:700;color:var(--gold);letter-spacing:.12em;margin-bottom:6px}@media(max-width:900px){.global-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.matrix{display:block;overflow-x:auto;white-space:normal}}@media(max-width:580px){.global-grid{grid-template-columns:1fr}.global-panel h2{font-size:21px}}
+</style>
+<style>
+.timeline-open{margin-top:12px;border-radius:8px;background:var(--ink);color:var(--bg);border-color:var(--ink);font-size:12px}.timeline-open:hover{opacity:.82}.myth-modal{position:fixed;inset:0;z-index:1000;background:#101119c9;display:none;align-items:center;justify-content:center;padding:16px}.myth-modal.open{display:flex}.myth-modal-card{width:min(900px,100%);max-height:90vh;overflow:auto;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:18px;padding:clamp(16px,3vw,30px);box-shadow:0 20px 70px #0006}.myth-modal-head{display:flex;gap:14px;justify-content:space-between;align-items:start}.myth-modal-head h2{font-size:clamp(22px,3vw,32px);margin:5px 0}.myth-close{border-radius:8px;flex:none}.myth-modal-card .timeline{margin-top:22px}.myth-modal-card .time-item strong{font-size:14px}.myth-modal-card .time-item p{font-size:13px;line-height:1.85}.myth-modal-lead{font-size:13px;line-height:1.9;color:var(--muted)}.source-note{font-size:11px!important;line-height:1.8!important;border-top:1px solid var(--line);padding-top:12px;margin-top:14px!important}.global-nav button[data-section="themes"],.global-nav button[data-section="method"]{display:none}
+</style>
+<style>
+/* Civilization gallery and story-focused modal */
+#regionGrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}#regionGrid>.myth-card{display:flex;flex-direction:column;min-width:0;padding:15px 15px 16px;overflow:hidden;transition:transform .2s,border-color .2s,box-shadow .2s}#regionGrid>.myth-card:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:0 12px 28px #00000010}#regionGrid>.myth-card h3{font-size:17px;line-height:1.45;margin:3px 0 10px;color:var(--ink)}#regionGrid>.myth-card p{font-size:12px;line-height:1.85;color:var(--muted)}#regionGrid>.myth-card p b{color:var(--ink)}.region-visual{height:168px;position:relative;overflow:hidden;margin:-15px -15px 14px;border-radius:11px 11px 0 0;background:linear-gradient(135deg,#4c514b,#9c7d4c);isolation:isolate}.region-visual img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 42%;transition:transform .45s,filter .3s;filter:saturate(.88)}#regionGrid>.myth-card:hover .region-visual img{transform:scale(1.055);filter:saturate(1.04)}.region-visual:after{content:'';position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#111b);z-index:1;pointer-events:none}.region-visual span{position:absolute;left:12px;bottom:12px;z-index:2;color:#fff;font-size:12px;font-weight:700;letter-spacing:.04em;text-shadow:0 1px 5px #0008}.region-visual small{position:absolute;top:10px;left:10px;z-index:2;padding:4px 7px;border:1px solid #ffffff70;border-radius:5px;background:#1118;color:#fff;font-size:9px;letter-spacing:.12em}.region-visual.image-fallback{display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 70% 20%,#d8b87566,transparent 40%),linear-gradient(135deg,#343e45,#8c6540)}.region-visual.image-fallback:before{content:'✦';font-size:55px;color:#f4dfb1aa}.timeline-open{align-self:flex-start;margin-top:auto;padding:9px 12px}.myth-modal-card{width:min(980px,100%)}.myth-modal-lead{padding:13px 15px;border-left:3px solid var(--gold);border-radius:0 9px 9px 0;background:light-dark(#f5eddf,#292938);margin:12px 0 4px}.myth-modal-card h3{font-size:15px!important;letter-spacing:.01em}.myth-modal-card .timeline{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;border:0;margin:15px 0 0;padding:0}.myth-modal-card .time-item{position:relative;margin:0;padding:15px 15px 14px;background:var(--bg);border:1px solid var(--line);border-radius:11px;min-width:0}.myth-modal-card .time-item:before{display:none}.myth-modal-card #mythStoryline .time-item{border-top:3px solid var(--gold)}.myth-modal-card #mythModalTimeline .time-item{border-top:3px solid var(--blue)}.myth-modal-card .time-item strong{display:block;font-size:13px!important;line-height:1.55;color:var(--ink);margin-bottom:6px}.myth-modal-card .time-item p{font-size:12px;line-height:1.85;margin:0;color:var(--muted)}.story-reading-note{font:11px/1.8 system-ui,sans-serif;color:var(--muted);margin:8px 0 0}.myth-modal-card .source-note{font-size:11px!important;line-height:1.85!important;background:light-dark(#f8f4eb,#202330);padding:14px;border-radius:9px;border-top:0}.myth-close{position:sticky;top:0;background:var(--panel);font-size:13px}
+@media(max-width:1050px){#regionGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){#regionGrid{grid-template-columns:1fr}.region-visual{height:190px}.myth-modal{padding:8px}.myth-modal-card{max-height:94vh;padding:16px}.myth-modal-card .timeline{grid-template-columns:1fr;gap:9px}.myth-modal-card h3{margin-top:20px!important}}
+</style>
+</head>
+<body><div class="app">
+<header><div class="eyebrow">WORLD MYTHOLOGY · A GLOBAL OVERVIEW</div><h1>全球古神话：起源、演化与文明脉络</h1><p>从创世故事、神祇体系与英雄叙事出发，横向比较中国、两河流域、埃及、希腊、印度、北欧及美洲等传统；纵向理解神话如何随着农业、城市、国家、宗教与文化交流而变化。这里整理的是研究地图，不把不同文明强行拼成一条单线历史。</p></header>
+<section class="global-intro"><div class="region-label">HOW TO READ MYTHOLOGY</div><p><b>核心思路：</b>先问神话在解释什么（宇宙、季节、王权、死亡、秩序），再看故事由谁讲述、服务于什么仪式和社会结构，最后比较不同文明的相似母题与独特路径。神话不是一套全球统一的“神谱”，而是许多传统在不同时空中形成、传播、改写的故事群。</p></section>
+<main class="global-wrap">
+<nav class="global-nav" id="globalNav"><button class="active" data-section="overview">总览框架</button><button data-section="timeline">全球历史背景</button><button data-section="regions">文明与神话发展路径</button></nav>
+<section class="global-section" id="section-overview">
+<div class="global-panel"><h2>一张全局地图：古神话在解释哪些问题？</h2><div class="global-grid">
+<article class="myth-card"><div class="era">01 · 宇宙论</div><h3>世界从哪里来？</h3><p>混沌分化、天地分离、神灵创造、原初巨人遗体化生、宇宙卵等创世模型，回答世界如何从“未分化”走向有秩序。</p><span class="pill">创世神话</span><span class="pill">宇宙起源</span></article>
+<article class="myth-card"><div class="era">02 · 自然与生计</div><h3>为什么有四季、洪水与丰收？</h3><p>农业社会常用植物生长、神祇死亡与复生、太阳运行、洪水和旱灾故事解释自然周期与生存风险。</p><span class="pill">季节循环</span><span class="pill">丰产仪式</span></article>
+<article class="myth-card"><div class="era">03 · 社会秩序</div><h3>权力与规则从何而来？</h3><p>神王更替、神圣祖先、英雄建国、法律与祭祀起源，帮助社会说明统治合法性、共同身份与行为规范。</p><span class="pill">王权神话</span><span class="pill">祖先叙事</span></article>
+<article class="myth-card"><div class="era">04 · 人的命运</div><h3>死亡、灾难与来世是什么？</h3><p>冥界旅程、灵魂审判、祖先世界与复活故事，表达对死亡、道德、记忆和生命延续的理解。</p><span class="pill">冥界</span><span class="pill">来世观</span></article>
+<article class="myth-card"><div class="era">05 · 英雄与边界</div><h3>人如何面对未知？</h3><p>英雄远征、怪物、禁忌、试炼和智谋，叙述人如何穿越危险、建立共同体，或因越界付出代价。</p><span class="pill">英雄神话</span><span class="pill">怪物传说</span></article>
+<article class="myth-card"><div class="era">06 · 神圣知识</div><h3>仪式与知识如何被解释？</h3><p>火、谷物、文字、工艺、医术和音乐的起源故事，常把技术知识描述为神授、盗取、传承或禁忌突破。</p><span class="pill">文化起源</span><span class="pill">仪式叙事</span></article>
+</div><div class="global-note">重要区别：神话（myth）、民间传说（legend / folktale）、宗教经典、史诗和历史记忆彼此交叠，但不是同一概念。一个故事可能同时具有宗教、文学、政治或地方传统的意义。</div></div>
+<div class="global-panel"><h2>古神话如何形成？一个可用于比较的过程模型</h2><div class="timeline"><div class="time-item"><strong>自然观察与口头叙事</strong><p>人群通过故事解释雷电、昼夜、洪水、动物、疾病、出生与死亡；故事随讲述者、迁徙和仪式而变化。不能把它简单等同于“原始科学”。</p></div><div class="time-item"><strong>仪式、季节与共同体记忆</strong><p>祭祀、成年礼、播种收获、葬礼和祖先纪念，让某些叙事反复被演述，逐渐形成稳定的母题和地方版本。</p></div><div class="time-item"><strong>农业聚落、城市与政治中心</strong><p>当灌溉、城市、王权和专门祭司群体发展后，神祇可能与城市、职业、王朝、法律及庙宇体系绑定，神谱也会被整理。</p></div><div class="time-item"><strong>文字、史诗与经典化</strong><p>书写使部分版本被保存、编订并获得权威，但文字记录并不意味着故事从此固定；口头传统和地方信仰仍可能并存。</p></div><div class="time-item"><strong>帝国、贸易、征服与宗教转型</strong><p>神祇会被翻译、合并、重新解释，英雄故事跨区域传播；新宗教兴起后，旧神话可能被吸收、批判、寓言化或转为民间故事。</p></div><div class="time-item"><strong>现代整理与再创造</strong><p>考古学、语言学、民俗学与宗教研究重新解释材料；文学、影视和游戏又会重塑公众熟悉的“神话版本”。</p></div></div></div>
+</section>
+<section class="global-section hide-card" id="section-timeline"><div class="global-panel"><h2>发展脉络：不是一条统一的世界时间线</h2><p>不同文明的年代、文献保存状况和宗教延续程度不同。下表给出研究时常用的宽泛历史框架，而不是说神话只在这些时期产生。</p><div class="timeline"><div class="time-item"><strong>史前时期：口头传统与考古材料</strong><p>文字出现以前的神话无法直接完整复原。图像、墓葬、遗址和后世口述材料只能提供间接线索，必须避免把现代传说直接投射到史前。</p></div><div class="time-item"><strong>约公元前四至三千纪：早期国家与书写传统</strong><p>两河流域、古埃及等地区出现早期城市、王权、神庙和书写记录。神祇名单、王权神学、创世与洪水叙事逐渐进入可考文本。</p></div><div class="time-item"><strong>约公元前二千纪至前一千纪：史诗与神学传统扩展</strong><p>美索不达米亚史诗、印度吠陀传统、中国早期礼制与祖先观念、希腊史诗等在不同历史条件下发展；它们不是同一来源，也不在同一时刻定型。</p></div><div class="time-item"><strong>约公元前一千纪至公元初期：经典化、哲学化与跨区域接触</strong><p>部分传统通过史诗、祭仪、哲学、国家礼制或宗教文本被重新解释。希腊、印度、东亚及地中海世界内部与彼此之间的交流不断改变故事的传播方式。</p></div><div class="time-item"><strong>公元初期至中世纪：宗教转型与地方传统共存</strong><p>佛教、基督教、伊斯兰教等扩展后，旧有神祇和传说在不同地区被重新诠释；北欧、东亚、非洲与美洲的材料也经历记录、传播或断裂等不同过程。</p></div><div class="time-item"><strong>近现代：文献整理、殖民语境与学术重构</strong><p>许多口头传统被外来记录者写下，记录过程可能改变原有语境。现代学术需要同时考察文本年代、考古证据、语言关系、地方知识与记录者立场。</p></div></div><div class="global-note">年代只能帮助定位现存材料和社会背景，不能直接给“神话本身”标注诞生年份。一个故事可能口头流传很久后才被写下，也可能在写定后继续变化。</div></div></section>
+<section class="global-section hide-card" id="section-regions"><div class="global-panel"><h2>主要文明传统：各自的历史路径</h2><input class="global-search" id="regionSearch" placeholder="搜索文明、神祇、母题或关键词"><div class="global-grid" id="regionGrid">
+<article class="myth-card" data-search="中国 盘古 女娲 伏羲 后羿 共工 洪水 祖先 天地阴阳"><div class="era">东亚 · 中国</div><h3>中国古代神话与传说</h3><p><b>常见线索：</b>天地开辟、女娲造人补天、洪水治理、文化英雄、祖先与王朝起源。材料散见于不同年代的典籍、地方传说和后世汇编，不存在一部覆盖所有传统的单一正典。</p><p><b>阅读重点：</b>神话、上古帝王传说、历史化叙事和道教神仙谱系需分层辨认；盘古故事的现存文献记录较晚，不能直接当作所有早期中国人的统一创世信仰。</p><span class="pill">创世</span><span class="pill">治水</span><span class="pill">文化英雄</span></article>
+<article class="myth-card" data-search="两河流域 美索不达米亚 苏美尔 阿卡德 巴比伦 吉尔伽美什 提亚马特 洪水"><div class="era">西亚 · 两河流域</div><h3>苏美尔、阿卡德与巴比伦传统</h3><p><b>常见线索：</b>城市守护神、神王更替、宇宙秩序、洪水、王权与人类命运。《吉尔伽美什史诗》突出友谊、死亡和不朽追求；《埃努玛·埃利什》呈现巴比伦创世与马尔杜克崛起。</p><p><b>阅读重点：</b>不同城市和时代的神学并不完全一致，后来的巴比伦文本会重排较早的神祇传统。</p><span class="pill">城市神</span><span class="pill">洪水</span><span class="pill">不朽</span></article>
+<article class="myth-card" data-search="古埃及 拉 太阳 奥西里斯 伊西斯 荷鲁斯 阿努比斯 玛阿特 冥界 审判"><div class="era">东北非 · 古埃及</div><h3>古埃及神话</h3><p><b>常见线索：</b>太阳每日运行、创世神学、奥西里斯的死亡与复生、荷鲁斯与王权、死者审判和玛阿特所代表的秩序。</p><p><b>阅读重点：</b>赫利奥波里斯、孟菲斯、底比斯等神学中心各有创世解释；墓葬文本和神庙铭文服务于不同仪式语境，不能简单拼成一部统一神谱。</p><span class="pill">太阳循环</span><span class="pill">王权</span><span class="pill">来世</span></article>
+<article class="myth-card" data-search="希腊 罗马 卡俄斯 盖亚 宙斯 雅典娜 赫拉克勒斯 奥德修斯 奥林匹斯 神谱"><div class="era">地中海 · 希腊与罗马</div><h3>希腊神话与罗马传统</h3><p><b>常见线索：</b>原初神与泰坦更替、奥林匹斯神系、英雄远征、悲剧性命运、城市守护神。罗马传统吸收并重释许多希腊神祇，同时保留自身祭祀、国家与建城传统。</p><p><b>阅读重点：</b>荷马史诗、赫西俄德《神谱》、悲剧、地方崇拜与罗马作者的版本各有差异；现代流行神谱是后世整理的结果。</p><span class="pill">神谱</span><span class="pill">英雄史诗</span><span class="pill">悲剧</span></article>
+<article class="myth-card" data-search="印度 吠陀 印度教 梵天 毗湿奴 湿婆 因陀罗 阿修罗 宇宙周期 罗摩 摩诃婆罗多"><div class="era">南亚 · 印度传统</div><h3>吠陀、史诗与印度教神话</h3><p><b>常见线索：</b>祭火与宇宙秩序、诸神与阿修罗的冲突、宇宙周期、化身、业与解脱，以及《罗摩衍那》《摩诃婆罗多》的英雄和王权叙事。</p><p><b>阅读重点：</b>吠陀传统、奥义书、史诗、往世书与地方信仰跨越多个世纪；神祇的地位、关系和哲学解释会随文本与宗派改变。</p><span class="pill">宇宙周期</span><span class="pill">化身</span><span class="pill">史诗</span></article>
+<article class="myth-card" data-search="北欧 日耳曼 奥丁 索尔 洛基 世界树 诸神黄昏 巨人 冰与火"><div class="era">北欧与日耳曼</div><h3>北欧神话</h3><p><b>常见线索：</b>世界树连接不同世界，诸神与巨人相互冲突，奥丁追求知识，索尔守护秩序，诸神黄昏描绘毁灭与新世界的可能。</p><p><b>阅读重点：</b>许多材料由基督教化时期的冰岛文献保存，文本记录与更早的信仰之间存在时间距离，不能把《埃达》简单视为未经变化的原始记录。</p><span class="pill">世界树</span><span class="pill">命运</span><span class="pill">末世</span></article>
+<article class="myth-card" data-search="日本 神道 伊邪那岐 伊邪那美 天照 须佐之男 国生 神生 神社"><div class="era">东亚 · 日本</div><h3>日本神话与神道传统</h3><p><b>常见线索：</b>国土与神祇诞生、伊邪那岐和伊邪那美、天照与须佐之男、皇室祖先谱系和祭祀秩序。</p><p><b>阅读重点：</b>《古事记》《日本书纪》是在特定政治与书写背景下编纂的文本，地方神社传统和口传故事并不完全等同于国家神话。</p><span class="pill">国土起源</span><span class="pill">祖先谱系</span></article>
+<article class="myth-card" data-search="美洲 玛雅 阿兹特克 印加 波波尔乌 太阳时代 玉米人 创世 羽蛇神"><div class="era">美洲 · 玛雅、阿兹特克、印加等</div><h3>美洲原住民神话传统</h3><p><b>常见线索：</b>多轮创世、玉米与人的起源、太阳时代、山川与动物的神圣力量、祖先迁徙和统治者合法性。不同民族的传统差异很大。</p><p><b>阅读重点：</b>《波波尔·乌》保存部分基切玛雅传统；阿兹特克和印加材料又有各自的语境。不能将“美洲神话”视为单一系统，殖民记录也需要批判阅读。</p><span class="pill">多次创世</span><span class="pill">玉米</span><span class="pill">太阳时代</span></article>
+<article class="myth-card" data-search="非洲 约鲁巴 阿南西 阿散蒂 宇宙 创世 祖先 口头传统"><div class="era">非洲 · 多种地方传统</div><h3>非洲神话与口头传统</h3><p><b>常见线索：</b>至高神与诸灵、祖先关系、动物寓言、社会伦理、王权和土地记忆。约鲁巴、阿散蒂及其他传统各有自己的神灵、仪式和叙事体系。</p><p><b>阅读重点：</b>非洲并非单一文化区；口头传承、表演、音乐和仪式是知识保存方式，不能只用欧洲书面神话标准衡量。</p><span class="pill">口头史诗</span><span class="pill">祖先</span><span class="pill">动物故事</span></article>
+<article class="myth-card" data-search="波利尼西亚 毛伊 夏威夷 毛利 创世 海洋 祖先 航海"><div class="era">大洋洲 · 波利尼西亚等</div><h3>大洋洲神话</h3><p><b>常见线索：</b>天地分离、海洋与岛屿形成、祖先航行、半神毛伊的功绩，以及谱系与土地、航海知识之间的联系。</p><p><b>阅读重点：</b>不同岛屿与语言社群的版本各异；相似的名字或母题不一定代表完全相同的神祇或同一套教义。</p><span class="pill">海洋</span><span class="pill">航海</span><span class="pill">祖先谱系</span></article>
+</div><div class="global-note">本页列举的是入门地图，不是穷尽清单。西伯利亚、凯尔特、斯拉夫、伊朗、安纳托利亚、东南亚以及澳大利亚原住民等传统，也应在后续专题中独立整理，不能用少数“世界神话”代表全部人类文化。</div></div></section>
+<section class="global-section hide-card" id="section-themes"><div class="global-panel"><h2>跨文明母题比较：相似不等于同源</h2><p>比较神话时，先记录故事结构，再检查年代、语言、地理接触和文本来源。相似故事可能来自文化传播，也可能是不同社会面对相似经验时各自形成的解释。</p><div style="overflow-x:auto"><table class="matrix"><thead><tr><th>母题</th><th>常见表现</th><th>可比较的例子</th><th>比较时要问</th></tr></thead><tbody><tr><td>创世与天地分离</td><td>混沌被分开、天地分离、原初存在创造世界。</td><td>中国盘古传统、希腊原初神谱、部分波利尼西亚创世故事等。</td><td>文本何时记录？天地分离是亲子冲突、身体分割，还是其他机制？</td></tr><tr><td>洪水</td><td>洪水毁灭旧世界，少数人或文化英雄得以存续。</td><td>美索不达米亚洪水叙事、希腊丢卡利翁故事、中国治水传统等。</td><td>是逃离灾难、重建秩序，还是治理洪水？不能只凭“有洪水”就断言同源。</td></tr><tr><td>神祇更替与秩序建立</td><td>新一代神推翻旧统治者，重新分配权力。</td><td>希腊泰坦战争、巴比伦马尔杜克传统等。</td><td>它是否解释政治权力、城市神地位或宇宙秩序？具体叙事结构是否相同？</td></tr><tr><td>死亡与复生</td><td>神祇或英雄进入冥界、失去生命、返回或改变存在状态。</td><td>埃及奥西里斯传统、希腊珀耳塞福涅故事及其他季节性叙事。</td><td>复生是永生、冥界统治、季节循环还是象征性重生？不能一概称为同一种“复活神话”。</td></tr><tr><td>英雄下冥界</td><td>英雄进入死者世界，带回知识、救人或接受考验。</td><td>《吉尔伽美什》中的死亡追寻、希腊英雄冥界旅程、印度史诗中的相关叙事。</td><td>英雄是否成功？旅程的道德意义、仪式背景和结局是什么？</td></tr><tr><td>文化英雄与技术起源</td><td>火、农作物、文字或工艺由神赐予、英雄取得或禁忌突破而来。</td><td>普罗米修斯盗火、各地农业与作物起源故事、动物或祖先传授知识的传统。</td><td>故事在赞扬创新，还是警告越界？它如何解释知识的权利和代价？</td></tr><tr><td>世界末日与更新</td><td>宇宙周期结束、灾难降临，旧世界消失或新世界诞生。</td><td>北欧诸神黄昏、印度宇宙周期、部分美洲传统的多轮创世。</td><td>是线性终结还是周期循环？新世界与旧世界有何关系？</td></tr></tbody></table></div></div><div class="global-panel"><h2>神话研究中最容易出现的三种误读</h2><div class="global-grid"><article class="myth-card"><h3>把相似当成同源</h3><p>两个文化都有洪水故事，不足以证明一个直接抄自另一个。需要传播路线、年代与具体细节等证据。</p></article><article class="myth-card"><h3>把后世版本当作最初版本</h3><p>经典文本往往经过编纂；更早的口头故事、地方祭祀与同时代异本可能并不一致。</p></article><article class="myth-card"><h3>把神话当成字面历史</h3><p>神话可保存社会记忆，但不能未经考古、语言和文献检验，就当作真实事件的直接记录。</p></article></div></div></section>
+<section class="global-section hide-card" id="section-method"><div class="global-panel"><h2>如何系统整理“所有古神话”</h2><p>“所有古神话”规模极大，不可能在一页中穷尽。更可靠的做法是建立可扩展的分类体系：以文明传统为横轴，以叙事类型为纵轴，再为每个故事记录来源、年代、版本和证据等级。</p><div class="global-grid"><article class="myth-card"><h3>第一层：文明与语言区</h3><p>中国、两河流域、埃及、希腊罗马、印度、伊朗、北欧、斯拉夫、凯尔特、日本、东南亚、非洲、美洲、大洋洲等。每一项都应允许内部差异。</p></article><article class="myth-card"><h3>第二层：叙事类型</h3><p>创世、神谱、洪水、季节、死亡与来世、英雄、怪物、祖先、王权、战争、爱情、文化技术起源、末世与更新。</p></article><article class="myth-card"><h3>第三层：资料卡</h3><p>故事名称、主要角色、概要、最早可考记录、文本或口传来源、地域、版本差异、相关仪式、现代学术争议。</p></article></div><div class="global-note"><b>证据分层建议：</b>①有可定位的古代文本或铭文；②有考古图像、仪式或物质材料支持；③主要依赖较晚的口述记录或编纂；④现代流行文化改编。不同证据类型不能简单互相替代，也不应把“记录晚”直接等同于“故事一定晚”。</div><h3 style="margin-top:22px">推荐的学习顺序</h3><ol><li>先掌握比较框架：创世、神谱、英雄、死亡与王权等基本类型。</li><li>选择文献保存较丰富的案例，学习如何从原始文本和历史背景理解神话。</li><li>再横向比较相似母题，明确哪些是可证实的文化接触，哪些只是结构相似。</li><li>把地方口头传统与非文字材料纳入研究，避免只研究拥有古典书面文献的文明。</li><li>最后研究神话的后世改写：宗教转型、民族叙事、文学、影视与游戏如何重塑传统。</li></ol></div></section>
+<footer class="global-panel"><h2>本页的立场</h2><p>全球神话史不是“所有文明从同一个神话源头依次发展”的单线故事，而是多种传统在生态环境、社会组织、政治制度、宗教实践和跨文化交流中不断形成与变化的历史。比较的目的，是看清共通问题与不同答案，而不是把差异抹平。</p></footer>
+</main>
+<div class="layout">
+<aside class="side"><div class="section-label">探索人物</div><input id="search" class="search" placeholder="搜索名字 / 身份，例如：雅典娜">
+<div class="section-label">按谱系筛选</div><div class="filters" id="filters"><button class="chip active" data-filter="all">全部</button><button class="chip" data-filter="primordial">原初神</button><button class="chip" data-filter="titan">泰坦</button><button class="chip" data-filter="olympian">奥林匹斯神</button><button class="chip" data-filter="hero">英雄 / 凡人</button></div>
+<div class="section-label">人物索引</div><div id="personList" class="person-list"></div><div class="hint">阅读提示：实线表示亲子或血缘；粉色虚线表示婚姻 / 伴侣。神话版本存在差异，此图采用常见的主流谱系。</div></aside>
+<main class="mainpanel"><div class="toolbar"><div><strong>神谱关系图</strong><br><span>选择任意节点，查看与其直接相关的人物</span></div><div><button id="reset">重置视图</button> <button id="allEdges">显示全谱系</button></div></div>
+<div class="legend"><span><i style="background:var(--green)"></i>原初神</span><span><i style="background:var(--blue)"></i>泰坦</span><span><i style="background:var(--gold)"></i>奥林匹斯神</span><span><i style="background:var(--rose)"></i>英雄 / 凡人</span><span>— 亲子 / 血缘</span><span style="color:var(--rose)">┄ 婚姻 / 伴侣</span></div><div class="mobile-note">关系图可横向滑动。也可以从左侧人物索引进入人物详情。</div>
+<div class="graphwrap"><div class="graph" id="graph"><svg class="edges" id="edges" viewBox="0 0 1000 560" preserveAspectRatio="none"></svg></div></div>
+<div class="details"><section class="detail-main"><div class="detail-kicker" id="detailType">人物档案</div><h2 id="detailName">宙斯 Zeus</h2><div id="detailTags"></div><p id="detailBio"></p></section><section class="detail-rel"><div class="section-label">直接关系</div><div id="detailRelations"></div></section></div>
+<div class="foot">这是一张帮助理解的简化关系图，不代表所有神话版本的唯一答案。希腊神话主要由史诗、悲剧与地方传统共同构成，同一人物的父母、配偶和故事可能因文本而异。</div>
+</main></div></div>
+<script>
+const people=[
+{id:'chaos',name:'卡俄斯',latin:'Chaos',type:'primordial',role:'原初混沌',bio:'宇宙最初的原初状态或深渊。赫西俄德《神谱》中，卡俄斯是最先出现的存在之一，之后出现盖亚、塔耳塔罗斯与厄罗斯等。',x:50,y:7},
+{id:'gaia',name:'盖亚',latin:'Gaia',type:'primordial',role:'大地女神',bio:'大地的化身，也是众多神祇与巨人的母亲。她与乌拉诺斯结合，生下泰坦、独眼巨人与百臂巨人。',x:25,y:19},
+{id:'eros',name:'厄罗斯',latin:'Eros',type:'primordial',role:'爱欲之神',bio:'早期宇宙神谱中的原初力量之一；在后来的传统中，也常被描绘为阿佛洛狄忒身边的爱神。',x:75,y:19},
+{id:'uranus',name:'乌拉诺斯',latin:'Uranus',type:'primordial',role:'天空之神',bio:'天空的化身，盖亚的伴侣与子嗣之父。后来被儿子克洛诺斯推翻，开启泰坦统治的更替。',x:25,y:31},
+{id:'cronus',name:'克洛诺斯',latin:'Cronus',type:'titan',role:'泰坦之王',bio:'盖亚与乌拉诺斯之子，推翻父亲后成为统治者。因害怕被子女取代而吞下孩子，最终被宙斯推翻。不要与时间之神克罗诺斯（Chronos）混为一谈。',x:25,y:43},
+{id:'rhea',name:'瑞亚',latin:'Rhea',type:'titan',role:'泰坦女神',bio:'克洛诺斯的妻子，也是赫斯提亚、得墨忒耳、赫拉、哈得斯、波塞冬与宙斯的母亲。她用石头替换婴儿宙斯，保护了他。',x:43,y:43},
+{id:'oceanus',name:'俄刻阿诺斯',latin:'Oceanus',type:'titan',role:'环流之河的泰坦',bio:'泰坦之一，与忒堤斯结合，生下俄刻阿尼得斯等水域神祇。',x:7,y:43},
+{id:'zeus',name:'宙斯',latin:'Zeus',type:'olympian',role:'天空 / 雷霆 / 众神之王',bio:'克洛诺斯与瑞亚之子，领导奥林匹斯诸神推翻泰坦。其神话中有大量婚姻、情爱与英雄血统故事；不同文本对其子女名单并不完全一致。',x:50,y:57},
+{id:'hera',name:'赫拉',latin:'Hera',type:'olympian',role:'婚姻与王权女神',bio:'宙斯的妻子与姐姐，奥林匹斯的重要女神。她与宙斯的婚姻既象征神圣王权，也常成为嫉妒、争执和英雄故事的起点。',x:68,y:57},
+{id:'poseidon',name:'波塞冬',latin:'Poseidon',type:'olympian',role:'海洋与地震之神',bio:'宙斯的兄弟，掌管海洋、风暴与地震。常见神话中，他与雅典娜争夺雅典的守护权。',x:86,y:57},
+{id:'hades',name:'哈得斯',latin:'Hades',type:'olympian',role:'冥界之王',bio:'宙斯的兄弟，统治死者的冥界。他并不等同于死亡本身；塔纳托斯才是死亡的拟人化神祇之一。',x:7,y:57},
+{id:'demeter',name:'得墨忒耳',latin:'Demeter',type:'olympian',role:'农业与丰收女神',bio:'宙斯的姐姐，珀耳塞福涅的母亲。女儿被哈得斯带往冥界的故事解释了季节循环与大地的丰歉。',x:24,y:57},
+{id:'athena',name:'雅典娜',latin:'Athena',type:'olympian',role:'智慧与战略女神',bio:'宙斯的女儿，常见版本说她从宙斯头部全副武装地诞生。她象征智慧、工艺与战略战争，是雅典的守护神。',x:40,y:75},
+{id:'apollo',name:'阿波罗',latin:'Apollo',type:'olympian',role:'预言 / 音乐 / 光明之神',bio:'宙斯与勒托之子，阿耳忒弥斯的双胞胎兄长。与德尔斐神谕、音乐、射箭和医术等传统相连。',x:58,y:75},
+{id:'artemis',name:'阿耳忒弥斯',latin:'Artemis',type:'olympian',role:'狩猎与荒野女神',bio:'宙斯与勒托之女，阿波罗的双胞胎妹妹，守护狩猎、荒野与年轻女性。',x:76,y:75},
+{id:'aphrodite',name:'阿佛洛狄忒',latin:'Aphrodite',type:'olympian',role:'爱与美之女神',bio:'关于她的出生有不同版本：赫西俄德说她由乌拉诺斯落入海中的生殖器所生；荷马传统则将她视为宙斯与狄俄涅之女。',x:94,y:75},
+{id:'persephone',name:'珀耳塞福涅',latin:'Persephone',type:'olympian',role:'春之女神 / 冥后',bio:'得墨忒耳之女，后来成为哈得斯的妻子与冥界王后。她每年部分时间返回地上，与季节循环的神话相联系。',x:13,y:91},
+{id:'heracles',name:'赫拉克勒斯',latin:'Heracles',type:'hero',role:'完成十二项功绩的英雄',bio:'宙斯与凡人阿尔克墨涅之子。因赫拉的敌意与自身悲剧经历，他接受了十二项功绩，死后在部分传统中升入神界。',x:35,y:91},
+{id:'perseus',name:'珀尔修斯',latin:'Perseus',type:'hero',role:'斩杀美杜莎的英雄',bio:'宙斯与达那厄之子，以斩杀美杜莎、拯救安德洛墨达等故事闻名。',x:55,y:91},
+{id:'leto',name:'勒托',latin:'Leto',type:'titan',role:'泰坦女神',bio:'与宙斯生下阿波罗和阿耳忒弥斯。她在分娩时受到赫拉阻挠的故事，是双子神出生神话的重要部分。',x:77,y:43},
+{id:'hephaestus',name:'赫淮斯托斯',latin:'Hephaestus',type:'olympian',role:'火与锻造之神',bio:'奥林匹斯的工匠神。其父母在不同版本中有差异：常见传统说他是赫拉与宙斯之子，也有说赫拉独自生下他。',x:92,y:43}
+];
+const edges=[
+['chaos','gaia','诞生 / 出现','kin'],['gaia','uranus','母子 / 结合','kin'],['uranus','cronus','父子','kin'],['gaia','cronus','母子','kin'],['cronus','zeus','父子','kin'],['rhea','zeus','母子','kin'],['cronus','rhea','夫妻','marriage'],['oceanus','rhea','同为泰坦','kin'],
+['zeus','hera','夫妻 / 兄妹','marriage'],['zeus','poseidon','兄弟','kin'],['zeus','hades','兄弟','kin'],['zeus','demeter','兄妹','kin'],['zeus','athena','父女','kin'],['zeus','apollo','父子','kin'],['zeus','artemis','父女','kin'],['leto','apollo','母子','kin'],['leto','artemis','母女','kin'],['apollo','artemis','双胞胎','kin'],
+['demeter','persephone','母女','kin'],['hades','persephone','夫妻','marriage'],['zeus','heracles','父子','kin'],['zeus','perseus','父子','kin'],['zeus','hephaestus','父子（部分版本）','kin'],['hera','hephaestus','母子（部分版本）','kin'],['uranus','aphrodite','起源（赫西俄德版本）','kin'],['eros','aphrodite','相关神祇','kin']
+];
+const byId=Object.fromEntries(people.map(p=>[p.id,p]));let selected='zeus',filter='all',showAll=true;
+const graph=document.getElementById('graph'),svg=document.getElementById('edges');
+function renderGraph(){graph.querySelectorAll('.node').forEach(n=>n.remove());svg.innerHTML='';
+let visible=people.filter(p=>filter==='all'||p.type===filter);let visibleIds=new Set(visible.map(p=>p.id));
+edges.forEach(([a,b,label,type])=>{if(!visibleIds.has(a)||!visibleIds.has(b))return;let A=byId[a],B=byId[b];let path=document.createElementNS('http://www.w3.org/2000/svg','path');let x1=A.x*10,y1=A.y*5.6,x2=B.x*10,y2=B.y*5.6;let mid=(y1+y2)/2;path.setAttribute('d',`M ${x1} ${y1} C ${x1} ${mid}, ${x2} ${mid}, ${x2} ${y2}`);path.setAttribute('class','edge '+(type==='marriage'?'marriage':''));path.dataset.a=a;path.dataset.b=b;path.dataset.type=type;svg.appendChild(path);
+if(showAll&&Math.abs(y2-y1)<130){let t=document.createElementNS('http://www.w3.org/2000/svg','text');t.setAttribute('x',(x1+x2)/2);t.setAttribute('y',(y1+y2)/2-4);t.setAttribute('text-anchor','middle');t.setAttribute('class','edge-label');t.textContent=label;svg.appendChild(t)}});
+visible.forEach(p=>{let n=document.createElement('button');n.className='node '+p.type+(p.id===selected?' selected':'');n.style.left=p.x+'%';n.style.top=p.y+'%';n.dataset.id=p.id;n.innerHTML=`<div class="greek">${p.name}</div><div class="desc">${p.role}</div>`;n.onclick=()=>selectPerson(p.id);graph.appendChild(n)});
+highlightEdges();}
+function highlightEdges(){let neighbors=new Set([selected]);edges.forEach(e=>{if(e[0]===selected)neighbors.add(e[1]);if(e[1]===selected)neighbors.add(e[0])});svg.querySelectorAll('.edge').forEach(e=>{let related=e.dataset.a===selected||e.dataset.b===selected;e.classList.toggle('highlight',related);e.style.opacity=showAll?'':(related?'1':'.12')});graph.querySelectorAll('.node').forEach(n=>n.classList.toggle('dim',!showAll&&!neighbors.has(n.dataset.id)))}
+function selectPerson(id){selected=id;let p=byId[id];document.getElementById('detailType').textContent=p.type==='primordial'?'原初神':p.type==='titan'?'泰坦神族':p.type==='olympian'?'奥林匹斯神祇':'英雄与凡人';document.getElementById('detailName').textContent=p.name+' · '+p.latin;document.getElementById('detailBio').textContent=p.bio;document.getElementById('detailTags').innerHTML=`<span class="tag">${p.role}</span><span class="tag">${p.type==='primordial'?'原初神':p.type==='titan'?'泰坦':p.type==='olympian'?'奥林匹斯神':'英雄 / 凡人'}</span>`;
+let rel=edges.filter(e=>e[0]===id||e[1]===id).map(e=>{let other=byId[e[0]===id?e[1]:e[0]];let verb=e[3]==='marriage'?'婚姻 / 伴侣':e[2];return `<div class="relation"><b>${verb}</b> · ${other.name}<div style="color:var(--muted);font-size:11px">${other.role}</div></div>`});document.getElementById('detailRelations').innerHTML=rel.length?rel.join(''):'<div class="relation">此简化图中暂无直接关系记录。</div>';
+renderGraph();renderList();}
+function renderList(){let q=document.getElementById('search').value.trim().toLowerCase();let list=people.filter(p=>(filter==='all'||p.type===filter)&&(!q||(p.name+p.latin+p.role+p.bio).toLowerCase().includes(q)));document.getElementById('personList').innerHTML=list.map(p=>`<button class="person-row ${p.id===selected?'selected':''}" data-id="${p.id}"><i class="dot" style="background:${p.type==='primordial'?'var(--green)':p.type==='titan'?'var(--blue)':p.type==='hero'?'var(--rose)':'var(--gold)'}"></i><span>${p.name}<small>${p.role}</small></span></button>`).join('');document.querySelectorAll('.person-row').forEach(n=>n.onclick=()=>selectPerson(n.dataset.id))}
+document.getElementById('search').addEventListener('input',renderList);document.getElementById('filters').querySelectorAll('button').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('active',c===b));renderGraph();renderList()});document.getElementById('reset').onclick=()=>{filter='all';showAll=true;document.getElementById('search').value='';document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('active',c.dataset.filter==='all'));selectPerson('zeus')};document.getElementById('allEdges').onclick=()=>{showAll=!showAll;document.getElementById('allEdges').textContent=showAll?'显示全谱系':'聚焦当前人物';highlightEdges()};selectPerson('zeus');
+</script>
+<script>
+document.querySelectorAll('#globalNav button').forEach(button=>button.addEventListener('click',()=>{const target=button.dataset.section;document.querySelectorAll('#globalNav button').forEach(b=>b.classList.toggle('active',b===button));document.querySelectorAll('.global-section').forEach(section=>section.classList.toggle('hide-card',section.id!=='section-'+target));document.getElementById('section-'+target).scrollIntoView({behavior:'smooth',block:'start'});}));
+const regionSearch=document.getElementById('regionSearch');if(regionSearch)regionSearch.addEventListener('input',()=>{const q=regionSearch.value.trim().toLowerCase();document.querySelectorAll('#regionGrid .myth-card').forEach(card=>card.classList.toggle('hide-card',!((card.dataset.search+' '+card.innerText).toLowerCase().includes(q))));});
+</script>
+<div class="myth-modal" id="mythModal" role="dialog" aria-modal="true" aria-labelledby="mythModalTitle"><div class="myth-modal-card"><div class="myth-modal-head"><div><div class="region-label" id="mythModalRegion">CIVILIZATION TIMELINE</div><h2 id="mythModalTitle">文明神话发展时间线</h2></div><button class="myth-close" id="mythModalClose" aria-label="关闭时间线">关闭 ×</button></div><p class="myth-modal-lead" id="mythModalLead"></p><div class="timeline" id="mythModalTimeline"></div><p class="source-note" id="mythModalSources"></p></div></div>
+<script>
+const mythHistories=[
+{name:'中国古代神话与传说',region:'东亚 · 中国',lead:'中国神话并非单一、封闭的神谱。它与史前地方传统、农业与治水经验、祖先祭祀、早期国家礼制和后世宗教文学交织。以下时间线区分“传统可能形成的社会背景”和“现存材料可以确认的记录年代”。',sources:'可继续核对的材料与研究方向：《山海经》《楚辞》《淮南子》《史记》及汉代文献；结合考古学、早期国家史、历史地理与民俗学研究。盘古故事的现存文献记录较晚，不能简单当作最早的统一创世版本。',steps:[['史前至新石器时代｜地方宇宙观与祖先传统','没有可直接阅读的史前神话文本。聚落、墓葬、动物与自然崇拜等考古材料能说明仪式生活，却不能单凭器物图案复原完整故事。不同区域可能存在不同的天地、祖先和自然观念。'],['约公元前二千纪至前一千纪｜早期国家与祖先—王权叙事','商周的祭祀、祖先观念、天命与王权秩序留下了较明确的文字和礼制线索。神话叙事与祖先谱系、政治合法性、农业和战争记忆逐渐发生联系。'],['战国至汉代｜神话材料被记录、分类与历史化','《山海经》《楚辞》《淮南子》等保存了神灵、异兽、宇宙、英雄和地方知识。不同作者会把古老故事纳入地理、哲学、政治或历史叙述，因此文本之间并不完全一致。'],['汉代以后｜国家祭祀、地方信仰与神仙传统并行','国家礼制、地方神祇、道教神仙传统及民间传说持续互动。部分人物被历史化、神格化，旧故事也会被重新解释。'],['中古至近现代｜汇编、地方传承与现代重构','志怪、小说、地方庙祀和口头故事不断增添新版本。今天熟悉的完整神谱，常是不同年代材料经后世整理的结果，而不是某一时代统一编定的系统。']]},
+{name:'两河流域：苏美尔、阿卡德与巴比伦',region:'西亚 · 两河流域',lead:'两河流域的神话发展与灌溉农业、城市国家、神庙经济、王权和书吏传统密切相关。不同城市有各自的守护神；王朝兴衰会影响神祇地位和创世故事的组织方式。',sources:'关键材料：楔形文字泥板、苏美尔神话与王表、《吉尔伽美什史诗》《埃努玛·埃利什》及相关神庙文书。年代应以具体泥板版本、语言和考古语境判断。',steps:[['史前至公元前四千纪｜聚落、农业与地方神灵','南部美索不达米亚的灌溉农业和聚落发展，为后来的城市、神庙和地方神祇传统提供社会背景。史前口头故事本身无法由后世文本完整还原。'],['约公元前四千纪末至前三千纪｜城市与书写出现','乌鲁克等城市的行政书写发展，神庙和城市守护神成为社会组织的重要部分。神祇逐渐与城市、自然力量、职业和政治权力相联系。'],['公元前三千纪｜苏美尔传统与王权神话','神祇谱系、创世和洪水故事、英雄与王的叙事进入书吏传统。不同城市的神学有各自重点，并非从一开始就存在统一的两河神系。'],['公元前二千纪｜阿卡德语传统与史诗重编','较早的苏美尔故事被翻译、改写或与阿卡德语传统互动。《吉尔伽美什》故事逐渐形成跨版本的史诗传统，死亡与不朽成为重要主题。'],['公元前二千纪末至一千纪｜巴比伦神学与经典化','《埃努玛·埃利什》等文本将马尔杜克的地位与巴比伦的政治宗教中心地位联系起来，展现神话如何在城市竞争与国家权力中被重新编排。'],['波斯、希腊化及后续时期｜传统延续与转译','帝国更替、语言变化和文化交流改变了神话的使用方式；部分传统继续被抄写，另一些则失去原有的祭祀环境。']]},
+{name:'古埃及神话',region:'东北非 · 尼罗河流域',lead:'古埃及神话深受尼罗河季节性洪泛、王权制度、墓葬实践和神庙中心影响。它并没有一套固定不变的统一神谱；赫利奥波里斯、孟菲斯和底比斯等地形成了不同但可互相吸收的创世神学。',sources:'关键材料：金字塔文本、棺材文本、亡灵书、神庙铭文、王室纪念物与考古遗址。可结合尼罗河环境史、埃及王朝史、宗教史与图像学研究。',steps:[['史前至前王朝时期｜尼罗河环境与地方崇拜','尼罗河洪泛、太阳周期、动物和墓葬实践构成宗教观念的重要背景。早期材料多为考古证据，不能直接等同于后世成型的神话故事。'],['约公元前3100年以后｜统一王权与神圣统治','上下埃及的政治统一使王权、神祇和国家秩序紧密结合。国王与荷鲁斯等神祇的关系逐渐成为王权意识形态的重要部分。'],['古王国时期｜太阳神学与金字塔文本','太阳运行、创世和国王死后升天等观念见于王室葬仪文本。神话既解释宇宙秩序，也服务于王室死后生命的仪式。'],['中王国至新王国时期｜冥界文本与神庙中心发展','棺材文本、亡灵书和神庙铭文保存更多关于死者旅程、奥西里斯、拉及其他神祇的叙事。地方神学相互吸收，但不会完全消除差异。'],['后期王朝至希腊罗马时期｜神祇融合与文化转译','神祇形象和祭祀在政治更替中持续变化。希腊罗马统治时期出现新的神祇对应和融合现象，古埃及宗教也逐渐改变其社会基础。']]},
+{name:'希腊与罗马神话',region:'地中海 · 希腊与罗马',lead:'希腊神话形成于爱琴海与东地中海的长期交流之中，受到迈锡尼文化、近东故事传统、地方祭祀和城邦政治影响。罗马神话则在本土祭祀、建城与国家传统的基础上，吸收并重新解释许多希腊神祇和故事。',sources:'关键材料：迈锡尼线形文字B泥板、荷马史诗、赫西俄德《神谱》、希腊悲剧、地方铭文和祭祀遗址，以及罗马作者维吉尔、奥维德等。需区分故事年代、文本年代与后世版本。',steps:[['青铜时代｜爱琴海、迈锡尼与东地中海接触','迈锡尼宫殿文化留下线形文字B记录，其中能辨认出部分后来与希腊神祇相关的名字，但不能据此复原后世完整奥林匹斯神谱。海上贸易和近东接触提供了故事交流的条件。'],['约公元前1200年后｜宫殿体系衰落与口头传统延续','宫殿书写体系衰退后，口头诗歌、地方祭祀和英雄记忆以不同方式延续。各地区故事并不完全统一，地方神庙和节庆仍是理解神话的重要线索。'],['约公元前八至七世纪｜史诗与神谱进入文字传统','《伊利亚特》《奥德赛》和赫西俄德《神谱》成为重要文本，帮助形成广为传播的神祇关系与英雄故事，但它们只是众多传统中的重要版本。'],['公元前五世纪｜城邦、戏剧与政治讨论','悲剧、喜剧、哲学和城邦祭祀重新诠释神话。英雄与神的故事被用于讨论正义、命运、家族冲突、战争和公民秩序。'],['希腊化时期｜跨区域传播与神祇融合','亚历山大之后的地中海与西亚交流促进神祇形象、祭祀和故事的跨文化转译。地方传统仍然保留差异。'],['罗马共和国至帝国时期｜罗马国家传统与希腊神话重释','罗马将希腊神祇与本土神祇对应，同时用建城传说、祖先叙事和帝国诗歌塑造政治记忆。后世欧洲熟悉的“经典神话”很大程度上由这些文本共同塑造。']]},
+{name:'印度：吠陀、史诗与印度教传统',region:'南亚 · 印度',lead:'印度神话不是一个在某一时刻完成的神系，而是吠陀祭祀传统、哲学思辨、史诗、往世书、地方崇拜和不同宗派长期互动的结果。其突出特点之一，是宇宙时间的循环观以及神祇在不同传统中的多种身份。',sources:'关键材料：《梨俱吠陀》等吠陀文献、奥义书、《摩诃婆罗多》《罗摩衍那》、往世书与区域语言文学。文本层次和年代复杂，应避免把后世印度教神谱倒推为早期吠陀时代的原貌。',steps:[['印度河文明时期｜考古材料与解释限度','印章、图像和遗址可帮助研究仪式与象征，但相关文字尚未被可靠释读，不能将某一图像直接认定为后世特定神祇。'],['约公元前1500年以后｜吠陀诗歌与祭祀宇宙观','吠陀传统强调祭火、赞歌、祭仪与宇宙秩序。因陀罗、阿耆尼、苏摩等神祇在不同赞歌中承担重要角色，文本本身也包含多种宇宙起源思考。'],['约公元前一千纪中期｜奥义书与哲学化转向','部分思想从祭祀秩序进一步探讨自我、终极实在、业与解脱。哲学传统与神话叙事相互影响，但并非简单取代关系。'],['约公元前一千纪后期至公元初期｜史诗形成与持续扩编','《摩诃婆罗多》《罗摩衍那》在长期口传和编订中形成多层文本，讲述王权、亲属义务、战争、道德困境与神圣介入。不同地区存在不同版本。'],['公元初期至中世纪｜往世书、宗派与地方传统发展','毗湿奴、湿婆、女神等传统在不同宗派和地区中获得突出地位；化身、宇宙周期和神圣故事不断被扩展，并与寺庙、朝圣和区域文学相连。'],['中世纪至现代｜区域化、改革与现代重释','语言文学、地方仪式和宗教运动持续改写故事。现代民族叙事、印刷出版和影视又改变了人们接触史诗与神祇的方式。']]},
+{name:'北欧神话',region:'北欧与日耳曼',lead:'北欧神话的形成背景包括日耳曼语言文化、北欧农业与航海社会、地方祭祀和诗歌传统。今天最熟悉的文本主要由中世纪冰岛的基督教作者保存，因此需要区分较早的口头传统与后来的文字整理。',sources:'关键材料：《诗体埃达》《散文埃达》、卢恩铭文、考古图像、墓葬和相关日耳曼语言材料。文本记录主要来自中世纪冰岛，不能直接代表所有时期和地区的信仰。',steps:[['铁器时代｜地方神祇、仪式与日耳曼传统','北欧各地存在多样的地方崇拜与口头诗歌。考古图像和铭文能提供线索，但无法完整复原一套统一神话体系。'],['罗马时代至维京时代｜贸易、迁徙与诗歌传承','北欧与欧洲大陆的接触、航海和社会变化影响神祇形象与英雄传说。奥丁、索尔等神祇在不同地区和语境中的地位可能不同。'],['约公元八至十一世纪｜维京时代的宗教与社会背景','诗歌、雕刻和仪式材料展现多样的神祇、巨人、命运和英雄传统。诸神黄昏等叙事不能仅凭后来的完整文本确定其所有早期细节。'],['约十三世纪｜冰岛文献记录与编纂','《诗体埃达》手稿和斯诺里·斯图鲁松的《散文埃达》保存了重要材料。编纂者生活在基督教社会，记录与整理本身可能影响故事呈现。'],['基督教化以后至现代｜旧神话的文学化与流行文化改写','旧有信仰逐渐退出公共祭祀体系，但诗歌、文学和民族文化中继续流传。现代文学、漫画、影视和游戏进一步塑造了大众熟悉的北欧神话形象。']]},
+{name:'日本神话与神道传统',region:'东亚 · 日本',lead:'日本神话与列岛地方信仰、稻作社会、氏族祖先、王权建构和大陆文化交流密切相关。《古事记》《日本书纪》保存了重要神话，但也是在八世纪国家形成背景下编纂的政治与宗教文本。',sources:'关键材料：《古事记》（712年）、《日本书纪》（720年）、风土记、神社祭祀与考古材料。应比较国家编纂文本与各地神社、地方传说之间的差异。',steps:[['史前至弥生时代｜列岛地方信仰与稻作社会','绳文、弥生等时期的考古材料显示人群生计和仪式生活经历变化。由于缺乏同期神话文本，不能把后世天照等神祇的完整故事直接投射到史前。'],['古坟时代｜首领联盟与祖先谱系','区域权力中心、古坟和大陆交流发展，祖先、氏族身份和统治者合法性成为后来国家神话的重要背景。'],['七世纪｜国家整合与祭祀秩序重组','中央政权发展，地方神祇传统与王权叙事被纳入更广泛的政治框架。佛教传入后，也与本土神祇信仰发生长期互动。'],['712与720年｜《古事记》《日本书纪》编纂','国土诞生、神祇谱系、天照与皇室祖先叙事进入书面国家叙事。两部文本在内容、编排和政治表达上并不完全相同。'],['平安时代以后｜神佛习合与地方神社传统','神祇信仰与佛教在许多地区长期交织，神社祭祀和地方故事继续发展。国家神话并未完全取代地方传统。'],['近代至现代｜国家神道与当代文化再诠释','近代国家对神道和皇室神话作出新的制度化解释；战后宗教环境变化，神话又在学术、文学和大众文化中被重新理解。']]},
+{name:'美洲原住民神话传统',region:'美洲 · 玛雅、阿兹特克、印加等',lead:'美洲包含众多语言、生态环境和政治体系不同的文明，不能作为单一神话系统。玛雅城邦、墨西加（常称阿兹特克）帝国、安第斯的印加国家以及其他原住民族拥有各自的创世、祖先、土地和宇宙时间传统。',sources:'关键材料：玛雅铭文与考古遗址、《波波尔·乌》的基切玛雅传统、殖民时期编纂的纳瓦特尔语资料、安第斯口述与编年史材料。殖民记录可能受翻译、传教和权力关系影响。',steps:[['史前至早期农业社会｜地方生态与祖先叙事','玉米种植、山地与雨林环境、河流和天象塑造不同社群的生活与仪式。由于口头传统多样且年代难以确定，不能把后世文本当成整个美洲的统一起源。'],['约公元前二千纪至公元初期｜中美洲农业文明与区域交流','玉米农业、仪式中心、历法和区域交换逐渐发展。不同文化在图像、仪式和宇宙秩序观念上既有交流，也保留独特传统。'],['古典玛雅时期（约公元250—900年）｜城邦、铭文与王权叙事','玛雅城邦以铭文、纪念碑和仪式表达王权、祖先、宇宙秩序与时间周期。不同城邦的政治史和神话表达并不完全相同。'],['后古典时期至欧洲到来前｜政治重组与多种传统并存','中美洲和安第斯各区域经历权力更替与文化交流。墨西加传统中的太阳时代与宇宙更新观念、安第斯的祖先和土地关系，应分别放回各自语境理解。'],['十六世纪以后｜殖民记录、传统断裂与延续','征服、传教和人口灾难造成巨大改变；部分故事由原住民作者、传教士或殖民官员记录。许多社群也持续在口头、仪式和地方实践中保存并发展传统。'],['现代至当代｜原住民知识与文化复兴','考古、语言学与原住民学者及社群的研究不断重建被忽略的历史语境。神话仍是身份、土地关系、语言复兴和当代艺术的重要资源。']]},
+{name:'非洲神话与口头传统',region:'非洲 · 多种地方传统',lead:'非洲大陆拥有大量彼此不同的语言、政治制度和宗教传统。祖先关系、土地、动物寓言、至高神与诸灵等主题在一些传统中突出，但不存在一套统一的“非洲神话”。口头讲述、表演、音乐和仪式本身就是传承方式。',sources:'研究材料包括地方语言口述史、仪式与表演、考古材料、历史语言学和经审慎评估的殖民时期记录。应优先尊重具体社群的名称、语境和当代传承者。',steps:[['史前至早期农业与畜牧社会｜生态与祖先记忆','不同地区的狩猎采集、农业、牧业和贸易环境形成不同的叙事与仪式传统。文字材料有限并不代表传统简单或缺乏历史。'],['古代至中世纪｜城市、王国与跨撒哈拉及印度洋交流','贸易网络、王权、宗教中心和迁徙使故事在区域间传播。埃及、努比亚、埃塞俄比亚、萨赫勒和西非等地区的发展路径差异显著。'],['约中世纪至近代早期｜王国史、口头史诗与地方祭仪','一些社会通过吟诵者、家族谱系、王室仪式和动物故事保存历史记忆与社会伦理。口头传统会随表演场合和受众而变化。'],['十五至十九世纪｜大西洋贸易、殖民与宗教互动','奴隶贸易、殖民扩张和基督教、伊斯兰教等宗教传统的传播改变了许多社群的生活。旧有神祇和仪式可能被压制、融合或转入新的宗教环境。'],['十九至二十世纪｜外部记录与民族志研究','许多故事被欧洲旅行者、传教士和人类学家记录，记录者的语言、翻译和理论框架可能影响材料。应结合当地语言资料与社群知识校读。'],['当代｜社群传承、复兴与跨大西洋联系','口头叙事、音乐、仪式和当代文学持续更新传统。非洲本土与加勒比、巴西等地的非洲侨民宗教之间存在复杂历史联系。']]},
+{name:'大洋洲神话',region:'大洋洲 · 波利尼西亚等',lead:'大洋洲各岛屿和澳大利亚原住民拥有高度多样的宇宙观与口头传统。海洋航行、岛屿形成、祖先迁徙、谱系和土地关系在许多波利尼西亚传统中重要；澳大利亚原住民传统则各有与具体国家、土地和“梦创时代”相关的知识体系，不能混为一谈。',sources:'研究材料包括具体社群的口述传统、航海与语言学研究、考古学、殖民时期记录及当代原住民研究。涉及神圣知识时，应尊重社群的公开与保密规范。',steps:[['远古至史前｜土地、海洋与祖先知识','许多传统通过口述、歌唱、舞蹈、地景和仪式传递。考古和语言学可帮助研究迁徙与接触，但不能据此推导出所有岛屿共享同一个神话。'],['约公元前二千纪以后｜拉皮塔文化与太平洋扩散背景','考古学所见的拉皮塔文化与后续南岛语族在太平洋的扩散，为理解部分波利尼西亚祖先迁徙提供背景；文化扩散不等于神话文本原样传播。'],['约公元前一千纪至公元第二千纪初｜航海、岛屿社会与谱系传统','远洋航行、岛屿定居和区域网络使祖先、海洋、岛屿形成与半神英雄故事在各地发展出不同版本。'],['欧洲接触前后｜地方政治、传教与记录变化','欧洲航海与殖民接触改变了宗教实践和人口结构。部分故事由外来者记录，部分由当地知识持有者继续传承；不同岛屿的历史经历并不相同。'],['二十世纪至今｜语言复兴与原住民知识保护','社群教育、语言复兴、航海实践和文化研究重新强调传统知识与土地、海洋之间的关系。传统并非只存在于过去，而是在当代持续实践。']]}
+];
+const mythStorylines=[
+[['盘古开天（现存记录较晚）','盘古在混沌中开辟天地，身体化生为自然万物。这是后世广为流传的创世故事，但不应把它当成所有早期中国传统唯一或最古老的创世版本。'],['女娲造人与补天','女娲造人、炼石补天等故事把人类起源、灾变与天地修复联系起来；不同文献和地方传统中的情节并不完全相同。'],['伏羲、神农等文化英雄','伏羲与八卦、渔猎，神农与农业和医药等故事，讲述人类如何获得文化技术。人物身份与事迹在后世文献中不断被整理。'],['后羿射日与治水传说','多日并出、后羿射日，以及鲧禹治水等叙事把灾难、英雄行动和社会秩序联系起来；这些故事有不同版本，也逐渐与上古帝王史叙事交织。'],['从神话人物到历史化的上古帝王','黄帝、尧、舜、禹等人物在后世叙事中逐渐被纳入王朝起源和政治伦理，神话、传说与历史书写相互叠合。']],
+[['原初诸神与宇宙秩序','苏美尔传统中，安、恩利尔、恩基、宁胡尔萨格等神祇在不同文本里承担不同角色；没有一套能概括所有城市和时代的单一创世版本。'],['人类与神祇的关系','部分故事把人类的出现与供养神祇、维持祭祀秩序联系起来；具体创造者、材料和目的随文本而异。'],['吉尔伽美什与恩奇都','乌鲁克王吉尔伽美什与恩奇都从冲突走向友谊，共同经历冒险；恩奇都之死使吉尔伽美什直面死亡。'],['洪水与不朽追寻','吉尔伽美什寻找洪水幸存者乌特纳比什提姆，追问如何逃离死亡，最终认识到人无法轻易获得永生。洪水故事有多个版本。'],['《埃努玛·埃利什》与马尔杜克','巴比伦创世诗讲述马尔杜克战胜提亚马特、建立宇宙秩序并取得至高地位，反映巴比伦神学对早期神祇传统的重新编排。']],
+[['原初水域与创世神','赫利奥波里斯传统以努恩的原初水域为起点，阿图姆出现并展开创造；孟菲斯等地则有不同的创世神学。'],['舒与泰芙努特：天地秩序形成','在赫利奥波里斯神谱中，舒与泰芙努特之后出现盖布与努特，天地被分开，神祇家族逐步展开。'],['奥西里斯、伊西斯、塞特与荷鲁斯','奥西里斯遭塞特杀害，伊西斯寻回并复原他，荷鲁斯长大后与塞特争夺王权。不同文本对冲突细节和结局的表达不同。'],['太阳神拉的每日旅程','太阳神白昼航行、夜间穿越冥界并面对阿佩普等混乱力量，黎明重生，呈现宇宙秩序每日更新的观念。'],['死者审判与来世','死者在冥界接受审判，心脏与玛阿特之羽相衡的场景成为后世熟悉的图像；葬仪文本帮助亡者通过来世旅程。']],
+[['卡俄斯与原初神','赫西俄德《神谱》以卡俄斯开篇，随后出现盖亚、塔耳塔罗斯、厄罗斯等原初力量；其他希腊地方传统的起源叙事并不完全相同。'],['乌拉诺斯被推翻：泰坦时代','盖亚与乌拉诺斯的后代包括泰坦。克洛诺斯在盖亚帮助下推翻父亲，神祇统治发生第一次重大更替。'],['宙斯推翻克洛诺斯','克洛诺斯害怕子女取代自己而吞下他们；瑞亚藏起宙斯。宙斯长大后救出兄弟姐妹，并在泰坦战争后确立新秩序。'],['奥林匹斯诸神与英雄世代','宙斯及其他神祇的故事与雅典娜、阿波罗、阿耳忒弥斯等神的出生和功绩相连；赫拉克勒斯、珀尔修斯等英雄则在神与人的世界间行动。'],['罗马重释：建城、祖先与国家命运','罗马传统将本土祭祀、罗慕路斯与雷穆斯等建城故事，与希腊神祇对应和特洛伊后裔传说结合，形成服务于罗马身份与国家记忆的叙事。']],
+[['吠陀诸神与宇宙起源之问','《梨俱吠陀》赞歌呈现因陀罗、阿耆尼、苏摩等神祇，也提出关于宇宙如何开始的开放性思考；并非所有文本都给出唯一答案。'],['因陀罗与宇宙秩序','因陀罗战胜弗栗多、释放被阻塞的水等故事，把神的战斗与降雨、生命秩序联系起来。'],['史诗中的罗摩与悉多','《罗摩衍那》讲述罗摩被流放、悉多被劫、猴王哈努曼相助及与罗波那决战；区域版本对人物和结局有不同解释。'],['《摩诃婆罗多》与俱卢之战','般度族与俱卢族的亲属冲突演变为大战；《薄伽梵歌》在战场上展开关于行动、责任与解脱的哲学对话。'],['往世书中的毗湿奴、湿婆与女神传统','后来的往世书和宗派传统扩展神祇的出生、化身、婚姻、战斗与宇宙周期故事。不同地区和宗派会把不同神祇置于中心。']],
+[['金恩加加普与世界形成','《诗体埃达》的创世诗描绘原初空虚金恩加加普，火与冰相遇，巨人尤弥尔等原初存在出现。'],['尤弥尔之身化为世界','奥丁及其兄弟杀死尤弥尔，以其身体构成大地、海洋等世界部分；这是北欧创世传统的重要版本。'],['人类诞生与世界树','奥丁等神祇赋予木头形体生命，形成最初的人类；世界树连接不同世界，神祇、巨人和人类共享彼此关联的宇宙。'],['奥丁、索尔与洛基的故事群','诸神与巨人反复冲突，奥丁追求知识，索尔守护神与人的世界，洛基在帮助和破坏之间摇摆。故事并非单一线性史诗，而是彼此交织的诗歌群。'],['诸神黄昏与新世界','诸神与巨人最终大战，旧世界毁灭，部分神祇和人类幸存，新世界再生。现存叙述来自中世纪文本，细节和解释仍有讨论。']],
+[['伊邪那岐与伊邪那美造国','《古事记》《日本书纪》记载伊邪那岐、伊邪那美以天沼矛搅动海水，形成岛屿，随后生出诸神；不同文本的次序与细节有差异。'],['神祇诞生与黄泉国','伊邪那美死后进入黄泉，伊邪那岐前往寻找她，最终逃离并通过禊祓净化。洗净过程中诞生天照、月读和须佐之男等神祇。'],['天照与须佐之男的冲突','须佐之男的行为引发冲突，天照躲入天岩户，世界陷入黑暗；众神以仪式和计谋使她重新出现。'],['须佐之男斩杀八岐大蛇','须佐之男在出云故事中斩杀八岐大蛇，救出奇稻田姬，并获得草薙剑。此故事与出云地方传统相连。'],['天孙降临与皇室祖先叙事','天照的后裔邇邇艺命降临地上，后续谱系与神武天皇传说相连；这是八世纪国家编纂文本中重要的王权起源叙事。']],
+[['玛雅创世：多次尝试创造人类','《波波尔·乌》记载创造者尝试用泥、木等材料造人，前几次失败，最后以玉米造成人类。这是基切玛雅传统，不代表整个美洲共有的版本。'],['英雄双子进入冥界','胡纳普与伊斯巴兰克在父辈遭冥界力量杀害后，进入西巴尔巴，通过智谋和试炼战胜冥界主宰。'],['太阳时代与墨西加宇宙观','墨西加传统讲述世界经历多个太阳时代，每一时代以灾变终结；现存版本与祭祀、历法和政治语境相关。'],['羽蛇神与不同中美洲传统','羽蛇神形象在不同时期和文化中出现，但其身份、故事和政治含义并不完全相同，不能视为单一人物在所有文明中的同一故事。'],['印加祖先与库斯科起源','印加传统中，太阳神因蒂、创世神维拉科查及祖先从洞穴或神圣地点出发的故事，与王权、土地和库斯科建城记忆相连；版本随记录者和地区而异。']],
+[['至高神、诸灵与地方创世故事','约鲁巴、阿散蒂及其他传统各有关于至高神、诸灵、土地和人类起源的叙事。不能将其中一个故事当成全非洲统一创世神话。'],['祖先、王权与社群谱系','许多传统把祖先、王室谱系和土地权利联系起来，故事通过家族记忆、仪式和口头讲述延续。具体人物与神祇必须放回各自社群理解。'],['阿南西与智慧故事','在阿散蒂及相关阿坎传统中，蜘蛛阿南西常以机智、欺骗或幽默揭示人类弱点。故事在讲述中不断变化，并传播到加勒比等地。'],['神灵、英雄与社会伦理','动物故事、祖先传说和神灵叙事常讨论慷慨、贪婪、权力与责任；不同地区的表演形式和故事结局各有特色。'],['跨大西洋传播与新宗教语境','奴隶贸易与殖民历史使部分非洲传统在加勒比和美洲延续、融合和重构。今天的传承既有历史连续性，也包含新的社群实践。']],
+[['天地分离与世界形成','部分波利尼西亚传统讲述天空之父与大地之母被分开，光与空间由此出现；具体神名和情节随岛屿与语言社群而不同。'],['毛伊捕获太阳、钓起岛屿','毛伊的故事群包括减慢太阳运行、钓起岛屿或取得火等功绩。它们是分布于多个地区的不同版本，不构成一套完全统一的神话。'],['祖先航行与岛屿谱系','祖先迁徙故事将航海、岛屿定居、家族谱系与土地权利联系起来。故事也承载航海知识和社群身份。'],['澳大利亚原住民的创世与地景叙事','许多原住民传统讲述祖先存在塑造地貌、物种和社会规则的故事，常与特定土地和仪式知识紧密相连；不同国家和语言社群的传统不可混同。'],['当代传承与文化复兴','故事通过语言、歌唱、航海、艺术和社群教育继续传承。部分知识具有神圣或限制公开的性质，整理时应尊重知识持有社群的规范。']]
+];
+const modal=document.getElementById('mythModal');
+const storyHeading=document.createElement('h3');storyHeading.textContent='神话故事主线：从创世到英雄与神祇';storyHeading.style.cssText='font-size:16px;margin:22px 0 0';document.getElementById('mythModalLead').after(storyHeading);const storyTimeline=document.createElement('div');storyTimeline.className='timeline';storyTimeline.id='mythStoryline';storyHeading.after(storyTimeline);const historyHeading=document.createElement('h3');historyHeading.textContent='历史背景与文本演变';historyHeading.style.cssText='font-size:16px;margin:26px 0 0';document.getElementById('mythModalTimeline').before(historyHeading);
+function openMythHistory(index){const d=mythHistories[index];if(!d)return;document.getElementById('mythModalRegion').textContent=d.region;document.getElementById('mythModalTitle').textContent=d.name+'｜神话故事发展';document.getElementById('mythModalLead').textContent=d.lead;storyTimeline.innerHTML=(mythStorylines[index]||[]).map((s,i)=>`<div class="time-item"><strong>${i+1}. ${s[0]}</strong><p>${s[1]}</p></div>`).join('');document.getElementById('mythModalTimeline').innerHTML=d.steps.map((s,i)=>`<div class="time-item"><strong>${i+1}. ${s[0]}</strong><p>${s[1]}</p></div>`).join('');document.getElementById('mythModalSources').textContent=d.sources;modal.classList.add('open');document.body.style.overflow='hidden';}
+function closeMythHistory(){modal.classList.remove('open');document.body.style.overflow='';}
+document.querySelectorAll('#regionGrid .myth-card').forEach((card,index)=>{const open=()=>openMythHistory(index);const b=document.createElement('button');b.className='timeline-open';b.textContent='查看本文明的发展时间线 →';b.addEventListener('click',e=>{e.stopPropagation();open()});card.appendChild(b);card.tabIndex=0;card.setAttribute('role','button');card.setAttribute('aria-label',card.querySelector('h3')?.textContent+'：点击查看发展时间线');card.style.cursor='pointer';card.addEventListener('click',e=>{if(!e.target.closest('button'))open()});card.addEventListener('keydown',e=>{if(e.target===card&&(e.key==='Enter'||e.key===' ')){e.preventDefault();open()}});});
+document.getElementById('mythModalClose').addEventListener('click',closeMythHistory);modal.addEventListener('click',e=>{if(e.target===modal)closeMythHistory()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMythHistory()});
+</script>
+<script>
+/* More focused narrative sequences: important episodes, motives, and consequences. */
+const focusedMythStories = [
+[
+["天地从混沌中分开｜盘古传统", "后世流传的盘古故事把天地尚未分明的状态写成混沌，盘古成长后将清阳托举为天、浊重凝结为地；他死后身体化生自然。重点是解释天地分化，不是所有中国传统共同认可的唯一创世版本。"],
+["人从哪里来｜女娲造人", "女娲以黄土造人，另一些讲法又强调她以泥浆快速造人。故事把人的起源放在大地材料与造作行为之中，与盘古的天地开辟回答的是不同问题。"],
+["天柱崩折｜女娲补天", "共工与祝融冲突的传统中，共工怒触不周山，天倾地陷、洪水与烈火威胁人间。女娲炼石补天、断鳌足立四极，修复的不是一个新世界，而是濒临崩坏的旧世界。"],
+["人类获得文化秩序｜伏羲与神农", "伏羲与八卦、渔猎和婚姻制度相联，神农则与农耕、草药和市场相联。两人作为文化英雄，解释人类怎样从生存走向制度与知识；各项发明在不同文献中的归属并不一致。"],
+["太阳过多与人间灾难｜后羿射日", "十日并出灼伤大地，后羿射落多余的太阳，使自然重新适合生命。故事的重点是英雄以行动恢复失衡的世界秩序，而不是建立一套完整神谱。"],
+["洪水治理与王权记忆｜鲧、禹治水", "鲧以堵塞治水而失败，禹改以疏导、开河和治理水患取得成功。故事由灾害解释逐渐连向勤劳、公共责任与政治合法性，后世史书又把禹纳入王朝起源叙事。"]
+],
+[
+["诸神各有城市｜没有唯一的创世者", "苏美尔、阿卡德与巴比伦的神祇体系并不完全相同。安、恩利尔、恩基、宁胡尔萨格等神在不同文本承担不同职责；理解故事要先确认它来自哪个城市、时代与语言传统。"],
+["神灵为何创造人｜《阿特拉哈西斯史诗》", "在一支巴比伦传统中，低阶神承担繁重劳役而反叛，神祇于是创造人类分担劳作、维持供奉。人类的起源由此与神庙、劳动和神人之间不对等的关系相连。"],
+["洪水不是单纯天灾｜神与人的冲突", "洪水叙事中，神祇决定毁灭人类，恩基通过秘密告知或暗示，使一名受选者建船保存生命。洪水故事既讲灾后存续，也讨论神意、人口、秩序与人类脆弱性。"],
+["国王遇见伙伴｜吉尔伽美什与恩奇都", "乌鲁克的吉尔伽美什因强势统治而引发不满，神创造恩奇都与他抗衡。两人交手后成为伙伴，力量从彼此冲突转为共同冒险，这也为之后的悲剧埋下伏笔。"],
+["英雄胜利的代价｜恩奇都之死", "吉尔伽美什与恩奇都杀死雪松森林守护者胡姆巴巴，又击败天牛。诸神决定让恩奇都死亡，英雄的荣耀由此转为哀悼与恐惧：超越禁忌会不会带来代价？"],
+["寻找永生却返回人间｜吉尔伽美什的结局", "吉尔伽美什寻找洪水幸存者乌特纳比什提姆，得知永生并非英雄可以凭功绩取得；即使得到恢复青春的植物，也最终失去它。史诗把结论落在人会死、城市与人的事业却能留下。"],
+["另一条神学主线｜马尔杜克战胜提亚马特", "《埃努玛·埃利什》不是吉尔伽美什冒险的下一章，而是巴比伦的创世诗：马尔杜克击败提亚马特，以她的身体组织天地，并获得至高地位。这一叙事把宇宙秩序与巴比伦的政治宗教中心地位相连。"]
+],
+[
+["原初水域｜各地创世神学并不相同", "赫利奥波里斯传统从努恩的原初水域展开，由阿图姆开始创造；孟菲斯传统突出卜塔以心智和言语创造；底比斯又把阿蒙置于中心。古埃及不是只有一个固定的创世答案。"],
+["神族家庭建立秩序｜舒、泰芙努特、盖布与努特", "在赫利奥波里斯谱系中，舒与泰芙努特生下盖布和努特。天空努特与大地盖布被分开，空间、天体与神族后代由此获得位置，创世故事同时也是一张亲属关系图。"],
+["王权争夺的悲剧｜奥西里斯被杀", "奥西里斯遭兄弟塞特杀害并被分尸。伊西斯寻找并收集遗体，使奥西里斯获得复生但转而统治冥界；他的故事将死亡、葬仪与死后生命联在一起。"],
+["遗腹之子长大｜荷鲁斯与塞特争王", "伊西斯保护并养育荷鲁斯。荷鲁斯成年后与塞特争夺统治权，冲突经过审判、较量和神界裁决，最终使王权合法性与秩序恢复成为故事核心。不同文本对争斗细节有不同写法。"],
+["太阳每天重生｜拉夜航冥界", "太阳神拉白天穿行天空，夜间乘船经过冥界，在黑暗中面对阿佩普等混乱力量，再于黎明重生。昼夜不是单纯重复，而是秩序每天战胜混乱的宇宙过程。"],
+["死后怎样通过审判｜心脏与玛阿特之羽", "葬仪文本描绘死者在冥界接受审判，心脏与代表真理和秩序的玛阿特之羽相衡。通过审判与仪式的死者才有机会进入理想的来世；这反映了道德、秩序和葬仪实践的结合。"]
+],
+[
+["混沌之后出现原初神｜卡俄斯与盖亚", "赫西俄德《神谱》以卡俄斯开篇，随后有盖亚、大地，塔耳塔罗斯和厄罗斯等原初力量。这是重要的希腊谱系版本，而非所有地方祭祀共有的唯一开端。"],
+["第一场权力更替｜克洛诺斯推翻乌拉诺斯", "乌拉诺斯压制自己的子女，盖亚推动儿子克洛诺斯反抗，克洛诺斯以镰刀推翻父亲。故事把宇宙秩序写成代际冲突，也预告新统治者同样可能被取代。"],
+["吞子与秘密婴儿｜宙斯重夺权力", "克洛诺斯害怕子女将来推翻自己，于是吞下瑞亚所生的孩子。瑞亚把宙斯藏起，以包布石块替代婴儿；宙斯长大后迫使克洛诺斯吐出兄弟姐妹，并联合诸神发动泰坦战争。"],
+["泰坦战争后建立新秩序｜奥林匹斯诸神", "宙斯一方战胜泰坦后，诸神分配天空、海洋与冥界等领域。雅典娜从宙斯头部诞生、阿波罗与阿耳忒弥斯出生等故事，进一步解释神祇权能、家族关系与城邦守护。"],
+["神祇时代进入英雄时代｜赫拉克勒斯与特洛伊战争", "赫拉克勒斯完成十二项功绩，珀尔修斯斩杀美杜莎，奥德修斯则在特洛伊战争后历经漂泊返乡。英雄既依赖神助，也受命运、骄傲和自身选择制约；这些故事不是一部连续编年史，而是交错的英雄故事群。"],
+["希腊故事如何成为罗马记忆｜埃涅阿斯与建城传说", "罗马作者将特洛伊英雄埃涅阿斯写成罗马祖先，并结合罗慕路斯与雷穆斯的建城传说、本土祭祀和国家神祇。罗马不是简单复制希腊神话，而是借用旧故事解释自身起源与使命。"]
+],
+[
+["宇宙起源仍是问题｜吠陀赞歌", "《梨俱吠陀》的宇宙起源赞歌并未总给出确定答案，甚至追问是否有谁真正知道世界如何开始。因陀罗、阿耆尼、苏摩等神祇则与雷雨、祭火、仪式和宇宙秩序有关。"],
+["释放被阻塞的水｜因陀罗战胜弗栗多", "弗栗多盘踞并阻塞水流，因陀罗凭借武器与神力战胜它，使水重新流动。故事把英雄式神战与降雨、生命恢复和祭仪秩序联系起来。"],
+["履行王子责任｜罗摩、悉多与流放", "《罗摩衍那》讲述罗摩因王位安排而流放森林，悉多遭罗波那劫走，哈努曼助其寻找并营救，最终发生大战。核心不只是打败恶敌，也包括责任、忠诚、王权与伦理困境。"],
+["亲族战争扩大为灾难｜《摩诃婆罗多》", "般度族与俱卢族的继承冲突升级为俱卢之战。战场上阿周那因面对亲友而犹豫，克里希纳在《薄伽梵歌》中讨论行动、义务、知识与解脱。胜利没有抹去战争的道德代价。"],
+["神以不同形态介入世界｜化身与宇宙周期", "在许多毗湿奴传统中，神以不同化身恢复失衡的秩序；湿婆、女神等传统也各自展开创世、毁灭、保护和战胜恶魔的故事。往世书将这些故事扩展为循环宇宙史，但各宗派的中心并不相同。"],
+["重要提醒｜印度神话不是单线神谱", "吠陀、奥义书、史诗、往世书和地方传统跨越多个世纪。因陀罗在早期文献中的突出地位，与后来某些宗派突出毗湿奴、湿婆或女神的情况不同；这是一段多层叠加的历史，而非旧神被新神依次替换的简单故事。"]
+],
+[
+["虚空之中出现原初存在｜金恩加加普与尤弥尔", "《诗体埃达》的创世诗从金恩加加普的原初空隙讲起，火与冰的力量交汇，巨人尤弥尔以及最初的存在出现。故事强调世界由相反力量相遇而展开。"],
+["巨人之身成为世界｜奥丁创造宇宙", "奥丁与兄弟杀死尤弥尔，以他的血形成海洋、骨骼形成山脉、头骨形成天空。创世不是凭空造物，而是从原初巨人的身体重组出可居住的世界。"],
+["人类与九界｜世界树连接不同存在", "神祇以木材塑造最初的人类，并赋予他们生命与意识。世界树连接诸界，神、巨人、精灵和人类的命运彼此牵连；这为后续冒险提供共同宇宙框架。"],
+["神祇的性格与代价｜奥丁、索尔和洛基", "奥丁为知识和预言付出代价，索尔用力量对抗巨人、保护神与人的世界，洛基则在协助和破坏之间游移。关于他们的故事是多首诗歌和传说构成的群集，并非单一英雄一路升级的故事。"],
+["悲剧预兆｜巴德尔之死与束缚洛基", "受众神喜爱的巴德尔梦见死亡，众神试图让万物发誓不伤害他，却遗漏槲寄生。洛基利用这个漏洞导致巴德尔被杀，随后遭到惩罚；这预示神界秩序已无法阻止最终灾难。"],
+["诸神黄昏｜毁灭之后仍有新生", "芬里尔挣脱束缚、世界蛇出现、火焰吞噬世界，诸神与宿敌决战。旧世界毁灭后，部分神祇和人类幸存，新大地浮现。现存细节由中世纪文本保存，不宜直接当作所有维京时代群体共同持有的唯一信仰。"]
+],
+[
+["以矛搅海造国｜伊邪那岐与伊邪那美", "《古事记》《日本书纪》讲述男女神站在天浮桥上，以天沼矛搅动海水，凝成岛屿，随后生出岛屿与众神。不同文本的生岛顺序、失败婚礼等细节并不完全一致。"],
+["死亡改变创世｜黄泉国之行", "伊邪那美因生火神而死，伊邪那岐进入黄泉寻找她，却看到她已处于腐坏状态，惊惧逃离。两神分离后，死亡与生者世界之间的界限被明确下来。"],
+["净化带来新神｜天照、月读与须佐之男", "伊邪那岐从黄泉归来后进行禊祓，清洗身体时诞生天照、月读和须佐之男等神。神祇的出生因此与污秽、净化以及生命秩序恢复关联。"],
+["太阳藏入洞中｜天岩户事件", "须佐之男破坏天界秩序后，天照躲入天岩户，世界失去光明。众神以镜、玉、舞蹈与欢笑诱使她出来，光明重新出现；故事解释光明恢复，也体现集体仪式与协作的作用。"],
+["斩蛇得剑｜须佐之男与八岐大蛇", "须佐之男来到出云，以酒设局灌醉八岐大蛇并将其斩杀，在蛇尾发现草薙剑。这个故事把英雄除害、地方神话与后来皇室三神器传统连接起来。"],
+["天孙降临｜神话转为王权谱系", "天照的后裔邇邇艺命降临地上，后续谱系与神武天皇传说相连。八世纪国家编纂把这些神话纳入皇室起源叙事，但地方神社与各地口传并不完全等同于官方版本。"]
+],
+[
+["玛雅基切传统的创世尝试｜《波波尔·乌》", "创造者先尝试用泥塑人，又创造木人；前者难以站立，后者没有真正的心智与记忆，最终被毁。反复失败不是支线，而是故事提出的关键问题：什么才使人成为能够记忆、尊敬神圣力量的人？"],
+["玉米造人｜身体与土地相连", "最终以白玉米和黄玉米创造出人类祖先。玉米既是食物，也是生命材料；这一故事属于基切玛雅《波波尔·乌》，不能代表所有玛雅社群或整个美洲。"],
+["英雄双子挑战冥界｜胡纳普与伊斯巴兰克", "双子继承父辈与冥界主宰的冲突，前往西巴尔巴面对黑暗之家、试炼和死亡陷阱，利用计谋击败对手。故事既是冒险，也是关于死亡、循环和知识的叙事。"],
+["墨西加的五个太阳｜世界会经历毁灭与更新", "墨西加传统描述多个世界时代，各时代以不同灾变终结，当前时代也并非永远稳定。太阳神、祭祀与宇宙更新观念应放回墨西加帝国自己的历史和政治语境理解。"],
+["特诺奇蒂特兰起源｜迁徙、征兆与城市身份", "墨西加人迁徙故事以神谕和鹰立仙人掌等征兆解释建城地点，城市起源因此成为集体身份与政治中心的象征。它与玛雅英雄双子、印加祖先故事属于不同传统，不能拼成同一条神话史。"],
+["安第斯的独立支线｜维拉科查与印加祖先", "部分安第斯传说把维拉科查描述为创造者，也有印加祖先从帕卡里坦博等神圣地点出发、建立库斯科的故事。不同叙述来自不同记录背景，涉及土地、祖先和王权，不应并入玛雅创世故事。"]
+],
+[
+["没有统一的非洲创世故事｜先确定具体传统", "约鲁巴传统、阿坎传统、伊博传统及非洲其他社群各有自身的创造者、神灵与宇宙观。一个故事不可能代表整片大陆；第一步应明确社群、语言和故事由谁传承。"],
+["约鲁巴传统中的奥杜杜瓦与大地形成", "部分约鲁巴创世叙事讲述奥洛伦派遣奥里沙降临原初水域，以土和特定工具形成可居住的大地；奥杜杜瓦在一些版本中承担关键角色。角色身份与情节在不同讲述传统中有差异。"],
+["阿坎传统中的阿南西｜智慧如何流向众人", "阿南西试图独占智慧或故事，后来却因自己的计谋失败，让智慧或故事传播开来。蜘蛛既机智又自私，故事通常用幽默揭露贪婪、权力与人性弱点。"],
+["祖先与王室谱系｜记忆由谁保存", "在多个社群中，家族口述、吟诵者、王室故事和仪式把祖先、土地、统治权与社群身份连在一起。它们不仅是神奇故事，也保存社会如何理解自身过去的方式。"],
+["跨大西洋的重组｜同一故事进入新的世界", "奴隶贸易和殖民使许多非洲传统在加勒比与美洲延续并变化，阿南西故事便在不同地区出现新的讲法。连续性与变形同时存在，不能将当代版本视为静止不变的古代原件。"]
+],
+[
+["天地分离｜天空之父与大地之母", "部分毛利传统讲述天空之父朗吉与大地之母帕帕紧紧相拥，子女们生活在黑暗中，最终由塔内等神祇将二者分开，使光线和空间出现。不同岛屿与社群有各自版本。"],
+["毛伊的英雄功绩｜让太阳慢下来", "毛伊与兄弟设法捕捉太阳并迫使它移动得更慢，让白昼足够长，人类能够完成日常工作。不同波利尼西亚传统也讲述毛伊钓起岛屿、取得火等故事，但各版本不是一套完全相同的传记。"],
+["岛屿从海中升起｜毛伊钓起陆地", "在毛利故事中，毛伊用神奇鱼钩从海中钓起北岛；岛屿与祖先的身体、行动或神圣力量相连。故事表达土地如何出现，也承载人与土地的亲属关系。"],
+["祖先航行｜海上路线成为族群记忆", "一些波利尼西亚谱系叙事记录祖先乘独木舟迁徙、发现岛屿和建立新家园。它们把口述地名、航海知识、祖先血缘与土地权利结合起来，具体航线和先祖名单因社群而异。"],
+["另一种传统｜澳大利亚原住民与地景创世", "许多澳大利亚原住民社群有与特定土地、水源、物种、祖先存在和仪式责任相连的创世传统。它们不是毛伊故事的后续章节，也不宜统一成一部连续神谱；知识常与具体国家和社群的传承规范相连。"],
+["仍在延续｜传统不是只属于过去", "口述、歌唱、雕刻、航海实践、语言复兴与社群教育持续传承这些知识。记录和展示时要区分公开故事与受限制的神圣知识，并尊重知识持有社群的规则。"]
+]
+];
+focusedMythStories.forEach(function(story,index){mythStorylines[index]=story;});
+var storyHeadingNew=document.querySelector('#mythStoryline').previousElementSibling;
+storyHeadingNew.textContent='神话故事主线｜关键事件、冲突与结果';
+var storyNoteNew=document.createElement('p');storyNoteNew.className='story-reading-note';storyNoteNew.textContent='阅读提示：这里按主题与叙事逻辑串联代表性故事，并不意味着一个文明只有一位创世神，或所有故事都源于同一时代的统一文本。';storyHeadingNew.after(storyNoteNew);
+document.querySelector('#mythModalTimeline').previousElementSibling.textContent='历史背景与文本演变｜这些故事如何被记录下来';
+const civilizationVisuals=[
+{src:'https://img.jiguzuo.com/guohua/tupian/202511/b2ff9aca23c581390eed34b5b009c15e.jpg%21webp',alt:'传统绘画中的伏羲与女娲',label:'中国 · 伏羲与女娲',mark:'EAST ASIA'},
+{src:'https://fotos.sapo.pt/acNvFa21CTMSOSpzZ5cj',alt:'古代两河流域伊什塔尔浮雕',label:'两河流域 · 伊什塔尔浮雕',mark:'MESOPOTAMIA'},
+{src:'https://smarthistory.org/wp-content/uploads/2022/04/osiris.jpg',alt:'古埃及墓室中的拉与奥西里斯形象',label:'埃及 · 拉与奥西里斯',mark:'ANCIENT EGYPT'},
+{src:'https://www.landesmuseum.de/fileadmin/_processed_/f/4/csm_Museumskoffer-Demoktratie-Opferszene-2-Badisches-Landesmuseum_a6895498bf.jpg',alt:'古希腊陶瓶上的神祇祭祀场景',label:'希腊 · 陶瓶神祇图像',mark:'GREECE & ROME'},
+{src:'https://collectionapi.metmuseum.org/api/collection/v1/iiif/38146/154215/main-image',alt:'印度传统中的毗湿奴石雕',label:'印度 · 毗湿奴神像',mark:'SOUTH ASIA'},
+{src:'https://miro.medium.com/v2/resize%3Afit%3A1358/format%3Awebp/1%2AEfdz3ULN2rPomsYsrCijpA.png',alt:'现代绘画风格的北欧奥丁与索尔',label:'北欧 · 奥丁与索尔',mark:'NORDIC'},
+{src:'https://assets.st-note.com/production/uploads/images/232642340/rectangle_large_type_2_f93e354575bbddbb63052ff6dd4ee993.png?fit=bounds&quality=85&width=1280',alt:'须佐之男与八岐大蛇的现代绘画',label:'日本 · 须佐之男斩蛇',mark:'JAPAN'},
+{src:'https://c2.staticflickr.com/4/3327/3429878479_c453eaf466_b.jpg',alt:'带有象形文字的玛雅石碑浮雕',label:'美洲 · 玛雅石碑',mark:'AMERICAS'},
+{src:'https://mythwink.com/images/anansi-and-the-box-of-stories/hero.webp',alt:'西非阿南西蜘蛛故事的现代插画',label:'非洲 · 阿南西故事',mark:'AFRICAN TRADITIONS'},
+{src:'https://mysticryst.com/cdn/shop/articles/maori-maui-trickster-hero.png?v=1773565564',alt:'毛利英雄毛伊钓起岛屿的现代插画',label:'大洋洲 · 毛伊钓起岛屿',mark:'OCEANIA'}
+];
+document.querySelectorAll('#regionGrid .myth-card').forEach(function(card,index){var data=civilizationVisuals[index];if(!data)return;var visual=document.createElement('div');visual.className='region-visual';var img=document.createElement('img');img.src=data.src;img.alt=data.alt;img.loading='lazy';img.decoding='async';img.addEventListener('error',function(){img.style.display='none';visual.classList.add('image-fallback');});var mark=document.createElement('small');mark.textContent=data.mark;var label=document.createElement('span');label.textContent=data.label;visual.appendChild(img);visual.appendChild(mark);visual.appendChild(label);card.prepend(visual);});
+/* A time-first humanities layer: date the evidence, not the birth of an oral story. */
+const humanitiesStyle=document.createElement('style');
+humanitiesStyle.textContent='.time-method{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0}.time-method>div,.source-card{padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--bg)}.time-method b{display:block;color:var(--gold);font-size:12px;margin-bottom:6px}.time-method p{margin:0;font-size:12px;line-height:1.85;color:var(--muted)}.era-switches{display:flex;gap:7px;flex-wrap:wrap;margin:18px 0}.era-switches button{border-radius:8px}.era-block{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:16px 0;background:var(--panel)}.era-head{padding:18px 20px;background:linear-gradient(110deg,light-dark(#eee1c7,#2c2a3a),var(--panel));border-bottom:1px solid var(--line)}.era-head .date{font:700 11px system-ui;letter-spacing:.1em;color:var(--gold)}.era-head h3{font-size:20px!important;margin:7px 0!important;color:var(--ink)}.era-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.era-item{padding:16px 18px;border-bottom:1px solid var(--line);min-width:0}.era-item:nth-child(odd){border-right:1px solid var(--line)}.era-item .place{font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--gold)}.era-item h4{font:600 15px/1.55 ui-serif,Georgia,serif;margin:6px 0}.era-item p{font-size:12px!important;line-height:1.9!important;margin:6px 0!important}.era-item .why{padding:9px 11px;border-left:2px solid var(--blue);background:light-dark(#f0f3f4,#252c39);border-radius:0 7px 7px 0}.era-item .tagline{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}.era-item .tagline span{font-size:10px;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:3px 6px}.era-footnote{padding:12px 18px;background:light-dark(#f8f4eb,#202330);font:11px/1.8 system-ui;color:var(--muted)}.comparison-table{width:100%;border-collapse:collapse;font-size:12px;margin-top:12px}.comparison-table th,.comparison-table td{padding:11px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);line-height:1.8}.comparison-table th{font-size:11px;color:var(--gold);background:light-dark(#f7f1e5,#292c3b)}.comparison-table td{color:var(--muted)}.source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}.source-card a{font:600 13px/1.6 system-ui;color:var(--blue);text-decoration:none}.source-card a:hover{text-decoration:underline}.source-card p{font-size:11px!important;line-height:1.8!important;margin:6px 0 0!important}.timeline-caveat{margin-top:16px;padding:13px 15px;border-left:3px solid var(--rose);border-radius:0 9px 9px 0;background:light-dark(#f7e9e8,#33272f);font:12px/1.9 system-ui;color:var(--muted)}.myth-context{margin:22px 0 4px}.myth-context h3{font-size:17px!important;margin:0 0 5px!important}.myth-context>p{font:12px/1.85 system-ui;color:var(--muted);margin:0 0 12px}.context-track{display:grid;grid-template-columns:1fr;gap:10px}.context-event{padding:15px;border:1px solid var(--line);border-left:3px solid var(--green);border-radius:10px;background:var(--bg)}.context-event h4{margin:0 0 9px;font-size:14px;line-height:1.6}.context-event p{margin:6px 0;font:12px/1.85 system-ui;color:var(--muted)}.context-event b{color:var(--ink)}.context-event .quote{padding:9px 11px;background:light-dark(#f3eee4,#292c3a);border-radius:6px}.source-note a{color:var(--blue)}.hide-era{display:none!important}@media(max-width:750px){.time-method{grid-template-columns:1fr}.era-grid{grid-template-columns:1fr}.era-item:nth-child(odd){border-right:0}.source-grid{grid-template-columns:1fr}.comparison-table{display:block;overflow-x:auto}}';
+document.head.appendChild(humanitiesStyle);
+var timelineTabNew=document.querySelector('#globalNav button[data-section="timeline"]');if(timelineTabNew)timelineTabNew.textContent='世界时空时间轴';
+var timeSectionNew=document.getElementById('section-timeline');
+timeSectionNew.innerHTML='<div class="global-panel"><div class="region-label">HISTORY × GEOGRAPHY × DAILY LIFE × LITERATURE</div><h2>世界时空时间轴：故事为什么会在这里出现？</h2><p>沿时间往前走，每个阶段同时观察社会制度、地理环境、日常生计和文学表达。环境并不机械地“决定”神话；它提供人们反复面对的问题，而政治、仪式、家庭生活和讲述者共同塑造故事。</p><div class="time-method"><div><b>历史原因</b><p>战争、王权、城市、迁徙与宗教变革，为故事提供冲突和社会功能。</p></div><div><b>地理与生计</b><p>河流、海洋、山地、季风、农作物与交通影响人们关心的问题，但不是唯一原因。</p></div><div><b>文学与证据</b><p>口述史诗、仪式、铭文、泥板和后世编纂保存不同版本。文本年代不等于故事最初形成的年代。</p></div></div><div id="eraSwitches" class="era-switches"><button class="active" data-era-filter="all">完整时间轴</button><button data-era-filter="early">早期国家</button><button data-era-filter="epic">史诗与经典</button><button data-era-filter="record">后世记录</button></div><div id="worldEraTimeline"></div><div class="timeline-caveat"><b>阅读原则：</b>没有文献的时代不等于没有神话；口头传统通常无法准确标出“诞生年份”。下文年代主要指可考社会背景、书写记录或重要编纂节点。不能把后世典籍、图像或抄本直接当作故事在同一时期才被创造的证据。</div></div><div class="global-panel"><h2>同一长时段，不同地理：故事回答的问题有什么不同？</h2><p>以下以约公元前1200—500年为比较窗口。各地不是在同一天进入相同阶段；比较的价值，是观察相近的长时段里，地理和社会组织如何影响反复出现的主题。</p><div style="overflow-x:auto"><table class="comparison-table"><thead><tr><th>地点与生计</th><th>社会背景</th><th>故事／文学表达</th><th>可以读出的关切</th></tr></thead><tbody><tr><td><b>黄河与中原</b><br>旱作农业、聚落与祖先祭祀</td><td>商代甲骨文记录对祖先、天气、战争和农事的占问；周代政治思想发展出以天命解释王朝更替的传统。</td><td>祖先谱系、天命与治水英雄等叙事，后来被典籍反复整理。盘古故事的可考记录较晚，不能硬放进这个时代。</td><td>谁能治理共同体？怎样解释灾害、收成与政权更替？统治与道德如何联系？</td></tr><tr><td><b>爱琴海与东地中海</b><br>岛屿、港湾、航海与交换</td><td>青铜时代宫殿网络衰落后，口头诗歌在不同社群间传承；城邦兴起后，节庆与戏剧又重释旧故事。</td><td>《伊利亚特》《奥德赛》保存战争、漂泊、陌生人接待、归乡与声誉的故事群。它们交叠了多个历史层次，不是航海日记。</td><td>远行如何面对风暴与陌生人？待客义务、荣誉和家园如何维系？</td></tr><tr><td><b>底格里斯—幼发拉底河</b><br>灌溉、城邦、神庙与书吏</td><td>城市依赖河渠、劳动组织和储粮；书吏将故事写在泥板上，并在不同时代抄写、改编。</td><td>《吉尔伽美什史诗》把王权、友谊、失去伙伴和追寻永生连在一起；洪水故事也保存在具体泥板版本中。</td><td>王能留下什么？为什么人终有一死？灾难之后如何重建秩序？</td></tr><tr><td><b>南亚与吠陀传统</b><br>牧业、农业、祭火与赞歌</td><td>祭仪由受训的诵唱者保存；宇宙、自然力与社会义务的思考在不同文本层次中持续变化。</td><td>吠陀赞歌中的因陀罗与弗栗多之战、释放水流等，与后来的史诗王权和伦理冲突不是同一时间层。</td><td>怎样恢复被阻塞的秩序？祭仪、行动和责任如何维系人与宇宙的关系？</td></tr><tr><td><b>太平洋海洋社群</b><br>独木舟、星象、风浪与岛屿迁徙</td><td>各岛屿有自己的迁徙史、航海知识和祖先谱系，年代与口述材料不能一概套入单一“神话时代”。</td><td>毛伊故事、天地分离和祖先航行传统，在部分版本中把岛屿、海洋、亲属谱系与知识传承连接起来。</td><td>如何在海上辨认方向、建立家园？土地和岛屿为何与祖先相连？故事怎样保存环境知识？</td></tr></tbody></table></div><div class="global-note">这不是地理决定论：有河流不必然产生同一种洪水神话，有海岸也不意味着故事都围绕航海。政治制度、性别分工、仪式、文学体裁与传播路径同样重要；主题相似也不等于存在直接借用。</div></div><div class="global-panel"><h2>研究资料、书籍与讲座</h2><p>优先选择专门研究、原始材料和大学公开课，而不只看无出处的神话汇总。下列资源适合作为进入历史、地理、生活与文学的第一步。</p><div id="mythResearchSources" class="source-grid"></div><div class="study-guide"><h3>每读一个故事，试着回答四个问题</h3><ol><li><b>历史：</b>谁在什么制度下讲述或记录这个故事？战争、王权、迁徙或宗教变化是否重要？</li><li><b>地理：</b>河流、海岛、山地、气候、作物和交通如何塑造生活经验？哪些联系有证据，哪些只是推测？</li><li><b>人文：</b>故事中的家庭、劳动、性别、待客、祖先、仪式和权力反映什么社会关切？</li><li><b>文学与文本：</b>它是史诗、仪式文本、神话谱系、口述故事还是后世编纂？最早可考的记录是什么，不能证明什么？</li></ol></div></div>';
+var timelineEras=[
+{filter:'early',date:'约公元前3500—2000年',title:'河谷聚落、城市与可考文字的出现',intro:'城市文明的出现，使一部分故事有机会被书写；没有文字记录的地区也拥有口述传统，只是无法从史前材料逐字还原。',items:[
+['两河流域｜灌溉与城市','神庙、城市和神祇逐渐相连','底格里斯河与幼发拉底河之间的农业需要维护水渠、组织劳动和储粮；神庙与城市权力也参与经济和仪式生活。','后世创世与人类劳作的故事可帮助研究城市秩序如何被想象，但晚出文本不是早期城邦的逐字记录。','灌溉农业','城市国家','神庙经济'],
+['尼罗河流域｜洪泛与土地更新','季节经验进入宇宙想象','尼罗河泛滥带来肥沃淤泥，太阳运行和农耕周期形成可重复观察的生活节律，墓葬仪式则让死亡与延续成为长期关切。','后来关于太阳重生、奥西里斯和死后生命的叙述，要与葬仪、王权和地区神学一起阅读，而不只是当作自然现象的寓言。','尼罗河','农耕周期','葬仪'],
+['中国与太平洋｜证据边界','不要把后世故事硬放进史前年代','史前考古可显示生计、迁徙和仪式，却通常不能提供完整神话情节。','盘古、女娲、毛伊等故事有各自的记录史和地区版本；故事的可考记录年代不等于它的口头起源。','考古证据','口头传统','年代谨慎']]},
+{filter:'early',date:'约公元前2000—1200年',title:'青铜时代网络：王权、宫殿与跨海联系',intro:'西亚与东地中海有贸易、外交和故事交流；中国的早期国家在不同政治与地理脉络中发展。不同地区可比较，但不能拼成一条单线文明史。',items:[
+['两河流域｜泥板与书吏','英雄力量也无法取消死亡','史诗在长期抄写与重编中形成，王权、城市和书吏教育为文学传统提供载体。','吉尔伽美什与恩奇都从竞争走向友谊，恩奇都之死又将故事推向对死亡的追问。','书吏学校','王权','死亡意识'],
+['古埃及｜法老与神圣秩序','荷鲁斯、国王与死后生命','王室仪式、神庙和墓葬体系把政治秩序、土地丰收与来世连接；不同中心仍有各自的创世神学。','国王与荷鲁斯的关联、奥西里斯传统，将统治者继位和死者延续放进同一宗教宇宙。','神庙','法老王权','葬仪'],
+['爱琴海｜宫殿和海上网络','史诗的后世版本不是青铜时代原始记录','迈锡尼宫殿的线形文字B记录中可以辨认部分后来希腊神祇的名字，但不能还原后世完整奥林匹斯神谱。','《奥德赛》的现存文学形态汇集了不同历史层的口头传统和创作，不能被当作真实航海日记。','海上交通','迈锡尼','口头传统']]},
+{filter:'epic',date:'约公元前1200—500年',title:'宫殿秩序变动：口头史诗与祖先叙事',intro:'一些地区经历宫殿体系衰落，地方共同体与新政治组织发展。旧故事在口头演述、仪式和后来的书写中被重新排列。',items:[
+['黄河与中原｜商到周','祖先、占卜与天命','商代甲骨记录祖先、天气、战争和农事占问；周代逐步发展出以天命解释王朝更替的政治语言。','治水英雄和上古帝王故事后来被放进历史书写与伦理论述；盘古故事不能作为商周甲骨已记录的神话。','甲骨占卜','祖先祭祀','天命与德'],
+['爱琴海｜希腊史诗','奥德修斯的漂泊、待客与归乡','航海和跨社群接触让陌生人接待、交易、危险和返乡成为现实与想象的重要部分。','《奥德赛》用海上漂泊串起怪物、神祇、诱惑与归家，折射待客伦理、声誉和家园，但并非实地航路记录。','海上交通','待客伦理','口头诗歌'],
+['南亚｜吠陀赞歌','因陀罗释放水流','祭火、赞歌和口头诵唱把人的祭仪生活与宇宙秩序连起来；文献层次跨越多个世纪。','因陀罗战胜弗栗多、释放水流的叙事把神的战斗、雨水与秩序联系起来；后期史诗属于不同文本层。','口头诵唱','祭火','水与秩序'],
+['太平洋｜航海知识','口述故事和环境观察一起传承','各岛屿定居时间和迁徙史有差别，导航依赖星辰、风、浪、鸟类和海洋经验。','一些祖先航行和英雄故事同时保存地名、谱系和方向知识，但无法将单一毛伊故事精确归入此时段。','独木舟','传统导航','活态知识']]},
+{filter:'epic',date:'约公元前500—公元300年',title:'城邦、帝国与文本重释：故事进入公共讨论',intro:'神话进入戏剧、哲学、编年史、史诗编订和国家文献后，可以批评政治、讨论伦理、建构身份，也随宗教和文化变化而重新解释。',items:[
+['希腊与罗马｜公共表演','神话上舞台：命运、战争与公民秩序','城邦节庆和剧场为悲剧提供社会场景；罗马作者把希腊英雄传统与本土祭祀、建城和祖先故事结合。','悲剧将神意、家庭义务和城邦法则置于冲突中；《埃涅阿斯纪》又把英雄流亡写成罗马起源叙事。','城邦','节庆戏剧','国家史诗'],
+['中国｜战国至汉代','《山海经》《楚辞》《淮南子》重组旧故事','诸侯竞争、知识分类和帝国整合影响典籍编纂；神灵、山川、异兽和上古传说被写入不同知识体系。','典籍并非原样收录地方传说；同一神灵可进入地理知识、哲学思考或政治论述。','典籍编纂','地理想象','帝国知识'],
+['南亚｜史诗扩编','《摩诃婆罗多》把亲族战争变成伦理困境','史诗通过口头演述和书面编订长期扩展，各地区和宗派形成不同版本。','阿周那在战场上面对亲属而犹豫，《薄伽梵歌》借克里希纳之口讨论行动和责任；史诗既讲故事也容纳哲学。','史诗扩编','亲属义务','哲学对话'],
+['埃及｜神庙与葬仪延续','古老故事继续在仪式中发挥作用','即使统治者和语言环境变化，神庙、葬仪和神祇图像仍会延续、吸收与转译。','太阳、奥西里斯和死者来世的叙述在不同文本与仪式里重组，并无完全固定的统一版本。','神庙文本','葬仪','版本变化']]},
+{filter:'record',date:'约公元300—1500年',title:'手稿、编纂与口述传统并行',intro:'中古文本常是更早口头传统的后世记录，也受当时国家、宗教和书写者影响。缺少同类文字材料不代表传统不存在。',items:[
+['日本｜八世纪国家编纂','《古事记》《日本书纪》组织神祇与王权谱系','中央政权整理历史、祖先谱系和地方神祇传统。','伊邪那岐、伊邪那美、天照与须佐之男进入国家神话叙事，两部典籍的细节与目的并不完全相同。','国家编纂','氏族与王权','地方神社'],
+['北欧｜十三世纪冰岛手稿','《埃达》保存故事，也留下记录时代的印记','较早诗歌由中世纪基督教书写环境保存；口头记忆、编者选择和抄本传承共同影响材料。','尤弥尔创世、巴德尔之死和诸神黄昏在文本中形成关联；不可把手稿视为所有维京时代人的唯一版本。','口头诗歌','冰岛手稿','编纂语境'],
+['太平洋｜航海文化','谱系、地景与导航构成相连知识','独木舟制造、星辰观察与海况知识通过家庭、师徒和社群传承，岛屿间的规范各异。','祖先航行、天地分离和毛伊故事都有地区版本，不应拼成一个统一的太平洋神谱。','口述传统','航海知识','地方版本']]},
+{filter:'record',date:'约公元1500—1900年',title:'殖民、翻译与记录：今天读到的版本如何形成',intro:'许多原住民传统在此阶段首次用新文字系统写下，或被外来者翻译。现存文本可能保存更早口述传统，也可能反映当时的权力关系；记录年代不等于故事起源。',items:[
+['危地马拉高地｜《波波尔·乌》','玉米造人：食物、身份与宇宙观','现存字母文本通常被认为写于十六世纪中叶的殖民语境，但其故事传统可能更早。','创造者多次造人失败，最终以玉米造人；这与玉米农业、劳动、仪式和族群身份密切相关。','玉米农业','殖民记录','口述与文字'],
+['非洲与大西洋世界｜故事迁徙','阿南西故事在新的社会中继续变化','奴隶贸易、殖民和宗教互动使故事跨区域传播，表演者面对不同受众调整人物与寓意。','阿南西在西非及加勒比等地出现多种版本，既保存幽默和社会批评，也适应新的语言与处境。','口头表演','跨大西洋传播','侨民文化'],
+['博物馆与学术整理｜现代“神话分类”','谁写下故事，会影响我们如何理解它','旅行者、传教士、收藏家和学者的选择、翻译和分类影响哪些故事被保存并流传。','现代整齐神谱有时是编辑、译者和流行文化重新整理的结果；阅读时要问谁记录、何时记录、为谁记录。','翻译史','民族志','收藏史']]},
+{filter:'record',date:'二十世纪至今',title:'考古、文学研究与活态传统：重新理解故事',intro:'现代研究将文本和考古、生态、语言、艺术史与人类学结合；原住民社群也持续传承自身知识。问题不仅是神是谁，还包括故事在何种场景被讲述、有什么证据、对谁有意义。',items:[
+['跨文明比较｜方法','相似母题是问题起点，不是同源证明','洪水、创世和英雄试炼可能独立出现，也可能随贸易、战争和迁徙传播。','比较应核对年代、语言、接触路线和具体叙事，不应仅凭“都有洪水”就认定直接借用。','比较神话','文本年代','传播证据'],
+['太平洋与原住民研究｜活态知识','故事、环境知识和社群责任仍在延续','语言教育、航海复兴、歌唱、仪式与地景知识持续传承；部分知识有特定公开规范。','故事可能帮助维持身份、环境关系与代际责任，研究者必须尊重知识持有社群的规则。','活态传统','社群知识','研究伦理'],
+['学习者｜读故事的方法','把文学细读和历史考证放进同一张笔记','先确认文本、图像或口述记录，再补充政权、地图、作物、交通、仪式和家庭生活。','读盘古、奥德修斯、吉尔伽美什或毛伊时，先解释它对本地听众意味着什么，再讨论可能的跨文化联系。','细读','历史地图','证据分层']] }
+];
+function createEraCard(item){var card=document.createElement('article');card.className='era-item';var place=document.createElement('div');place.className='place';place.textContent=item[0];var title=document.createElement('h4');title.textContent=item[1];card.appendChild(place);card.appendChild(title);[['历史与生活背景',item[2]],['故事或文学材料',item[3]],['为什么重要',item[4]]].forEach(function(pair,i){var p=document.createElement('p');if(i===2)p.className='why';var b=document.createElement('b');b.textContent=pair[0]+'：';p.appendChild(b);p.appendChild(document.createTextNode(pair[1]));card.appendChild(p);});var tags=document.createElement('div');tags.className='tagline';item.slice(5).forEach(function(t){var s=document.createElement('span');s.textContent=t;tags.appendChild(s);});card.appendChild(tags);return card;}
+function renderWorldTimeline(){var root=document.getElementById('worldEraTimeline');root.innerHTML='';timelineEras.forEach(function(era){var block=document.createElement('article');block.className='era-block';block.dataset.era=era.filter;var head=document.createElement('div');head.className='era-head';var date=document.createElement('div');date.className='date';date.textContent=era.date;var h=document.createElement('h3');h.textContent=era.title;var p=document.createElement('p');p.textContent=era.intro;head.appendChild(date);head.appendChild(h);head.appendChild(p);var grid=document.createElement('div');grid.className='era-grid';era.items.forEach(function(item){grid.appendChild(createEraCard(item));});block.appendChild(head);block.appendChild(grid);root.appendChild(block);});}
+renderWorldTimeline();document.querySelectorAll('#eraSwitches button').forEach(function(btn){btn.addEventListener('click',function(){document.querySelectorAll('#eraSwitches button').forEach(function(b){b.classList.toggle('active',b===btn);});var f=btn.dataset.eraFilter;document.querySelectorAll('#worldEraTimeline .era-block').forEach(function(block){block.classList.toggle('hide-era',f!=='all'&&block.dataset.era!==f);});});});
+var mythSources=[
+['Geraldine Pinch，《Egyptian Myth: A Very Short Introduction》','牛津大学出版社；讨论埃及神话、尼罗河景观、王权、死亡与文本来源。','https://academic.oup.com/book/518'],
+['Stephanie Dalley，《Myths from Mesopotamia》','牛津世界经典；含创世、洪水、吉尔伽美什等楔形文字材料，附注释和术语表。','https://www.oupjapan.co.jp/en/node/5736'],
+['大英博物馆：吉尔伽美什史诗洪水泥板','具体馆藏对象；新亚述时期泥板可帮助区分故事传统和现存文物的年代。','https://www.britishmuseum.org/collection/object/W_SM-1881'],
+['耶鲁公开课：Introduction to Ancient Greek History，第3讲','讨论荷马诗歌描绘的社会、口头传统叠合的历史层次，以及政治结构与英雄伦理。','https://oyc.yale.edu/classics/clcv-205/lecture-3'],
+['Mogens Herman Hansen，《Polis: An Introduction to the Ancient Greek City-State》','牛津学术专著；补充城邦、人口、城市与腹地及政治组织的历史背景。','https://academic.oup.com/book/47289'],
+['Allen J. Christenson：玉米与《波波尔·乌》','剑桥大学出版社相关章节，从文学与环境角度分析玉米、人类起源与社会生活。','https://www.cambridge.org/core/books/abs/global-history-of-literature-and-the-environment/who-shall-be-a-sustainer-of-maize-and-human-mediation-in-the-maya-popol-vuh/887934427A32DA64355FB2372C0EE1FF'],
+['联合国教科文组织：《The Canoe Is the People》','太平洋原住民航海知识教育资源；关注星辰、风、浪、鸟类与鲸鱼等导航线索。','https://www.unesco.org/en/links/canoe'],
+['联合国教科文组织：Holau Vaka Taumako','当代太平洋社群复兴独木舟制造与祖传导航知识的案例。','https://www.unesco.org/en/articles/holau-vaka-taumako'],
+['David Keightley 等，《The Cambridge History of Ancient China》商代章节','剑桥学术史著；甲骨文显示商代占卜与祖先、季节、农业、战争和王权相连。','https://www.cambridge.org/core/books/abs/cambridge-history-of-ancient-china/shang-chinas-first-historical-dynasty/CBBB66E6FE74948F988903AA3E4984C2'],
+['Susan Gillespie：关于《波波尔·乌》的学术书评','介绍基切玛雅史诗的创世、英雄双子、玉米造人和十六世纪的现存书写背景。','https://journals.upress.ufl.edu/delos/article/view/1005']
+];
+var sourceRoot=document.getElementById('mythResearchSources');mythSources.forEach(function(s){var article=document.createElement('article');article.className='source-card';var a=document.createElement('a');a.href=s[2];a.target='_blank';a.rel='noopener';a.textContent=s[0];var p=document.createElement('p');p.textContent=s[1];article.appendChild(a);article.appendChild(p);sourceRoot.appendChild(article);});
+/* Context track for each civilization: history, landscape, lifeways and the literary evidence. */
+var contextByCivilization=[
+[
+['治水英雄为何会成为政治伦理的范例','典籍反复讲述洪水治理、农业秩序与统治责任，但各故事的版本和记录时代不同。','黄河流域经历洪灾与改道，北方和南方又有不同水文与生计，不能把中国全境归为一种环境。','土地、作物、聚落安全和跨地区协作关系到生存；治水故事后来常被解释为公共责任与治理能力。','鲧禹故事见于不同传世文献；它们的历史化过程应与商代甲骨材料分开研究。'],
+['女娲补天：灾难与世界修复','战国至汉代文献记录并重释较早故事，作者也用神话讨论宇宙秩序与政治失序。','天倾地陷、洪水和火灾是可经验的灾难意象，但不能直接当作某一次真实灾害的记录。','当生产和安全遭到威胁，修复世界的女娲把共同体的生存危机转化为主动恢复秩序的行动。','《淮南子》等保存了相关故事；细节和灾变原因在不同文本里并不完全一致。'],
+['文化英雄发明了什么，又为什么','后世典籍把复杂的文化发明归于上古英雄，用人格化人物解释制度和知识的起源。','耕作、渔猎、医药和交换知识依赖各地生态与长期累积，不太可能由单个人一次性创造。','谷物、工具、医药、婚姻和交易构成人类社会生活的基础问题。','伏羲、神农是文化英雄类型的重要例子；把知识集中在英雄身上，是可记忆的文学组织方式。']],
+[
+['城市神与劳动','城邦竞争、神庙经济和书吏传统使城市、神祇与政治权力相互连接。','灌溉农业需要维护水渠、组织劳动和储存谷物，河流既创造资源，也带来治理压力。','劳动、粮食分配、祭祀和城市共同体是日常问题；部分创世文本把人类的任务写成承担劳作与供奉。','《阿特拉哈西斯史诗》等阿卡德语文本保存了特定传统，不能无差别倒推至早期城市。'],
+['吉尔伽美什：荣耀、友谊和死亡','王的形象同时涉及力量、统治和对神祇的责任；英雄故事最后让王直面自身有限性。','乌鲁克的城市视野为远行、森林、山地和边界提供叙事空间，但文学地理不是实地行程图。','竞争者成为朋友，朋友之死又使英雄哀悼；这让友谊和死亡成为史诗中心，而非只展示英雄战力。','《吉尔伽美什》有多个版本；大英博物馆的洪水泥板是具体的新亚述时期抄本。'],
+['洪水与不朽追寻','洪水叙事让城市社会讨论神意、灾难与人类命运。','河流洪水是可经验风险，但史诗中的宇宙性洪水经文学加工，不能等同于某一次洪灾。','灾后存续、重新建立秩序和面对死亡，是故事反复被讲述的缘由。','《吉尔伽美什》第十一泥板与其他洪水故事应按文本版本研究，情节相似不是同源证明。']],
+[
+['尼罗河、太阳与更新','神庙、王室祭仪和葬仪文本把政治秩序、土地丰收和死后生命相连。','尼罗河泛滥带来肥沃淤泥，太阳每日运行，使土地与天体呈现周期性更新。','农业依赖洪泛，葬仪回应死亡与延续；神话在家庭葬仪、王室和神庙中的用途不完全相同。','大都会艺术博物馆的古埃及教育资料和 Geraldine Pinch 的专著讨论了自然周期、艺术和仪式的关联。'],
+['奥西里斯、荷鲁斯与王权','古埃及王权与神圣秩序紧密相连；奥西里斯传统与死后生命有关，荷鲁斯则与在位国王相关。','尼罗河农业与土地更新是背景，但故事的意义还来自继承制度、葬仪和神学。','死亡、继承、家庭照料和政治合法性在神祇家族的悲剧中相互交织。','现存叙述分布于不同时期的铭文和葬仪文本，不能与后世希腊罗马版本混同。'],
+['埃及也没有唯一创世版本','赫利奥波里斯、孟菲斯和底比斯等宗教中心各自发展神学，也会相互吸收。','区域神庙与政治中心影响神祇地位；尼罗河流域内部并非文化完全同质。','不同仪式场景会调用不同神祇和故事，神话进入日常生活的方式并不只有一种。','研究时先认明文本、神庙与时代，避免把所有神系拼成无矛盾的统一神谱。']],
+[
+['奥德修斯为何一路漂泊','口头史诗保存多个历史层次；城邦时期的节庆和表演又影响故事的传播。','爱琴海多岛屿、港湾和海上通道，航行与陌生社群接触成为现实与想象的一部分。','旅者面对风暴、食物、陌生人接待、交易和返乡；待客之礼在史诗中反复被测试。','耶鲁公开课讨论荷马诗歌所描绘的社会和口头传统叠合的历史层次；故事不是航海日志。'],
+['神族权力更替','城邦时期作者整理不同地方的神祇和祭仪；赫西俄德《神谱》只是重要版本之一。','地方祭祀和城邦身份影响各地神祇的地位，同一故事会有异本。','代际权力、继承、联盟与冲突是熟悉的社会问题，神族家庭将其放大为宇宙秩序的变化。','《神谱》、荷马史诗和悲剧不是同一种文类，需比较它们如何重写同一人物。'],
+['从神话到悲剧','城邦戏剧节庆将神话变成公共观演与讨论。','城邦由城市中心与周边乡村组成，祭祀、节日与公共政治彼此关联。','家庭义务、个人承诺与公共法律可能冲突；悲剧让观众观看不同责任之间的不可调和。','Richard Seaford 的《Reciprocity and Ritual》将荷马、仪式互惠和悲剧放回社会史中解释。']],
+[
+['因陀罗与水流','吠陀赞歌由受训诵唱者以口头方式保存，祭火与赞歌将生活和宇宙秩序联系起来。','南亚生态多样，季风、河流、牧业和农业都有影响，但不能归结为一种环境经验。','水关乎作物、牲畜与生活，释放被阻塞的水成为恢复秩序的强烈叙事。','《梨俱吠陀》中的神战属于较早文本层；后来的往世书神谱不可直接倒投到吠陀时代。'],
+['《罗摩衍那》：流放、忠诚和王权','史诗在口传与文本扩编中形成，不同地区版本对伦理和人物作出不同强调。','森林、城市和王国边界构成流放、营救与远征的文学空间，但不能机械当作真实地图。','家庭义务、婚姻、君主责任和忠诚进入人物选择；不同社会可能对这些价值作不同解读。','引用时标明具体版本与译本，避免将一种现代改编当作整个南亚的统一文本。'],
+['《摩诃婆罗多》：胜利等于正义吗','亲族继承冲突的长篇故事经过多层编订，容纳哲学与宗教讨论。','王国、森林、战场和朝廷构成故事空间，社会制度比单一地貌更能解释冲突。','亲属忠诚、个人责任和战争暴力彼此矛盾，胜利并不能消除道德代价。','《薄伽梵歌》是史诗中的一段对话，不能把整部作品压缩成单一教义。']],
+[
+['世界树与不稳定的宇宙','北欧诗歌主要通过中世纪冰岛抄本保存，编纂者身处基督教社会。','北大西洋航海、冬季、农业和畜牧构成背景，但气候不能单独“解释”诸神黄昏。','名誉、誓言、复仇、宴会厅关系和命运感有助理解部分英雄故事的社会张力。','《诗体埃达》和《散文埃达》各有体裁与编纂语境，引用时标明具体诗篇或章节。'],
+['巴德尔之死：誓言与漏洞','现存故事由中世纪文本保存，细节未必代表所有维京时代地区。','地理只是背景；叙事关键在于誓言、例外和神界社会关系。','共同体依赖承诺与信任，但规则也可能因遗漏和欺骗而失效。','比较《诗体埃达》与斯诺里的叙述，不应把两者当成完全一致的原始版本。'],
+['诸神黄昏：毁灭之后','中世纪文本保存末世故事，其语境与更早的口头传统有时间距离。','火、寒冷、洪水和天体失序借用自然经验，同时也是文学对命运与秩序的思考。','毁灭后仍有新世界的想象，可与战争、死亡和不确定性的社会经验对读。','应注明采用的《埃达》文本和翻译，避免宣称只有一种固定的“原始版本”。']],
+[
+['神话如何成为国家谱系','《古事记》和《日本书纪》于八世纪编纂，与国家整合、祖先谱系和地方神祇相关。','列岛地理、区域首领网络和地方神社传统构成多层文化环境。','氏族组织、地方祭祀和统治者联盟有助理解国家神话编纂背景，但不能把每个故事都还原成稻作象征。','两部典籍不只是同一文本的两个版本；角色顺序和政治表达需逐篇比较。'],
+['天岩户：黑暗与集体行动','国家文献以故事突出天照，也保存仪式、音乐、舞蹈和神祇协作的想象。','光照和季节是可共同观察的经验，但此故事的意义还在日本祭祀传统内。','世界陷入黑暗后，众神通过集体行动恢复秩序，并非单一英雄直接击败敌人。','需把书面国家文本与地方神社传统并读，而非宣称只有统一的神道版本。'],
+['斩蛇得剑与地方传统','须佐之男斩八岐大蛇的故事与出云地方传统相连，后来的编纂将它纳入更大的神祇谱系。','河流、山地与聚落构成地方叙事空间；对蛇与河流的解释需要证据支持。','除害、婚姻联盟、土地守护和神圣器物在同一个故事中交织。','阅读时比较《古事记》和《日本书纪》中的情节、人物和神器细节。']],
+[
+['玉米造人：食物也是身份','《波波尔·乌》现存字母文本写于十六世纪中叶的殖民语境，故事传统可能更早。','中美洲玉米农业、雨季、山地环境和储粮技术对许多社群的生活至关重要。','玉米是食物、劳动、交换和仪式的一部分；用玉米造人把生计与人类起源直接相连。','剑桥相关学术章节从文学与环境角度讨论玉米和人类中介关系。'],
+['英雄双子与冥界','《波波尔·乌》同时讲宇宙起源和基切玛雅共同体记忆，并非只有一段创世故事。','球赛、洞穴和冥界空间与中美洲仪式、地景和宇宙观发生联系，需结合文本与考古证据。','英雄借助智谋、协作和试炼对抗强权与死亡。','现存文本在殖民语境中用字母记录，应同时考虑口述传统、书写史和翻译选择。'],
+['玛雅、墨西加、印加必须分开','三种传统的历史、语言、政治组织和文献来源不同，“美洲神话”只适合总览。','雨林、高地、湖盆和安第斯山地的生态、作物与交通方式不同。','玉米、城市祭仪、帝国政治和山地祖先关系，在不同地区有不同意义。','《波波尔·乌》应明确标注为基切玛雅文本；墨西加与印加传统需用各自的资料。']],
+[
+['阿南西：幽默也传递社会判断','阿南西故事在阿坎等传统中流传，亦随大西洋奴隶贸易传播到加勒比等地。','蜘蛛形象可能与地方生态有关，但所有阿南西故事不能只用自然观察解释。','贪婪、机智、权力与分享常通过动物角色讲述，使听众在幽默中评判行为。','口头故事依赖表演和受众，文字记录通常只固定某一次讲述。'],
+['创世故事必须属于具体社群','约鲁巴、阿坎、伊博和其他传统各有历史、语言与神祇体系。','撒哈拉、萨赫勒、雨林、草原、海岸和高地形成不同生活世界。','祖先、土地、王权和仪式在不同社群中关联各异，不可概括成“非洲人相信……”。','记录时应注明社群、语言、讲述者、采录地点和采录年代。'],
+['跨大西洋传播不是原样搬运','奴隶制和殖民导致强迫迁徙，也改变故事表演场合和宗教环境。','故事沿海上贸易路线传播，但不同港口、岛屿和社区经历并不相同。','口述故事可保存记忆、幽默与反抗，也会适应新语言和社会结构。','应比较不同地区的版本，而非把加勒比文本当作非洲某个原型的透明副本。']],
+[
+['祖先航行与海洋知识','太平洋各岛屿的定居、联盟与迁徙史复杂，考古、语言和口述谱系提供不同证据。','远洋航行需要理解星空、风向、海浪、鸟类和鱼类活动；海洋既是通道，也连接不同社群。','独木舟制造、船员协作、食物储备、方向判断和亲属联系都是现实生活知识。','联合国教科文组织的导航教育资源展示故事、环境观察和航海训练如何共同传递。'],
+['毛伊：英雄行动与自然现象','毛伊故事分布于不同波利尼西亚传统，采录年代和情节顺序存在差异。','太阳、岛屿、火与海洋是生活关键，但各岛屿生态与历史不同。','让白昼更长、取得火或钓起岛屿的故事，把生存条件写成英雄行动。','应注明地区变体，不能将一个毛伊故事当作全太平洋的统一原著。'],
+['澳大利亚原住民：土地也是知识载体','传统与具体社群相连，并经历殖民、语言损失和当代复兴。','地貌、水源、物种和路径可能与祖先故事、仪式责任紧密关联；不同社群不可合并。','故事不仅解释地景，也会联系土地责任、季节资源和社群关系。','展示前应尊重知识持有社群对神圣、限制访问或特定传承知识的规范。']]
+];
+var openMythHistoryOriginal=window.openMythHistory;
+if(typeof openMythHistoryOriginal==='function')window.openMythHistory=function(index){openMythHistoryOriginal(index);var host=document.getElementById('mythStoryline');if(!host)return;var box=document.getElementById('mythContextLenses');if(!box){box=document.createElement('section');box.id='mythContextLenses';box.className='myth-context';host.after(box);}var entries=contextByCivilization[index]||[];box.innerHTML='';var h=document.createElement('h3');h.textContent='把故事放回它的时空｜为什么会这样讲？';var intro=document.createElement('p');intro.textContent='这不是说地理环境单独制造了神话，而是把故事放回社会制度、地理与生计、人民生活和可考文学材料中理解。以下关联应视为有证据支持的解释线索，而不是唯一原因。';var track=document.createElement('div');track.className='context-track';entries.forEach(function(e){var article=document.createElement('article');article.className='context-event';var title=document.createElement('h4');title.textContent=e[0];article.appendChild(title);[['历史背景',e[1]],['地理环境',e[2]],['人民生活与人文',e[3]],['文学文本与证据',e[4]]].forEach(function(pair,i){var p=document.createElement('p');if(i===3)p.className='quote';var b=document.createElement('b');b.textContent=pair[0]+'：';p.appendChild(b);p.appendChild(document.createTextNode(pair[1]));article.appendChild(p);});track.appendChild(article);});box.appendChild(h);box.appendChild(intro);box.appendChild(track);};
+</script>
+<script>
+(function(){
+/* Stable, self-contained SVG artwork: no remote image host or hotlink dependency. */
+var art=[
+'<svg class="myth-art" viewBox="0 0 420 200" role="img" aria-label="中国神话山河与日月插画"><rect width="420" height="200" fill="#e7cfa1"/><circle cx="314" cy="49" r="26" fill="#b95038"/><circle cx="314" cy="49" r="36" fill="none" stroke="#b95038" stroke-opacity=".32"/><path d="M0 147 L67 83 103 118 166 48 227 130 274 89 337 143 420 93 V200 H0Z" fill="#7d8c75"/><path d="M0 167 L77 121 128 153 203 100 267 158 344 119 420 153 V200 H0Z" fill="#485f53"/><path d="M173 200 Q209 171 191 143 T227 105 Q246 134 225 153 T258 200" fill="none" stroke="#dbe5d3" stroke-width="11"/><path d="M0 180 Q80 169 140 185 T280 180 T420 179 V200 H0Z" fill="#263f3a"/><path d="M28 42h70M42 32h44M38 53h49" stroke="#8f653d" stroke-width="2"/><g fill="#f8e7be"><circle cx="45" cy="83" r="2"/><circle cx="92" cy="33" r="2"/><circle cx="254" cy="30" r="2"/><circle cx="376" cy="75" r="2"/></g></svg>',
+'<svg class="myth-art" viewBox="0 0 420 200" role="img" aria-label="两河流域阶梯神庙与新月插画"><rect width="420" height="200" fill="#d9b37d"/><circle cx="330" cy="42" r="24" fill="#f3dfad"/><path d="M326 19 A24 24 0 1 0 350 52 A21 21 0 0 1 326 19" fill="#9e583e"/><g fill="#8f553b"><path d="M48 171h324l-25-22H73z"/><path d="M78 149h264l-24-22H102z"/><path d="M110 127h200l-24-21H134z"/><path d="M140 106h140l-19-20h-102z"/><path d="M171 86h78V60h-78z"/><path d="M182 60h56V46h-56z"/></g><g stroke="#e5c391" stroke-width="3" fill="none"><path d="M78 160h264M108 138h204M137 116h146M171 96h78"/></g><path d="M0 180q80-18 156 0t132 0t132 0v20H0z" fill="#55736a"/><path d="M0 190q70-14 140 0t140 0t140 0" fill="none" stroke="#9cc0ae" stroke-width="3"/><g fill="#f4e7c9"><circle cx="83" cy="43" r="2"/><circle cx="132" cy="30" r="2"/><circle cx="267" cy="72" r="2"/><circle cx="381" cy="97" r="2"/></g></svg>',
+'<svg class="myth-art" viewBox="0 0 420 200" role="img" aria-label="古埃及金字塔、太阳与尼罗河插画"><rect width="420" height="200" fill="#e9c98f"/><circle cx="300" cy="49" r="31" fill="#c77643"/><g stroke="#f1dfa8" stroke-width="2" stroke-opacity=".7"><path d="M300 7v-8M300 91v8M258 49h-9M341 49h10M270 19l-7-7M330 79l7 7M330 19l7-7"/></g><path d="M18 169L108 58l96 111z" fill="#bd915d"/><path d="M108 58l96 111h-96z" fill="#866345"/><path d="M157 169L240 86l82 83z" fill="#d0a66b"/><path d="M240 86l82 83h-82z" fill="#966d4b"/><path d="M0 176q65-13 127 0t126 0t167 0v24H0z" fill="#466d70"/><path d="M0 184q50-8 98 0t98 0t98 0t126 0" fill="none" stroke="#b4d4c4" stroke-width="3"/><g fill="#7a6848"><rect x="355" y="120" width="8" height="52"/><path d="M359 120q-28-8-33-29 25 4 33 29M359 119q5-28 26-38 0 24-26 38M359 123q24-14 38-7-10 19-38 7"/></g></svg>',
+'<svg class="myth-art" viewBox="0 0 420 200" role="img" aria-label="古希腊神庙与山海插画"><rect width="420" height="200" fill="#d7ded9"/><circle cx="325" cy="45" r="25" fill="#d8a966"/><path d="M0 151L73 99l49 38 54-63 74 75 49-39 70 45 51-20v65H0z" fill="#93a8a0"/><path d="M0 171l95-32 64 30 82-38 87 39 92-30v60H0z" fill="#617b75"/><g fill="#f2ead8" stroke="#9b9a87" stroke-width="2"><path d="M127 84l83-38 83 38z"/><rect x="132" y="84" width="156" height="9"/><rect x="140" y="94" width="13" height="53"/><rect x="168" y="94" width="13" height="53"/><rect x="196" y="94" width="13" height="53"/><rect x="224" y="94" width="13" height="53"/><rect x="252" y="94" width="13" height="53"/><rect x="128" y="147" width="164" height="9"/><rect x="117" y="157" width="186" height="8"/></g><path d="M0 182q80-12 147 0t135 0t138 0v18H0z" fill="#3e6769"/></svg>',
+'<svg class="myth-art" viewBox="0 0 420 200" role="img" aria-label="印度莲花、神圣圆轮与山峦插画"><rect width="420" height="200" fill="#c77d5f"/><circle cx="210" cy="86" r="61" fill="#e9c78c" opacity=".92"/><circle cx="210" cy="86" r="48" fill="none" stroke="#a74d3c" stroke-width="2"/><circle cx="210" cy="86" r="34" fill="none" stroke="#a74d3c" stroke-width="2"/><g stroke="#a74d3c" stroke-width="2"><path d="M210 25v122M149 86h122M167 43l86 86M253 43l-86 86"/><path d="M210 44q-18 20 0 42 18-22 0-42M252 86q-20-18-42 0 22 18 42 0M210 128q-18-20 0-42 18 22 0 42M168 86q20-18 42 0-22 18-42 0"/></g><path d="M0 155l65-54 52 43 53-34 53 43 57-59 56 50 84-31v87H0z" fill="#6c7264"/><path d="M0 174q80-22 158 0t144 0t118 0v26H0z" fill="#354d46"/><path d="M210 167v-24m-28 24q28-21 56 0" stroke="#ebd5a4" stroke-width="4" fill="none"/></svg>',
+'<svg class="myth-art" viewBox="0 0 420 200" role="img" aria-label="北欧世界树、月亮与群山插画"><rect width="420" height="200" fill="#293e50"/><circle cx="331" cy="45" r="25" fill="#e5dfc9"/><circle cx="341" cy="37" r="24" fill="#293e50"/><g fill="#e3d8b4"><circle cx="64" cy="33" r="2"/><circle cx="112" cy="58" r="2"/><circle cx="267" cy="22" r="2"/><circle cx="378" cy="93" r="2"/><circle cx="294" cy="69" r="2"/><circle cx="92" cy="88" r="2"/></g><path d="M0 158l62-43 57 26 45-64 52 61 56-45 58 54 45-28 45 33v48H0z" fill="#526b79"/><path d="M0 180l96-31 72 21 70-30 91 38 91-28v50H0z" fill="#192b36"/><g stroke="#b4c7b3" stroke-linecap="round" fill="none"><path d="M207 176V71" stroke-width="13"/><path d="M207 105q-51-39-65-66 43 7 65 44M208 91q43-55 79-58-11 42-79 72M207 132q-56-31-82-16 27 38 82 32M208 139q47-31 77-13-30 36-77 31" stroke-width="9"/><path d="M207 75L207 45M207 99L177 78M209 112l36-29" stroke-width="4"/></g><path d="M176 179h62" stroke="#d5b77b" stroke-width="5"/></svg>',
+'<svg class="myth-art" viewBox="0 0 420 200" role="img" aria-label="日本富士山、鸟居与朝阳插画"><rect width="420" height="200" fill="#e9c8b7"/><circle cx="310" cy="55" r="34" fill="#bd5b55"/><path d="M0 153L120 62l66 56 82-80 152 115v47H0z" fill="#8a9ea0"/><path d="M151 117l117-79 86 79-26-8-22 12-20-10-20 11-20-10-19 9-23-9-27 6z" fill="#f6f0df"/><path d="M0 172q80-12 150 0t130 0t140 0v28H0z" fill="#526c70"/><g fill="#9e3e38"><path d="M63 105h114v10H63zM73 114h10v58H73zM157 114h10v58h-10zM53 98h134v8H53zM45 88h150v8H45z"/></g><path d="M238 161q20-36 40 0m-19 0v-24m-7 8l-12-8m26 8l12-8" stroke="#5b6d59" stroke-width="3" fill="none"/></svg>',
+'<svg class="myth-art" viewBox="0 0 420 200" role="img" aria-label="中美洲阶梯金字塔与玉米插画"><rect width="420" height="200" fill="#d7b47e"/><circle cx="322" cy="43" r="24" fill="#f1d49b"/><path d="M0 159L55 117l57 26 62-51 46 54 63-35 57 40 47-24 33 18v55H0z" fill="#819176"/><g fill="#8f6240"><path d="M69 168l79-78 81 78z"/><path d="M92 151h112l-17-16h-78z"/><path d="M110 135h77l-15-15h-47z"/><path d="M127 120h43l-10-13h-22z"/></g><path d="M0 180q80-12 160 0t150 0t110 0v20H0z" fill="#405f4d"/><g stroke="#5c7d45" stroke-width="5" fill="none" stroke-linecap="round"><path d="M310 180V89m0 39q-39-28-42-54 38 10 42 54m1 15q34-37 61-30-14 29-61 40"/><path d="M350 180v-69m0 36q-29-24-30-46 27 8 30 46m0 11q24-26 43-20-10 21-43 29"/></g><g fill="#d9c45e"><path d="M306 137q-14-18 4-26 17 10 4 26z"/><path d="M350 151q-13-16 3-23 15 9 3 23z"/></g></svg>',
+'<svg class="myth-art" viewBox="0 0 420 200" role="img" aria-label="非洲草原、猴面包树与蜘蛛故事插画"><rect width="420" height="200" fill="#e2bd88"/><circle cx="319" cy="45" r="30" fill="#d88950"/><path d="M0 140q74-24 140 0t130 0t150 0v60H0z" fill="#a47b4a"/><path d="M0 165q98-19 186 0t234 0v35H0z" fill="#526846"/><g stroke="#5b4934" stroke-linecap="round" stroke-linejoin="round"><path d="M196 179q10-41-1-80l-6-25 22 1 13 26q-10 35 7 78z" fill="#755639" stroke-width="3"/><path d="M204 97q-60-13-66-57 39-18 72 27 16-43 60-48 17 41-47 77" fill="#647b4d" stroke-width="3"/><path d="M203 101l-32-18m60 16l37-20" fill="none" stroke-width="8"/></g><g stroke="#3c302a" stroke-width="4" stroke-linecap="round" fill="none"><path d="M80 120l-9-17m9 17l-19 2m19-2l9 15m-9-15l19-6m-19 6v18"/><path d="M70 103l-5-8m5 8l9-4"/></g><ellipse cx="80" cy="117" rx="8" ry="10" fill="#292d2b"/><g fill="#f2e4be"><circle cx="46" cy="41" r="2"/><circle cx="110" cy="58" r="2"/><circle cx="267" cy="28" r="2"/></g></svg>',
+'<svg class="myth-art" viewBox="0 0 420 200" role="img" aria-label="太平洋海浪、独木舟与岛屿插画"><rect width="420" height="200" fill="#a9ced0"/><circle cx="310" cy="48" r="30" fill="#f4d49a"/><path d="M0 106q44-25 85 0t85 0t85 0t85 0t80 0v94H0z" fill="#538b91"/><path d="M0 133q45-25 90 0t90 0t90 0t90 0t60 0" fill="none" stroke="#d9eee1" stroke-width="5"/><path d="M0 164q45-25 90 0t90 0t90 0t90 0t60 0" fill="none" stroke="#d9eee1" stroke-width="4"/><path d="M217 124l48-48 43 48z" fill="#687c58"/><path d="M230 124l35-35 31 35z" fill="#879b6b"/><path d="M251 124q5-20 14-29v29" fill="#526a51"/><path d="M114 142q58 14 117 0l-15 12h-88z" fill="#714e37"/><path d="M168 140V78l42 60z" fill="#f4ead0" stroke="#a77750" stroke-width="2"/><path d="M168 79v61" stroke="#754f37" stroke-width="3"/><path d="M168 70v-9m0 9l-5-5m5 5l5-5" stroke="#754f37" stroke-width="2" fill="none"/><g fill="#47775b" stroke="#47775b" stroke-width="4" stroke-linecap="round"><path d="M366 139v-49m0 20q-27-17-33-34 26 3 33 34m0 15q21-27 38-25-8 19-38 32"/><path d="M390 143v-37m0 16q-18-11-21-25 18 4 21 25"/></g></svg>'
+];
+var visualLabels=['山河、日月与天地开辟','阶梯神庙与两河文明','太阳、金字塔与尼罗河','神庙、群山与爱琴海','莲花、神圣圆轮与宇宙秩序','世界树与诸界','富士山与神社鸟居','阶梯金字塔与玉米','草原、生命之树与阿南西','独木舟、海浪与岛屿'];
+document.querySelectorAll('#regionGrid .myth-card').forEach(function(card,i){var old=card.querySelector('.region-visual');if(old)old.remove();var v=document.createElement('div');v.className='region-visual';v.setAttribute('role','img');v.setAttribute('aria-label',visualLabels[i]||'文明主题插画');v.innerHTML=art[i]||art[0];var mark=document.createElement('small');mark.textContent=['EAST ASIA','MESOPOTAMIA','ANCIENT EGYPT','GREECE & ROME','SOUTH ASIA','NORDIC','JAPAN','AMERICAS','AFRICAN TRADITIONS','OCEANIA'][i]||'MYTHOLOGY';var label=document.createElement('span');label.textContent=visualLabels[i]||'文明主题';v.appendChild(mark);v.appendChild(label);card.prepend(v);});
+/* One integrated chronology per civilization, with story, environment, social history and textual evidence in full paragraphs. */
+var integratedMythTimelines=[
+[
+['史前传统｜没有可以精确标年的创世开篇','今天的中国神话并不是从一部完整的“创世圣经”开始。黄河流域的旱作农业、长江流域的稻作与水网、沿海和山地的生活，曾让人们面对不同的洪水、旱灾、动物和季节经验；然而，考古遗址只能帮助我们认识当时的生计和仪式，不能直接复原一段女娲或盘古的完整故事。把神话放回远古，首先要承认它留下的沉默：我们知道人怎样生活，却未必知道他们如何逐字讲述世界的起源。','口头传统与考古证据'],
+['商周时期｜祖先、占卜与天地秩序','到了商代，龟甲兽骨上的占卜记录把风雨、收成、战争、疾病和祖先带进同一套政治生活。周代又发展出天命与德行相联的观念：统治并非只凭力量，也需要解释为何这个王朝有资格治理天下。这里可考的不是盘古开天或女娲造人的完整情节，而是神圣力量、祖先和公共秩序如何进入早期国家的世界观；这种背景后来为治水英雄和圣王叙事提供了可被重新诠释的土壤。','甲骨文、祖先祭祀与王权'],
+['战国至汉代｜山川异物与古老人物进入书写','当诸侯竞逐、知识被分类、帝国开始整合各地传统时，《山海经》《楚辞》《淮南子》等文本保存了神灵、异兽、天象、洪水与英雄故事。女娲炼石补天的叙事格外动人：天地受损，四极失序，女神以行动修补世界。这样的情节不只是给灾难配上一个神奇原因，也让“秩序可以被修复”成为想象的核心。书写者把流传中的材料收入地理、哲学或政治论述，故事从来就不只是原封不动地被抄下。','《山海经》《楚辞》《淮南子》'],
+['魏晋以后｜盘古创世的文字形态逐渐可见','盘古以身体化生天地的故事，在后世文献中成为极有感染力的宇宙起源图景：天与地由混沌分开，山川、日月和自然万物仿佛带着创世者的遗痕。但这条叙事的书面证据晚于商周甲骨和不少先秦材料，不能仅凭故事宏大就把它认定为中国最早、人人共有的创世版本。它的重要性也在于后世如何把分散的宇宙想象整理成容易记忆、可以图像化的故事。','后世引文与盘古叙事的记录史'],
+['中古至近代｜神话、圣王与地方信仰交织','随着志怪、历史书写、道教神仙谱系、庙祀和地方说唱不断发展，上古人物会被重新解释：有时成为治世的圣王，有时成为地方保护神，有时又进入文学想象。中国神话因此没有一条所有人物都按出生顺序排好的单线谱系；它更像河流汇合的水系，各地传说、经典解释和生活仪式在不同年代相遇，形成今天熟悉却并不唯一的故事地图。','地方版本、宗教传统与文学重写']
+],
+[
+['城市与灌溉社会｜神为什么拥有一座城','在底格里斯河与幼发拉底河之间，农业生产依赖河渠、劳动协作和储粮，城市神庙也参与经济与公共仪式。苏美尔各城有自己的守护神和神圣谱系；安、恩利尔、恩基等神并未从一开始便组成完全统一的系统。对依靠水利和城市组织生活的人来说，神话中的秩序并非遥远的抽象概念：它和土地能否耕种、劳动如何分配、城邦如何得到保护紧密相连。','苏美尔城邦、神庙经济与神祇传统'],
+['公元前三千纪｜英雄王的名字进入书吏世界','乌鲁克王吉尔伽美什的故事在长期流传与书写中逐渐积累。城墙、宫殿、远征和王权构成英雄的外在世界，但史诗没有把他塑造成毫无缺点的完美统治者；强势的王需要遇见一个能与自己抗衡的人。恩奇都从荒野来到城市，与吉尔伽美什先争斗、后结为伙伴，文明与荒野、权力与友谊于是被放进同一段人物关系。现存泥板版本分属不同时期，不能把后来的完整史诗直接视作最早的原本。','苏美尔故事与早期王权记忆'],
+['公元前二千纪｜创世故事也在讨论劳动','在《阿特拉哈西斯史诗》的一条巴比伦传统中，较低阶神祇因为承担繁重劳作而反叛，诸神随后创造人类，让人接手某些工作并维持神祇供奉。这个故事让人类起源带着鲜明的社会意味：世界不只需要被创造，还需要被持续运转。灌溉、建造、储粮和神庙劳动都是城市生活的重要部分；但这不是所有两河传统的唯一答案，而是特定文本对神、人和劳动关系的一次解释。','《阿特拉哈西斯史诗》与人类起源'],
+['公元前二千纪后期｜洪水幸存者与永生之问','当恩奇都死去，吉尔伽美什第一次真正被死亡击中。他离开乌鲁克寻找洪水幸存者乌特纳比什提姆，希望得知如何逃过终结，却发现永生并不是英雄凭力量就能赢得的奖赏。洪水在这里既是世界毁灭与再生的巨大景象，也是关于脆弱、哀悼和人类限度的转折。两河流域确有洪水风险，但史诗中的宇宙性洪水已被文学化，不能直接等同某一次可考的历史洪灾。','《吉尔伽美什史诗》与洪水泥板'],
+['公元前二千纪末至一千纪｜马尔杜克成为宇宙秩序的中心','《埃努玛·埃利什》讲述马尔杜克战胜提亚马特、以她的身体组织天地，并获得诸神之首的地位。它并非吉尔伽美什冒险的下一章，而是有自己目的的巴比伦创世诗：通过胜利与秩序重建，巴比伦的主神也在宇宙中取得中心位置。城邦竞争和国家权力因此进入神谱；神话不是被城市政治简单“利用”，也通过神圣语言让人们理解城市、王权与世界的关系。','《埃努玛·埃利什》与巴比伦神学']
+],
+[
+['前王朝时期｜尼罗河边的生存节律','尼罗河的季节性洪泛带来肥沃淤泥，太阳每日东升西落；对沿河生活的人们而言，水位、耕作时间和土地更新不是抽象概念，而是决定收成的现实节律。墓葬与对死者的照料又使死亡成为家庭和社会长期面对的事。我们可以由考古、葬仪和图像研究这些关切，却不能把后世拉或奥西里斯的完整神话毫无保留地投射回史前。','尼罗河环境、墓葬与早期仪式证据'],
+['早期王朝至古王国｜国王成为维系秩序的人','王权统一后，国王与神圣秩序的联系逐渐进入政治仪式和纪念物。荷鲁斯与在位国王的关联，让继位不只是权力交接，也成为宇宙秩序的延续；太阳神学与金字塔文本则将国王死后的旅程写入宇宙图景。对于依赖河谷农业、王室工程和组织化劳动的社会来说，神话把土地的安定、国王的职责与天地秩序紧紧联系在一起。','王权神学与金字塔文本'],
+['古王国至中王国｜奥西里斯之死让来世成为可讲述的旅程','奥西里斯被塞特杀害并分尸，伊西斯四处搜寻遗体，使他获得复生却转而成为冥界之王。这不是简单的“死而复活”故事：它把哀悼、身体完整、葬仪和死后生命编织在一起。随着葬仪文本的发展，来世逐渐拥有路线、关卡、神祇和必须掌握的知识；墓葬中的文字与图像也成为死者继续存在的仪式工具。','奥西里斯传统与葬仪文本'],
+['中王国至新王国｜荷鲁斯争王与拉的夜航','荷鲁斯长大后与塞特争夺统治权，诸神通过较量和裁决寻求王位归属；这条神族家庭故事线让继承、合法统治与秩序恢复彼此相连。与此同时，太阳神拉夜间乘船经过冥界，在黑暗中抵御混乱力量，黎明再度出现。对每日仰望太阳、沿河安排耕作与仪式的人们而言，重生并非只发生在墓室，它也发生在天际的每一个清晨。','神庙文本、荷鲁斯争端与太阳冥界旅程'],
+['后期王朝至希腊罗马时期｜古老神祇在新世界中继续变化','赫利奥波里斯、孟菲斯和底比斯等中心有不同的创世神学：有的突出阿图姆，有的突出卜塔的心智与言语，另一些则抬高阿蒙。帝国更替和文化接触并没有立刻让埃及神话消失，反而催生融合、重新解释与新的图像表达。所谓“埃及神谱”是多个时代与宗教中心留下的层叠痕迹，而不是一部从头到尾毫无矛盾的统一故事书。','地方神学、神庙与跨文化转译']
+],
+[
+['青铜时代｜海上网络先于我们熟悉的奥林匹斯神谱','爱琴海多岛屿、港湾和海上通道，迈锡尼宫殿与东地中海社会之间有交换和联系。线形文字B泥板中可以辨认部分后来希腊神祇的名字，却不足以证明宙斯、赫拉、雅典娜等人的完整故事当时已经按后世版本流传。海洋为商品、技术和叙事提供相遇的路线；但一个名字的早期出现，与后来一部神话文学作品的定型，是两回事。','迈锡尼考古与线形文字B'],
+['公元前十二世纪以后｜宫殿世界衰落，故事靠声音继续旅行','宫殿行政书写体系衰退后，口头诗歌、地方祭祀和英雄记忆以不同方式延续。特洛伊战争的故事由此并非一份战场报告，而是一条由歌者不断讲述、增添和重组的记忆河流。听众熟悉远航、食物短缺、盟誓、战利品和陌生人接待，这些现实经验使英雄故事有了社会温度；神祇介入，则让胜负、灾难和命运变得既具体又难以掌控。','口头诗歌、青铜时代记忆与后世史诗'],
+['约公元前八至七世纪｜《伊利亚特》《奥德赛》与《神谱》进入文字世界','《伊利亚特》把战争写成荣耀、愤怒与失去的悲剧；《奥德赛》让奥德修斯在漫长归途中经历海难、诱惑、怪物和陌生人之家。爱琴海航行的风险，使海洋既是交流通道，也是可能夺走归乡者的力量；待客礼、家族和声誉则构成陆地社会的伦理坐标。赫西俄德《神谱》用另一种方式整理神族世代更替。它们形成重要传统，却不是全部希腊世界唯一的版本。','荷马史诗与赫西俄德《神谱》'],
+['公元前五世纪｜神话走进剧场，成为公共的伦理难题','城邦的戏剧节庆把旧故事带到公民共同观看的场合。悲剧作者不必照抄神话，而能让家族义务、神意、个人选择和城邦法律彼此冲撞；观众看到的不是简单的善恶分明，而是行动为何会带来无法挽回的后果。希腊神话因此从宇宙与英雄的故事，也成为一个共同体公开讨论正义、责任、战争和人的限度的文学语言。','雅典戏剧节庆与悲剧'],
+['希腊化时期至罗马帝国｜旧英雄被写进新的国家记忆','帝国和贸易网络扩张后，神祇与故事越过语言边界，被翻译、对应或重新解释。罗马作者一方面吸收希腊文学，另一方面保留自身的祭祀、建城和祖先传统；《埃涅阿斯纪》把特洛伊流亡者写成罗马起源故事中的先祖。故事不再只是“希腊神话传到罗马”，而是旧材料被新社会用于解释它从何而来、应走向何方。','罗马建城传说与《埃涅阿斯纪》']
+],
+[
+['约公元前二千纪以后｜赞歌中的神力与自然秩序','吠陀传统依靠受训诵唱者记忆和传递赞歌，祭火、献祭与诗歌本身就是维持社会和宇宙秩序的实践。因陀罗、阿耆尼、苏摩等神祇在不同赞歌中承担各异的角色；《梨俱吠陀》甚至留下对宇宙起源的追问，而不总是给出确定答案。南亚地理横跨季风、河流、草原与农耕地带，水和火与生存密切相关，但不能只用气候来解释神祇的性格。','《梨俱吠陀》与口头祭仪传统'],
+['吠陀赞歌时期｜因陀罗击败弗栗多、释放被阻塞的水','在因陀罗与弗栗多的故事中，水被阻塞，神祇出战并使水重新流动。这个画面既有英雄战胜阻碍的力量，也让雨水、生命、祭仪和宇宙秩序彼此相连。对依赖牲畜、农作和季节性水源的人群而言，水并非抽象符号；但故事的意义仍须从赞歌的仪式语境理解，而不能被化约成单纯的“降雨说明”。','因陀罗赞歌与水的象征'],
+['约公元前一千纪｜从祭仪思考到自我与解脱','随着奥义书等传统的发展，一部分思想开始追问个体生命、终极实在、业与解脱。神话和仪式并没有突然消失，而是与哲学思考形成复杂的对话。这个变化发生在多样的社会世界中：王权、祭司、森林修行和地方生活并存，因而关于人应如何生活、怎样理解行动后果的问题，也不会只有一个答案。','奥义书与哲学传统'],
+['史诗长期形成期｜罗摩的流放、悉多的失踪与王权之责','《罗摩衍那》把一场王位安排写成漫长考验：罗摩离开宫廷进入森林，悉多被罗波那劫走，哈努曼与盟友跨越距离寻找她，冲突最终发展为大战。森林、王城、远行和联盟让故事拥有广阔的地理舞台；更深的张力在于王子的责任、伴侣关系、忠诚和君主应如何行动。不同区域版本改变人物细节，也改变听众对这些伦理问题的理解。','《罗摩衍那》的区域版本'],
+['史诗扩编与宗派发展期｜俱卢之战之后，胜利仍留下问题','《摩诃婆罗多》将亲族继承冲突推至战场，阿周那面对亲友而迟疑，克里希纳的《薄伽梵歌》对话遂讨论行动、义务与解脱。战争的规模并没有让伦理问题消失，反而将它们推到极端。后来的往世书和宗派传统又发展毗湿奴、湿婆与女神的创世、化身和战斗故事；印度神话因此是不断叠加的文本与宗教世界，而不是新神依次取代旧神的简单年表。','《摩诃婆罗多》《薄伽梵歌》与往世书']
+],
+[
+['铁器时代以来｜地方神祇与诗歌传统并存','北欧与日耳曼世界的神祇、英雄和仪式传统分布在不同社群中。农业、畜牧、长距离航海和北大西洋环境塑造了生活条件，却不能单独解释某个神的性格或诸神黄昏的出现。考古图像与铭文可以补充证据，但无法为每个故事还原完整的早期“标准版”；我们熟悉的神谱，很大程度上依赖后来保存下来的诗歌。','考古图像、卢恩铭文与地方传统'],
+['维京时代｜奥丁、索尔与洛基的故事群','奥丁为知识和预言付出代价，索尔以力量抵御威胁，洛基则在帮助与破坏之间游移。故事中的誓言、荣誉、宴会厅关系和复仇，与一个重视名誉、联盟和承诺的社会世界相互映照；但这些人物来自多首诗歌和多种叙述，不是一位英雄从出生到结局的单线传记。把他们排成整齐的“神生年表”，反而会遮蔽不同诗歌的视角。','北欧诗歌与日耳曼传统'],
+['中世纪文本保存的创世记忆｜尤弥尔与世界树','《诗体埃达》中的创世诗描绘金恩加加普的原初空隙，冰火相遇，尤弥尔等存在出现；奥丁与兄弟杀死尤弥尔，以其身体组成世界。世界并非凭空而来，而是从原初力量和牺牲中形成。世界树又将神、巨人和人类连接起来，使各界命运无法完全分离。现存文本由后来的书写环境保存，因此应区分诗歌里的宇宙图景与我们能够确证的维京时代生活。','《诗体埃达》与《散文埃达》'],
+['巴德尔之死｜一项遗漏如何使神界秩序失效','巴德尔梦见死亡后，众神试图让万物发誓不伤害他，却遗漏了槲寄生；洛基抓住这个漏洞，使盲神霍德尔间接导致巴德尔之死。故事的力量来自一个令人不安的细节：再周密的誓言，也可能被例外击穿。它既写出洛基的狡黠与神界关系的破裂，也让读者看到命运并不总以正面冲突降临，有时只从不起眼的缝隙进入。','《埃达》中的巴德尔故事'],
+['中世纪冰岛编纂｜诸神黄昏与旧世界的终结','诸神黄昏把芬里尔挣脱、世界蛇现身、诸神决战与火焰毁灭世界连成宏大的末世景象，但结尾仍留下新大地和幸存者。它既是毁灭的诗，也保留重生的可能。由于主要文本由基督教化时期的冰岛作者保存，故事究竟承接了多少更早传统、又受何种编纂影响，仍需谨慎讨论；它不宜被当成所有维京时代社群共有的唯一末世信条。','中世纪冰岛手稿与末世诗学']
+],
+[
+['史前至古坟时代｜地方神祇与祖先传统并未留下统一文本','日本列岛的山地、森林、河流和海岸形成许多地方生活世界；考古材料能帮助了解聚落、稻作、氏族和仪式变化，却不能直接还原天照或须佐之男的完整情节。后来被编进国家史书的神祇故事，可能吸收地方信仰，也会被重新安排进统治者的祖先谱系。理解日本神话，必须同时看见地方差异与后来的国家编纂。','考古材料与地方信仰'],
+['七至八世纪｜国土从海水中形成，神祇谱系开始被书写','《古事记》和《日本书纪》中的造国故事让伊邪那岐与伊邪那美站上天浮桥，以天沼矛搅动海水，凝成岛屿，继而诞生更多神祇。列岛的岛屿地理为造国想象提供了可感的空间，但它并非对地质形成过程的说明。八世纪国家编纂将不同故事纳入有次序的神代叙事，两部典籍对情节的排列和细节并不完全一样。','《古事记》（712）与《日本书纪》（720）'],
+['黄泉之行与禊祓｜死亡留下界限，净化带来新神','伊邪那美因生火神而死，伊邪那岐追入黄泉希望带她回来，却因看见死亡的形态而惊惧逃离。两神分离，生者和死者之间出现不能轻易跨越的边界；归来后的禊祓又诞生天照、月读与须佐之男。故事把出生、污秽、死亡和净化编织成一条连贯的神话链，也与祭祀中对洁净和秩序的重视形成呼应。','黄泉叙事与禊祓传统'],
+['天岩户与八岐大蛇｜光明靠共同体重新迎回','须佐之男的破坏行为使天照躲进天岩户，世界因此失去光明；诸神用镜、玉、舞蹈和欢笑把她引出洞窟。另一个出云故事中，须佐之男借酒设局斩杀八岐大蛇，并取得草薙剑。前者突出仪式和群体协作，后者则把除害、地方神话、婚姻与神圣器物相连；两种故事不是同一情节，而是分别进入神祇谱系的不同支线。','天岩户、出云传说及其异文'],
+['八世纪以后｜地方神社、神佛交涉与现代国家叙事','当国家神话编纂完成，故事并没有停止变化。地方神社继续保存各自的祭祀和传说，佛教传入后与本土神祇发生长期交涉；近代国家又以新的制度解释神道和皇室谱系。今天读这些故事，既要感受神话对光明、死亡与国土的诗性表达，也要意识到现存文本在特定政治时代被选择与组织过。','地方神社传统与后世重释']
+],
+[
+['农业与城邦兴起｜先看多样的美洲，而非一套统一神话','美洲横跨雨林、高地、湖盆和安第斯山脉，生计、语言、政治结构相差甚远。玉米农业在中美洲许多社会极为重要，但并非所有美洲社群共享同一个起源故事。早期考古、图像和遗址能说明仪式与社会生活，却不能被直接拼成一部统一“美洲神话史”；玛雅、墨西加与印加必须分开追踪。','区域考古、农业史与语言差异'],
+['古典玛雅时期｜铭文、王权与宇宙时间','玛雅城邦借石碑、建筑和铭文纪念王权、祖先与重要日期，政治历史和宇宙秩序彼此相连。各城邦有自己的统治史与地方传统；后世的《波波尔·乌》保存基切玛雅故事，但不能代表所有玛雅地区。理解玛雅神话时，玉米、雨季、土地与城市仪式是重要背景，具体文本和铭文却必须分别读，不能互相替代。','玛雅铭文与城邦纪念物'],
+['基切玛雅传统｜造人失败，玉米终于成为人的身体','《波波尔·乌》中的创造者先尝试以泥造人，又造出木人；这些尝试未能创造出理想中的人，最终人类由白玉米和黄玉米形成。对依赖玉米栽培、储存、加工和共享的社会而言，玉米不只是食物，而是日常劳动与共同体延续的基础。这个故事将粮食和人的身体直接相连；它的现存字母文本写于十六世纪的殖民环境，但故事传统不应被限定为当时才出现。','《波波尔·乌》与玉米农业'],
+['英雄双子进入西巴尔巴｜以机智对抗冥界的权力','胡纳普与伊斯巴兰克前往冥界西巴尔巴，面对黑暗之家、试炼和死亡陷阱，最终凭借计谋与协作战胜对手。这里的英雄并非只靠力量取胜，他们识破规则、利用对手的自信，在危机中重新安排局面。冥界故事也与球赛、仪式空间和宇宙秩序相连；阅读时应把它放回基切玛雅文本的具体世界，而不是笼统当成整个美洲共有的“英雄下冥界”。','《波波尔·乌》的英雄双子叙事'],
+['墨西加与安第斯传统｜太阳时代和祖先迁徙是不同的故事线','墨西加传统中的多个太阳时代以灾变结束，表现宇宙并非永远稳定；特诺奇蒂特兰起源故事则通过迁徙征兆与城市建立连接身份和政治中心。安第斯的维拉科查与印加祖先传说又关注神圣地点、祖先谱系和库斯科的建立。它们都把土地、时间与权力联系起来，但地理、语言和殖民记录背景不同，不能拼成同一部连续的神话编年史。','墨西加与印加各自的编年史和传统']
+],
+[
+['地方社群与口头传统｜不存在一部统一的非洲神话','非洲大陆涵盖森林、草原、沙漠、河谷和海岸，不同语言社群的政治结构、宗教和生计方式差别极大。约鲁巴、阿坎、伊博等传统各有对大地、神灵和祖先的理解；口述表演、音乐、仪式和家族谱系本身就是保存知识的方式。若将它们统称成一种创世神话，便会抹掉故事赖以生长的具体社群。','地方语言、仪式与社群知识'],
+['王国、迁徙与贸易网络｜祖先故事维系人与土地的联系','在许多传统中，祖先与家族、王室、土地和统治权之间的联系会被讲述和仪式反复确认。贸易路线、迁徙和王国更迭让故事在不同区域相遇，但相遇不意味着原样复制。吟诵者、长者和表演者通过记忆与现场讲述赋予故事新的强调；口述传统并不是缺少历史的文本，而是一种依靠人和场合延续的历史。','区域王国史、谱系和口头史诗'],
+['阿坎传统中的阿南西｜蜘蛛用机智赢得故事，也暴露贪心','阿南西常以小而狡黠的蜘蛛形象出现，他借巧计摆布强者，有时赢得知识，有时又被自己的贪心反噬。这样的故事不必依赖宫廷或书吏才得以流传，它可以在家庭、社区和表演场景里被反复讲述，让听众一边发笑，一边判断欺骗、慷慨、权力与智慧的边界。由于每次讲述都面对具体受众，故事的笑点和寓意也会随着语境改变。','阿坎口头故事与表演传统'],
+['十五至十九世纪｜大西洋奴隶贸易让故事跨海，却也改变它','奴隶贸易强迫大量非洲人离开原有社群；在加勒比等地，语言、宗教和社会关系被暴力改造，部分阿南西故事却继续流传，并在新环境中获得新的意义。蜘蛛的机智可以成为对强权的讽刺，也可以保留社群记忆。这样的延续从来不是毫无变化的复制；研究者需要比较不同地区的讲述记录，同时警惕殖民记录者对人物和意义的翻译。','跨大西洋传播与侨民文化'],
+['现代民族志与当代复兴｜让讲述者重新回到故事中心','近现代收藏者和人类学家记录了大量口头材料，也曾用外部分类框架解释它们。今天的研究更重视记录地点、语言、讲述者、仪式和社群的知识规范；传统仍在音乐、文学、宗教实践和家庭讲述中延续。理解非洲神话不仅是阅读一个文本，更要看故事由谁传承、在何种场合讲述，以及谁有权解释它。','口述史方法与当代社群研究']
+],
+[
+['远洋定居之前与之中｜海洋首先是道路，不只是边界','太平洋社群的航行与岛屿定居历经很长时间，各岛的语言、祖先谱系和历史并不相同。观察星辰、风向、波浪、鸟类与鱼群，是远洋导航赖以成立的知识；海洋把岛屿连接起来，也让航行风险与失散成为生活经验。考古学和语言学能讨论迁徙路线，却不能仅凭路线复原一则毛伊故事的准确年代。','太平洋迁徙史与传统导航知识'],
+['不同波利尼西亚传统｜毛伊让太阳放慢，也把岛屿钓出海面','毛伊的故事群在不同岛屿有不同版本：他可能捕捉太阳，让白昼更长；也可能以神奇鱼钩钓起岛屿，或为人类取得火。对依赖海洋、潮汐、日光、食物储备和岛间航行的生活来说，这些英雄行动把重要生存条件变成可记忆的故事。但不能把各地毛伊传说拼成一部统一的传记，或假定每个版本都在同一时代形成。','地区口述变体与海洋生活'],
+['毛利传统｜天空与大地分离，世界才有呼吸的空间','在部分毛利故事中，天空之父朗吉与大地之母帕帕紧紧相拥，子女们被困在黑暗中；塔内等神祇将他们分开，光线和空间才进入世界。故事不只是自然起源说明，它也用亲属关系理解天地、生命和分离的代价。毛利传统与其他波利尼西亚版本有联系，也保留自己的名称、谱系和地景关系，必须在具体社群背景中阅读。','毛利口述传统与地景知识'],
+['澳大利亚原住民传统｜创世叙事扎根于具体土地','澳大利亚原住民社群并不共享一部统一神谱。许多传统把祖先存在、地形、水源、动物、路径和仪式责任联系在一起；土地并非故事的布景，而是记忆和知识的一部分。不同国家与语言群体对公开讲述的范围也有自己的规范，因此不能把某一公开版本当作所有社群的通用“梦创时代神话”。','特定社群的地景叙事与传承规则'],
+['殖民接触至当代｜记录与复兴并行，传统仍在生活中','欧洲航海、殖民和传教改变了太平洋及澳大利亚许多社群的语言和宗教环境；部分故事由外来者记录，也有许多通过家族、歌唱、舞蹈和实践继续传承。现代独木舟复兴与导航教育显示，关于海洋的传统并非过去留下的装饰，而是可在今天继续实践的知识。研究与展示时，应尊重社群对神圣或限制公开知识的规则。','殖民记录、语言复兴与活态传统']
+]
+];
+var modalStyle=document.createElement('style');
+modalStyle.textContent='.region-visual .myth-art{display:block;width:100%;height:100%;object-fit:cover}.integrated-timeline{position:relative;display:grid;grid-template-columns:1fr;gap:17px;margin:22px 0 28px;padding:0 0 0 27px;border-left:2px solid var(--line)}.integrated-event{position:relative;padding:16px 19px 17px;border:1px solid var(--line);border-radius:12px;background:var(--bg);min-width:0}.integrated-event:before{content:"";position:absolute;left:-35px;top:21px;width:13px;height:13px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px var(--panel);border:2px solid var(--gold)}.integrated-period{font:700 10px/1.6 system-ui,sans-serif;letter-spacing:.1em;color:var(--gold);text-transform:uppercase}.integrated-event h4{margin:6px 0 9px;font:600 17px/1.55 ui-serif,Georgia,"Noto Serif SC",serif;color:var(--ink)}.integrated-event p{margin:0;font:14px/2 system-ui,"Noto Sans SC",sans-serif;color:var(--muted);letter-spacing:.01em}.integrated-evidence{margin-top:12px;padding-top:9px;border-top:1px solid var(--line);font:11px/1.7 system-ui,sans-serif;color:var(--blue)}.integrated-evidence b{color:var(--gold);font-weight:600}.myth-modal-card .myth-modal-lead{font:14px/2 system-ui,sans-serif;margin:10px 0 16px}.myth-modal-card .source-note{font:12px/1.9 system-ui,sans-serif}.myth-modal-card .source-note:before{content:"文献线索  ";color:var(--gold);font-weight:700}.region-visual{background:#e0c99b}.region-visual:after{background:linear-gradient(transparent,#1117)}@media(max-width:650px){.integrated-timeline{padding-left:21px;gap:12px}.integrated-event{padding:13px 14px}.integrated-event:before{left:-29px;width:11px;height:11px}.integrated-event h4{font-size:16px}.integrated-event p{font-size:13px;line-height:1.95}}';
+document.head.appendChild(modalStyle);
+var modalStoryHeading=document.getElementById('mythStoryline').previousElementSibling;
+var modalHistoryHeading=document.getElementById('mythModalTimeline').previousElementSibling;
+if(modalStoryHeading)modalStoryHeading.style.display='none';
+if(modalHistoryHeading)modalHistoryHeading.style.display='none';
+document.getElementById('mythStoryline').style.display='none';
+document.getElementById('mythModalTimeline').style.display='none';
+var contextHeadingText='把故事放回它的时空｜为什么会这样讲？';
+function renderIntegratedTimeline(index){
+var old=document.getElementById('integratedMythTimeline');if(old)old.remove();var oldHeading=document.getElementById('integratedTimelineHeading');if(oldHeading)oldHeading.remove();var oldIntro=document.getElementById('integratedTimelineIntro');if(oldIntro)oldIntro.remove();
+var heading=document.createElement('h3');heading.id='integratedTimelineHeading';heading.textContent='沿着时间读懂故事｜历史、地理与生活如何进入神话';heading.style.cssText='font-size:18px;margin:20px 0 5px';
+var intro=document.createElement('p');intro.id='integratedTimelineIntro';intro.className='story-reading-note';intro.style.cssText='font-size:12px;line-height:1.9;margin:0 0 14px';intro.textContent='以下时间轴把故事情节与它的历史环境合在一起。时间标记指可考的历史背景或文本记录，不把口头传统的起源伪装成精确年份。';
+var timeline=document.createElement('div');timeline.id='integratedMythTimeline';timeline.className='integrated-timeline';
+(integratedMythTimelines[index]||[]).forEach(function(entry){var article=document.createElement('article');article.className='integrated-event';var period=document.createElement('div');period.className='integrated-period';period.textContent=entry[0];var title=document.createElement('h4');title.textContent=entry[1];var body=document.createElement('p');body.textContent=entry[2];var evidence=document.createElement('div');evidence.className='integrated-evidence';var b=document.createElement('b');b.textContent='对应的故事与材料：';evidence.appendChild(b);evidence.appendChild(document.createTextNode(entry[3]));article.appendChild(period);article.appendChild(title);article.appendChild(body);article.appendChild(evidence);timeline.appendChild(article);});
+var source=document.getElementById('mythModalSources');source.parentNode.insertBefore(heading,source);source.parentNode.insertBefore(intro,source);source.parentNode.insertBefore(timeline,source);
+var oldContext=document.getElementById('mythContextLenses');if(oldContext)oldContext.style.display='none';
+}
+var previousOpenMythHistory=window.openMythHistory;
+window.openMythHistory=function(index){if(typeof previousOpenMythHistory==='function')previousOpenMythHistory(index);var d=window.mythHistories&&window.mythHistories[index];if(!d){var names=['中国古代神话与传说','两河流域：苏美尔、阿卡德与巴比伦','古埃及神话','希腊与罗马神话','印度：吠陀、史诗与印度教传统','北欧神话','日本神话与神道传统','美洲原住民神话传统','非洲神话与口头传统','大洋洲神话'];var regions=['东亚 · 中国','西亚 · 两河流域','东北非 · 尼罗河流域','地中海 · 希腊与罗马','南亚 · 印度','北欧与日耳曼','东亚 · 日本','美洲 · 玛雅、墨西加、印加等','非洲 · 多种地方传统','大洋洲 · 波利尼西亚等'];var leads=['中国神话不是一部从创世到英雄的单一正典。不同流域、山地与沿海社群的生活经验，在祖先祭祀、早期国家礼制和后世典籍中留下不同痕迹。读这条时间轴时，要区分故事可能流传的历史背景与今天可以确认的记录年代。','两河流域的故事在城市、神庙、灌溉和书吏传统中流传。不同城邦有不同守护神，王朝兴衰也会改变创世故事的组织方式；泥板是具体时代的记录，不是口头故事起点的自动证明。','埃及神话随着尼罗河农业、法老王权、墓葬仪式与地方神庙一起变化。河水、太阳和死后生命是重要经验，但不同宗教中心有各自的创世说法，不能将它们压成一个没有矛盾的神谱。','希腊故事在爱琴海的贸易、口头诗歌、地方祭祀与城邦戏剧中重组，罗马作者又把这些传统与本土建城和国家记忆结合。史诗、神谱和悲剧讲的是相互关联却不同的版本。','印度传统跨越吠陀赞歌、奥义书、史诗、往世书与地方宗教，经历很长时间的口头传承和文本扩编。季风、河流和农业是生活背景之一，哲学、仪式与社会义务同样塑造了故事。','北欧故事以诗歌、仪式与地方传统为背景，今天熟悉的文本主要由中世纪冰岛手稿保存。航海和冬季生活构成历史环境，但不能单靠气候解释神祇性格或末世传说。','日本神话与列岛地方神祇、氏族祖先和国家编纂相连。《古事记》《日本书纪》让不同传统获得书面次序，但故事在记录前后都存在地区差异和持续重释。','美洲包含许多彼此不同的社群与生态区域。玛雅、墨西加和印加故事必须分别理解；玉米、城市仪式、太阳时代与祖先迁徙在各自社会中具有不同意义。','非洲没有统一的神话系统。故事在具体语言社群、家庭、王国、仪式与表演中传递；殖民记录可能保存材料，也可能改变它们的语境，因此必须把讲述者和采录地点放回解释中。','大洋洲各岛屿与澳大利亚原住民社群拥有各自的土地、海洋和祖先传统。航海故事与环境知识可能密切相连，但不同社群的版本、年代与公开规则并不相同。'];document.getElementById('mythModalRegion').textContent=regions[index]||'CIVILIZATION TIMELINE';document.getElementById('mythModalTitle').textContent=(names[index]||'文明神话')+'｜神话的发展史';document.getElementById('mythModalLead').textContent=leads[index]||'';}renderIntegratedTimeline(index);};
+var oldStoryNote=document.getElementById('mythStoryline').previousElementSibling;if(oldStoryNote){oldStoryNote.style.display='none';if(oldStoryNote.previousElementSibling)oldStoryNote.previousElementSibling.style.display='none';}
+})();
+</script>
+<script>
+/* Add a compact myth-genealogy/story pathway to the civilization cards only. */
+(function(){
+var lineageStyle=document.createElement('style');
+lineageStyle.textContent='.myth-lineage{margin:14px 0 2px;padding:12px 11px 10px;border-top:1px solid var(--line);background:light-dark(#faf5eb,#202330);border-radius:0 0 8px 8px}.lineage-caption{font-size:10px;font-weight:800;letter-spacing:.08em;color:var(--gold);margin-bottom:9px}.lineage-track{margin-top:9px}.lineage-track:first-of-type{margin-top:0}.lineage-track-label{display:block;font-size:10px;color:var(--muted);margin-bottom:5px}.lineage-steps{display:flex;align-items:center;gap:5px;flex-wrap:wrap}.lineage-step{font:11px/1.55 system-ui,sans-serif;color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:4px 6px;background:var(--panel);max-width:100%}.lineage-arrow{font:12px system-ui,sans-serif;color:var(--gold);flex:none}.lineage-note{font:10px/1.7 system-ui,sans-serif;color:var(--muted);margin:8px 0 0!important}.myth-lineage+.timeline-open{margin-top:12px}';
+document.head.appendChild(lineageStyle);
+var pathways=[
+{tracks:[{label:'创世与文化英雄',steps:['混沌与天地开辟','女娲造人、补天','伏羲与神农','后羿射日、鲧禹治水','上古帝王与王朝记忆']}],note:'盘古故事的现存记录较晚；这些故事不是一条从古至今统一定型的神谱。'},
+{tracks:[{label:'吉尔伽美什史诗',steps:['乌鲁克王吉尔伽美什','恩奇都成为伙伴','恩奇都之死','吉尔伽美什追寻永生']},{label:'巴比伦创世传统',steps:['原初诸神','马尔杜克战胜提亚马特','天地与秩序建立']}],note:'两河流域有多座城市、多个时代的神祇传统；英雄史诗和巴比伦创世诗是相互独立的叙事线。'},
+{tracks:[{label:'赫利奥波里斯神谱（重要版本之一）',steps:['努恩原初水域','阿图姆','舒与泰芙努特','盖布与努特','奥西里斯、伊西斯、塞特、荷鲁斯']}],note:'孟菲斯、底比斯等地也发展了不同的创世神学，不能把这一谱系当作埃及唯一版本。'},
+{tracks:[{label:'从神族更替到英雄时代',steps:['卡俄斯等原初力量','盖亚与乌拉诺斯','克洛诺斯与泰坦','宙斯与奥林匹斯诸神','赫拉克勒斯等英雄','罗马的再诠释']}],note:'这条线索主要参照赫西俄德《神谱》等文本；荷马史诗、地方祭祀与罗马传统另有版本和重点。'},
+{tracks:[{label:'传统层累（并非单一神谱）',steps:['吠陀赞歌与诸神','奥义书的哲学追问','《罗摩衍那》与《摩诃婆罗多》','往世书与毗湿奴、湿婆、女神传统']}],note:'印度传统跨越许多世纪，不同宗派有不同的神祇中心；这些节点是文本与思想的演变，不是同一组神的直系后代。'},
+{tracks:[{label:'创世与诸神命运',steps:['金恩加加普','尤弥尔与原初存在','奥丁等神祇塑造世界','人类与九界','巴德尔之死','诸神黄昏与新生']}],note:'现存主要叙述由中世纪冰岛文本保存，故事细节不能一概视为所有维京时代社群共有的单一版本。'},
+{tracks:[{label:'神祇谱系与国土传说',steps:['伊邪那岐、伊邪那美','造国与生神','天照、月读、须佐之男','天岩户与八岐大蛇','天孙降临与王权谱系']}],note:'《古事记》《日本书纪》在八世纪对传统进行编纂，两书和地方神社传承并不完全相同。'},
+{tracks:[{label:'玛雅基切传统',steps:['创造者反复造人','玉米造人','英雄双子挑战冥界']},{label:'墨西加与印加的独立传统',steps:['墨西加：多个太阳时代','墨西加：城市起源叙事']},{label:'安第斯',steps:['维拉科查等创世传统','祖先谱系与库斯科起源']}],note:'玛雅、墨西加与印加不是同一神话系统；每条线索都应按自己的语言、年代和记录背景理解。'},
+{tracks:[{label:'约鲁巴部分创世传统',steps:['奥洛伦与奥里沙','奥杜杜瓦等与大地形成']},{label:'阿坎故事传统',steps:['阿南西的机智与计谋','故事在口述表演中变化','跨大西洋传播与重述']}],note:'非洲大陆传统极为多样，这些例子只代表特定社群的部分故事，不能概括为统一的非洲神谱。'},
+{tracks:[{label:'毛利部分创世传统',steps:['朗吉与帕帕紧紧相拥','塔内等神祇分开天地','光明与诸界展开']},{label:'波利尼西亚多地的英雄故事',steps:['毛伊捕捉太阳或钓起岛屿','祖先航行与谱系传承']},{label:'澳大利亚原住民传统',steps:['各社群与具体土地相连的创世叙事']}],note:'大洋洲不是单一神话世界；各岛屿、语言社群和澳大利亚原住民国家都有各自的故事与传承规范。'}
+];
+var cards=document.querySelectorAll('#regionGrid>.myth-card');
+cards.forEach(function(card,index){
+var data=pathways[index];if(!data)return;
+var old=card.querySelector('.myth-lineage');if(old)old.remove();
+var section=document.createElement('section');section.className='myth-lineage';section.setAttribute('aria-label','神话故事发展脉络');
+var caption=document.createElement('div');caption.className='lineage-caption';caption.textContent='神话发展脉络';section.appendChild(caption);
+data.tracks.forEach(function(trackData){
+var track=document.createElement('div');track.className='lineage-track';
+var label=document.createElement('span');label.className='lineage-track-label';label.textContent=trackData.label;track.appendChild(label);
+var steps=document.createElement('div');steps.className='lineage-steps';
+trackData.steps.forEach(function(step,i){if(i>0){var arrow=document.createElement('span');arrow.className='lineage-arrow';arrow.textContent='→';arrow.setAttribute('aria-hidden','true');steps.appendChild(arrow);}var item=document.createElement('span');item.className='lineage-step';item.textContent=step;steps.appendChild(item);});
+track.appendChild(steps);section.appendChild(track);
+});
+if(data.note){var note=document.createElement('p');note.className='lineage-note';note.textContent=data.note;section.appendChild(note);}
+var button=card.querySelector('.timeline-open');if(button)card.insertBefore(section,button);else card.appendChild(section);
+});
+var regionHeading=document.querySelector('#section-regions .global-panel h2');if(regionHeading)regionHeading.textContent='主要文明传统：神话故事发展脉络';
+})();
+</script>
+<script>
+/* Dedicated, source-annotated story-path modal. Keep story sequence separate from historical chronology. */
+(function(){
+var style=document.createElement('style');
+style.textContent='.story-path-open{display:block;width:100%;margin:10px 0 7px;padding:10px 12px;border-radius:8px;background:var(--ink);color:var(--bg);border-color:var(--ink);font-size:12px}.story-path-open:hover{opacity:.84}.story-path-modal{position:fixed;inset:0;z-index:1200;display:none;align-items:center;justify-content:center;padding:16px;background:#101119d9}.story-path-modal.open{display:flex}.story-path-card{width:min(1000px,100%);max-height:92vh;overflow:auto;padding:clamp(16px,3vw,30px);border:1px solid var(--line);border-radius:17px;background:var(--panel);color:var(--ink);box-shadow:0 20px 70px #0007}.story-path-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px}.story-path-head h2{font-size:clamp(22px,3vw,32px);margin:5px 0 8px}.story-path-close{position:sticky;top:0;flex:none;border-radius:8px;background:var(--panel);font-size:13px}.story-path-lead{margin:8px 0 14px;padding:13px 15px;border-left:3px solid var(--gold);border-radius:0 8px 8px 0;background:light-dark(#f5eddf,#292938);font:13px/1.95 system-ui,sans-serif;color:var(--muted)}.story-path-method{font:11px/1.8 system-ui,sans-serif;color:var(--muted);margin:9px 0 18px}.story-path-arc{margin:20px 0 0}.story-path-arc h3{font-size:16px;margin:0 0 10px}.story-path-event{position:relative;display:grid;grid-template-columns:42px minmax(0,1fr);gap:12px;margin:10px 0;padding:15px;border:1px solid var(--line);border-radius:11px;background:var(--bg)}.story-path-number{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:light-dark(#ead9b9,#393342);color:var(--gold);font:700 12px system-ui,sans-serif}.story-path-event h4{font:600 15px/1.6 ui-serif,Georgia,\"Noto Serif SC\",serif;margin:0 0 6px}.story-path-event p{font:12px/1.95 system-ui,sans-serif;color:var(--muted);margin:0}.story-path-annotation{margin-top:10px;padding-top:9px;border-top:1px solid var(--line);font:11px/1.8 system-ui,sans-serif;color:var(--blue)}.story-path-annotation b{color:var(--gold)}.story-path-sources{margin-top:22px;padding-top:16px;border-top:1px solid var(--line)}.story-path-sources h3{font-size:15px;margin:0 0 7px}.story-path-sources>p{font:11px/1.8 system-ui,sans-serif;color:var(--muted);margin:6px 0}.story-path-source{padding:11px 12px;border:1px solid var(--line);border-radius:8px;margin:8px 0;background:var(--bg)}.story-path-source a{font:600 12px/1.7 system-ui,sans-serif;color:var(--blue);text-decoration:none}.story-path-source a:hover{text-decoration:underline}.story-path-source p{font:11px/1.8 system-ui,sans-serif;color:var(--muted);margin:5px 0 0}.story-path-caveat{margin-top:15px;padding:12px 14px;border-left:3px solid var(--rose);border-radius:0 8px 8px 0;background:light-dark(#f7e9e8,#33272f);font:11px/1.9 system-ui,sans-serif;color:var(--muted)}@media(max-width:600px){.story-path-modal{padding:7px}.story-path-card{max-height:96vh;padding:14px}.story-path-event{grid-template-columns:30px minmax(0,1fr);gap:8px;padding:11px}.story-path-number{width:27px;height:27px}.story-path-event h4{font-size:14px}.story-path-event p{font-size:12px}}';
+document.head.appendChild(style);
+var sourceData=[
+{name:'中国古代神话与传说',region:'东亚 · 中国',lead:'不把中国神话写成“盘古之后依次出生所有神”的单一谱系。本故事路径按创世、补天、文化英雄、太阳灾难、治水与圣王记忆来组织；这些母题来自不同时代的文献与地方传统，顺序是阅读路线，不是可以证实的起源年代。',sources:[['《中原神话》｜Sunway University Press（2025）','目录把材料分为创世神话、古代帝王、古代英雄、自然神话等章节，可用于核对主题分组；不把现代目录顺序当作古代故事原有顺序。','https://sunwayuniversity.edu.my/press/books/myths-of-central-plains'],['《The Chinese Myths》｜Tao Tao Liu','目录区分创世与起源、神祇、太阳月亮、尧舜、鲧禹治水和文化神等板块，支持将相关故事视作相互关联但不同的故事群。','https://www.thamesandhudson.com/products/the-chinese-myths-myths']]},
+{name:'两河流域：苏美尔、阿卡德与巴比伦',region:'西亚 · 两河流域',lead:'这里不把所有内容硬串成一部连续神谱，而是分出人类起源与洪水、吉尔伽美什史诗、巴比伦创世诗三条故事线。书目目录本身就将《阿特拉哈西斯》《吉尔伽美什》《伊什塔尔下冥界》和《创世史诗》分别列出。',sources:[['Stephanie Dalley, Myths from Mesopotamia','牛津世界经典目录分别列出《阿特拉哈西斯》《吉尔伽美什》（标准版与古巴比伦版）、伊什塔尔下冥界、《阿达帕》《埃塔纳》《安祖》及《创世史诗》；弹窗据此区分故事群。','https://www.oupjapan.co.jp/en/node/5736'],['大英博物馆｜吉尔伽美什洪水泥板','馆藏对象帮助区分后世抄本的考古年代与故事传统形成的时间。','https://www.britishmuseum.org/collection/object/W_SM-1881']]},
+{name:'古埃及神话',region:'东北非 · 尼罗河流域',lead:'埃及神话以数条并行故事线构成：不同城市的创世说、荷鲁斯与王权、奥西里斯与冥界，以及拉的太阳旅程。它们有关联，但不能拼成一个没有矛盾的唯一版本。',sources:[['Geraldine Pinch, Egyptian Myth: A Very Short Introduction','牛津大学出版社目录包括“创世神话”“国家神话”“冲突与和解”“神祇配对与序列”“死亡神话”等章节；本页按这些主题分线讲述。','https://academic.oup.com/book/518'],['Geraldine Pinch, Egyptian Mythology: A Guide to the Gods, Goddesses, and Traditions of Ancient Egypt','该书目录依历史时期整理早期王权、金字塔文本、棺材文本、神庙与冥界文本，可辅助区分故事母题与记录语境。','https://miamioh.ecampus.com/egyptian-mythology-guide-gods-goddesses/bk/9780195170245']]},
+{name:'希腊与罗马神话',region:'地中海 · 希腊与罗马',lead:'希腊神族更替可依赫西俄德《神谱》的叙事顺序阅读；奥德修斯、赫拉克勒斯等属于不同英雄故事群，罗马对希腊材料的再诠释又形成另一条支线。这里不把全部人物当作同一部连续史诗中的角色。',sources:[['赫西俄德《神谱》｜情节结构与原文','文本结构包括卡俄斯与原初神、乌拉诺斯—克洛诺斯—宙斯的更替、泰坦战争、提丰以及宙斯的婚姻和后代。','https://new.greekmythology.com/sources/hesiod/theogony'],['古希腊史诗与历史背景｜耶鲁公开课','适合补充理解荷马史诗的社会背景与口头传统层次；《神谱》、荷马史诗和悲剧应作为不同文类分别阅读。','https://oyc.yale.edu/classics/clcv-205/lecture-3']]},
+{name:'印度：吠陀、史诗与印度教传统',region:'南亚 · 印度',lead:'印度故事更适合按文献层次和史诗支线阅读：吠陀赞歌、奥义书、两部史诗和往世书并不是一组人物按血缘依次传下来的单线神谱。故事情节顺序可依据原典篇章，但文本成形和扩编跨越很长时间。',sources:[['《罗摩衍那》七篇（kāṇḍa）结构说明','目录按童年篇、阿逾陀篇、森林篇、猴国篇、美妙篇、战争篇与后篇组织罗摩故事，可帮助串联流放、寻妻、结盟、营救与归来等主要情节。','https://www.isvara.org/archive/the-structure-of-this-edition/'],['The Mahābhārata Atlas｜原典与篇章来源','参考《摩诃婆罗多》校勘本和十八篇（parva）结构，并为具体事件标注篇章范围；《薄伽梵歌》是毗湿摩篇中的一段对话。','https://www.mahabharata.co/sources']]},
+{name:'北欧神话',region:'北欧与日耳曼',lead:'北欧材料是多首诗歌和故事构成的群集，不是一条从创世到末日的完整历史年表。创世诗、诸神冒险、巴德尔之死、洛基受罚、诸神黄昏与世界重生可以按叙事情节关联起来，同时保留文本记录的时代距离。',sources:[['《散文埃达》故事目录指南','该目录按《欺骗古鲁菲》与《诗艺语言》等部分整理斯卡蒂、芬里尔、索尔冒险、巴德尔之死、洛基受罚、诸神黄昏与世界更新等故事。','https://myndir.uvic.ca/pdfs/DIS-Notes-Prose-Edda-Contents-Guide.pdf'],['《散文埃达》｜版本与背景','用于核对冰岛中世纪文本与更早北欧传统之间的记录距离。','https://books.google.com/books/about/The_Prose_Edda.html?id=T6rKRuqqpv8C']]},
+{name:'日本神话与神道传统',region:'东亚 · 日本',lead:'这一故事路径以《古事记》的篇章安排为主要参照：国土与神祇诞生、黄泉、三贵子、天岩户、须佐之男与大蛇、大国主、国让、天孙降临。它是经典文本中的叙事路线，不代表日本列岛所有地方传统都采用同一顺序。',sources:[['《古事记》分段目录（Kojiki）','目录将伊邪那岐与伊邪那美、黄泉、天照、须佐之男、大国主、国让、邇邇艺命降临等分为相连但不同的情节单元。','https://kojiki.co/en/mythology/mokuzi.html'],['Te Ara｜毛利创世传统的比较提示','虽然主题不同，该资料也清楚说明同一文化内部的部族版本可以不同；可作为比较时避免“一种官方版本代表所有口传”的方法提醒。','https://teara.govt.nz/en/maori-creation-traditions/page-2']]},
+{name:'美洲原住民神话传统',region:'美洲 · 玛雅、墨西加、安第斯等',lead:'弹窗将玛雅基切《波波尔·乌》与墨西加、安第斯的故事分开标示。玉米造人与英雄双子属于基切玛雅文本线索；太阳时代、特诺奇蒂特兰起源和印加祖先谱系是不同传统，不能合并成一条泛美洲神话。',sources:[['史密森尼美国原住民国家博物馆｜玛雅创世故事','资料明确将《波波尔·乌》限定为基切玛雅传统，包含创造尝试、玉米造人、英雄双子和基切谱系；不把它当作所有美洲文化的统一版本。','https://maya.nmai.si.edu/the-maya/creation-story-maya'],['《Popol Vuh》章节目录示例','目录将创造、英雄双子、冥界试炼、玉米人和谱系分开，可为基切玛雅支线提供具体情节次序。','https://www.kriso.lv/popol-vuh-db-9780888999214.html']]},
+{name:'非洲神话与口头传统',region:'非洲 · 多种地方传统',lead:'非洲不是单一文化区。这里把约鲁巴部分创世传统、阿坎的阿南西故事，以及祖先和口头表演放在不同支线中，避免从单一目录推断全非洲共有统一神谱。',sources:[['Global Yorùbá｜Indiana University Press','学术目录将约鲁巴神话放在社会、知识体系、宇宙观、历史网络和邻近社群的章节中，提醒读者把神话放回具体社会。','https://publish.iupress.indiana.edu/projects/global-yoruba'],['Martha Warren Beckwith, Jamaica Anansi Stories (1924)','目录收录大量动物故事与 Anansi 相关篇目。这是牙买加的口述故事记录，可用于研究跨大西洋变体，不应直接当成西非原始版本。','https://www.gutenberg.org/files/72735/72735-h/72735-h.htm']]},
+{name:'大洋洲神话',region:'大洋洲 · 波利尼西亚等',lead:'这里分开呈现毛利天地分离、波利尼西亚多地的毛伊故事、祖先航行以及澳大利亚原住民与具体土地相连的传统。它们可以比较，但不能被排列成一个共同神系的连续章节。',sources:[['Te Ara｜毛利创世传统','新西兰百科介绍朗吉与帕帕、天地分离和诸神的领域，并强调不同部族版本之间存在差异。','https://teara.govt.nz/en/maori-creation-traditions/page-1'],['Te Ara｜Ranginui：天空与毛伊故事','并列介绍天空与大地分离、毛伊让太阳减速等故事，可用于分辨相邻的主题支线。','https://teara.govt.nz/en/ranginui-the-sky'],['联合国教科文组织｜The Canoe Is the People','太平洋导航教育资料强调各地航海知识、故事与实践既有相似处也有地方差异。','https://www.unesco.org/en/links/canoe']] }
+];
+var annotations=[
+['目录主题：创世神话与天地开辟；此条讲的是后世流传的盘古版本，不据此推定其口头起源年代。','目录主题：人类起源神话；女娲造人与补天在叙事功能上不同，不合并成一个事件。','目录主题：创世与天地秩序；共工触山、天倾地陷和补天故事在不同文本中的组合有差异。','目录主题：古代帝王、文化起源；伏羲、神农是文化英雄线索，不意味着其事迹同时成形。','目录主题：太阳神话与古代英雄；后羿射日的情节与各版本中多余太阳的数量和后续故事不同。','目录主题：治水传说与帝王记忆；鲧、禹故事后来进入政治伦理与王朝叙事。'],
+['语境注：城市神和多种创世传统并存；Dalley 的目录列的是不同作品，而非同一套神谱章节。','目录直接列出《阿特拉哈西斯》；本段对应其中神祇劳作、人类起源及洪水等情节。','目录中洪水相关叙事出现在《阿特拉哈西斯》和《吉尔伽美什》等作品，需区分版本。','目录直接列出《吉尔伽美什》标准版和古巴比伦版；此段是史诗内部的人物关系起点。','目录对应《吉尔伽美什》史诗中恩奇都之死与英雄哀悼的情节。','目录对应《吉尔伽美什》后段的永生追寻；不是所有两河洪水故事的共同结局。','目录另列《创世史诗》；马尔杜克与提亚马特的冲突属于巴比伦创世支线，不是吉尔伽美什的下一章。'],
+['Pinch 目录的“创世神话”；这里以赫利奥波里斯版本为例，不当作埃及唯一创世叙事。','目录线索：“神祇配对与序列”；亲属谱系是该创世版本的重要组织方法。','目录线索：“冲突与和解”及“死亡神话”；奥西里斯故事同时关联王权、葬仪和来世。','目录线索：“国家神话”与冲突／和解；荷鲁斯、塞特的争端反映神圣王权的不同叙述。','目录线索：太阳神与天空神祇的组合及序列；夜航故事依赖具体葬仪和神庙文本。','目录线索：“死亡神话”；审判场景在不同年代葬仪材料里有变化。'],
+['《神谱》开篇至原初神世代：依据赫西俄德叙事顺序，不代表所有希腊地方神话的唯一开端。','《神谱》中乌拉诺斯、克洛诺斯与后代的神族更替段。','《神谱》中克洛诺斯吞子、瑞亚保护宙斯与宙斯崛起的叙事链。','《神谱》里的泰坦战争和宙斯确立权力；英雄故事属于另一类材料。','赫拉克勒斯、珀尔修斯与奥德修斯各有不同文本传统，不是《神谱》后续章节中的连续人物。','罗马支线参考维吉尔《埃涅阿斯纪》及罗马建城传统；属于再诠释，不是希腊神谱原有结尾。'],
+['《梨俱吠陀》的宇宙起源赞歌与神祇赞歌；这些文本不只给出一套固定创世答案。','《梨俱吠陀》因陀罗与弗栗多故事线索，注意早期吠陀传统与后世印度教神谱的差异。','《罗摩衍那》篇章结构：流放、森林、结盟、营救和战争在不同 kandas 中展开。','《摩诃婆罗多》中的亲族战争；《薄伽梵歌》是史诗中的对话段，不代表整部史诗只有一个主题。','往世书中的毗湿奴化身、湿婆与女神传统各有版本，按不同宗派文本分别阅读。','目录与文本层次提示：印度传统跨越多世纪，多种神祇体系并行，不可画成直系后代谱。'],
+['《诗体埃达》创世诗相关段落；“金恩加加普”与尤弥尔是文本中的叙述，不等于可考历史事件。','《散文埃达》创世章节：尤弥尔身体化为世界是特定诗文传统中的宇宙解释。','创世故事与世界树、最初人类的相关诗文；不同版本细节不完全一致。','《散文埃达》的诸神故事章节包含索尔、洛基等不同冒险，并非一部连续传记。','UVic《散文埃达》目录指南明确列出巴德尔之死与洛基受罚两个故事单元。','目录明确把诸神黄昏与世界毁灭后的更新分作相连情节；文本由中世纪冰岛文献保存。'],
+['《古事记》目录：伊邪那岐与伊邪那美及造国故事；《日本书纪》有不同细节。','《古事记》目录中的黄泉与三贵子章节；死亡、逃离和净化是连续情节。','《古事记》天照与须佐之男相关章节：天岩户之前还有争执、仪式和诸神协作。','《古事记》须佐之男支线包括大蛇故事；出云传统与国家谱系应区别阅读。','《古事记》大国主、国让以及邇邇艺命降临属于后续不同单元，常被概括为王权谱系。','天孙降临及其后代进入国家编纂的祖先序列；不可将国家神话等同所有地方传承。'],
+['《波波尔·乌》创世段：创造动物、泥人、木人等情节属于基切玛雅传统。','《波波尔·乌》英雄双子支线：父辈与冥界主宰的冲突构成后续故事起点。','《波波尔·乌》有冥界试炼、死亡和复生等情节；细节按具体译本核对。','史密森尼明确将玉米造人放在基切玛雅《波波尔·乌》语境内。','墨西加太阳时代与特诺奇蒂特兰建城是不同的墨西加传统，应使用其自身史料。','印加与安第斯创世、祖先谱系是独立支线；本段不将其与玛雅文本相混。'],
+['目录主题：约鲁巴创世与神祇；奥洛伦、奥里沙和奥杜杜瓦的角色会随社群与版本而异。','祖先和王室谱系是一些社群保存记忆的方式；不能把所有非洲传统概括成同一谱系。','阿南西故事属于阿坎／阿散蒂相关的口头故事群；不同表演场合会改变细节。','动物、英雄与伦理故事对应相关研究中常见的叙事类别，但各语言传统不同。','跨大西洋传播造成故事连续与变化并存，不能将加勒比版本视作某个原型的透明副本。'],
+['Te Ara 所述毛利创世传统：天地父母分离的故事有不同部族版本。','毛伊故事在不同波利尼西亚社群有多种讲法，不宜合成一部统一英雄传记。','祖先航行与谱系属于各社群的地方历史，不用泛化到所有岛屿。','澳大利亚原住民传统必须按具体国家、语言群体和公开规范处理。','现代导航与社群教育让传统知识持续实践，不应只作为古代遗迹呈现。','来源边界注：太平洋航海知识和神话故事相互关联但不是同一体裁；各地版本独立保留。']
+];
+var modal=document.createElement('div');modal.className='story-path-modal';modal.id='storyPathModal';modal.setAttribute('role','dialog');modal.setAttribute('aria-modal','true');modal.setAttribute('aria-labelledby','storyPathTitle');
+var panel=document.createElement('div');panel.className='story-path-card';
+var head=document.createElement('div');head.className='story-path-head';var titleWrap=document.createElement('div');var kicker=document.createElement('div');kicker.className='region-label';kicker.id='storyPathRegion';kicker.textContent='MYTH STORY PATH';var title=document.createElement('h2');title.id='storyPathTitle';title.textContent='神话故事发展脉络';titleWrap.appendChild(kicker);titleWrap.appendChild(title);var close=document.createElement('button');close.className='story-path-close';close.type='button';close.textContent='关闭 ×';close.setAttribute('aria-label','关闭神话故事脉络');head.appendChild(titleWrap);head.appendChild(close);
+var lead=document.createElement('p');lead.className='story-path-lead';lead.id='storyPathLead';var method=document.createElement('p');method.className='story-path-method';method.textContent='阅读方法：按原典／专著目录中的故事单元组织情节，再用事件的因果关系串联。编号代表阅读顺序，不代表故事在历史上依次“发明”的时间。跨文本的平行故事将单独标注。';
+var body=document.createElement('div');body.id='storyPathBody';var sources=document.createElement('section');sources.className='story-path-sources';sources.id='storyPathSources';panel.appendChild(head);panel.appendChild(lead);panel.appendChild(method);panel.appendChild(body);panel.appendChild(sources);modal.appendChild(panel);document.body.appendChild(modal);
+function addText(parent,tag,className,value){var el=document.createElement(tag);if(className)el.className=className;el.textContent=value;parent.appendChild(el);return el;}
+function openStoryPath(index){var data=sourceData[index],stories=focusedMythStories[index]||[];if(!data)return;document.getElementById('storyPathRegion').textContent=data.region;document.getElementById('storyPathTitle').textContent=data.name+'｜详细神话故事脉络';lead.textContent=data.lead;body.innerHTML='';var heading=addText(body,'h3','', '故事主线｜按关键事件展开');heading.style.cssText='font-size:16px;margin:22px 0 8px';stories.forEach(function(story,i){var event=document.createElement('article');event.className='story-path-event';addText(event,'div','story-path-number',String(i+1).padStart(2,'0'));var content=document.createElement('div');addText(content,'h4','',story[0]);addText(content,'p','',story[1]);var note=annotations[index]&&annotations[index][i];if(note){var an=document.createElement('div');an.className='story-path-annotation';var b=document.createElement('b');b.textContent='目录／文本注释：';an.appendChild(b);an.appendChild(document.createTextNode(note));content.appendChild(an);}event.appendChild(content);body.appendChild(event);});sources.innerHTML='';addText(sources,'h3','', '专著、原典与目录依据');addText(sources,'p','', '以下按可查到的专著目录、原典篇章或学术机构资料整理故事主题与次序。目录用于定位具体故事单元，不等同于神话在口头传统中的真实诞生顺序。');data.sources.forEach(function(s){var item=document.createElement('div');item.className='story-path-source';var a=document.createElement('a');a.href=s[2];a.target='_blank';a.rel='noopener noreferrer';a.textContent=s[0];item.appendChild(a);addText(item,'p','',s[1]);sources.appendChild(item);});addText(sources,'div','story-path-caveat','版本提醒：同一传统可能存在地方异文、文本编者的重排、翻译差异及后世改写。阅读时应优先核对该条注释所指的原典或专著，不将不同作品强行合并为一个封闭神谱。');modal.classList.add('open');document.body.style.overflow='hidden';close.focus();}
+function closeStoryPath(){modal.classList.remove('open');document.body.style.overflow='';}
+document.querySelectorAll('#regionGrid>.myth-card').forEach(function(card,index){var mini=card.querySelector('.myth-lineage');if(mini)mini.remove();var old=card.querySelector('.story-path-open');if(old)old.remove();var button=document.createElement('button');button.type='button';button.className='story-path-open';button.textContent='查看详细神话故事脉络 ↗';button.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();openStoryPath(index);});var historyButton=card.querySelector('.timeline-open');if(historyButton)card.insertBefore(button,historyButton);else card.appendChild(button);});
+close.addEventListener('click',closeStoryPath);modal.addEventListener('click',function(e){if(e.target===modal)closeStoryPath();});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&modal.classList.contains('open'))closeStoryPath();});
+})();
+</script>
+<style>
+/* Match the two modal footprints and keep story headings aligned consistently. */
+.story-path-card{width:min(980px,100%);max-height:90vh;padding:clamp(16px,3vw,30px);border-radius:18px}
+.story-path-head{align-items:flex-start}
+.story-path-head h2{font-size:clamp(22px,3vw,32px);line-height:1.4;letter-spacing:0;margin:5px 0 8px}
+.story-path-card #storyPathBody>h3,.story-path-card .story-path-sources>h3{font-size:16px!important;line-height:1.55;margin:22px 0 10px!important;padding:0 0 9px;border-bottom:1px solid var(--line);letter-spacing:.01em}
+.story-path-event{grid-template-columns:38px minmax(0,1fr);gap:12px;align-items:start}
+.story-path-number{width:30px;height:30px;line-height:1;flex:none}
+.story-path-event h4{font-size:15px;line-height:1.65;letter-spacing:.01em;margin:0 0 8px;font-weight:650;overflow-wrap:anywhere}
+.story-path-event p{font-size:12px;line-height:1.95;overflow-wrap:anywhere}
+.story-path-annotation{font-size:11px;line-height:1.85}
+.story-path-sources>p{line-height:1.85}
+.story-path-source a{display:block;font-size:12px;line-height:1.75;overflow-wrap:anywhere}
+.story-path-source p{line-height:1.85}
+@media(max-width:600px){.story-path-card{max-height:94vh;padding:16px;border-radius:16px}.story-path-event{grid-template-columns:28px minmax(0,1fr);gap:9px}.story-path-number{width:26px;height:26px;font-size:11px}.story-path-event h4{font-size:14px;line-height:1.65}.story-path-card #storyPathBody>h3,.story-path-card .story-path-sources>h3{font-size:15px!important}}
+</style>
+<style>
+/* Keep both detail dialogs the same visible size, and align story headings. */
+.myth-modal-card,
+.story-path-card{
+  width:min(980px,100%);
+  height:min(88vh,820px);
+  max-height:88vh;
+  overflow-y:auto;
+  scrollbar-gutter:stable;
+}
+.myth-modal-card .myth-modal-head h2,
+.story-path-card .story-path-head h2{
+  font-size:clamp(22px,3vw,32px);
+  line-height:1.4;
+  letter-spacing:0;
+  margin:5px 0 8px;
+}
+.myth-modal-card .integrated-timeline{
+  margin:22px 0 28px;
+  gap:14px;
+}
+.myth-modal-card .integrated-event,
+.story-path-card .story-path-event{
+  display:grid;
+  grid-template-columns:34px minmax(0,1fr);
+  align-items:start;
+  gap:12px;
+  padding:15px 17px;
+  border:1px solid var(--line);
+  border-radius:11px;
+  background:var(--bg);
+  min-width:0;
+}
+.myth-modal-card .integrated-event:before{left:-34px}
+.myth-modal-card .integrated-period{
+  font-size:10px;
+  line-height:1.6;
+  letter-spacing:.1em;
+}
+.myth-modal-card .integrated-event h4,
+.story-path-card .story-path-event h4{
+  margin:1px 0 8px;
+  font:600 16px/1.65 ui-serif,Georgia,"Noto Serif SC",serif;
+  letter-spacing:.01em;
+  text-align:left;
+  overflow-wrap:anywhere;
+  word-break:normal;
+}
+.myth-modal-card .integrated-event p,
+.story-path-card .story-path-event p{
+  margin:0;
+  font:12px/1.95 system-ui,"Noto Sans SC",sans-serif;
+  text-align:left;
+  overflow-wrap:anywhere;
+}
+.story-path-card .story-path-number{
+  width:30px;
+  height:30px;
+  margin-top:0;
+  line-height:1;
+}
+.story-path-card #storyPathBody>h3,
+.story-path-card .story-path-sources>h3{
+  display:block;
+  font-size:16px!important;
+  line-height:1.55;
+  margin:22px 0 10px!important;
+  padding:0 0 9px;
+  border-bottom:1px solid var(--line);
+  letter-spacing:.01em;
+  text-align:left;
+}
+.story-path-card .story-path-annotation{
+  font-size:11px;
+  line-height:1.85;
+  text-align:left;
+  overflow-wrap:anywhere;
+}
+.story-path-card .story-path-sources>p,
+.story-path-card .story-path-source p{
+  font:11px/1.85 system-ui,"Noto Sans SC",sans-serif;
+  text-align:left;
+  overflow-wrap:anywhere;
+}
+.story-path-card .story-path-source a{
+  display:block;
+  font:600 12px/1.75 system-ui,"Noto Sans SC",sans-serif;
+  text-align:left;
+  overflow-wrap:anywhere;
+}
+@media(max-width:650px){
+  .myth-modal-card,
+  .story-path-card{
+    width:100%;
+    height:94vh;
+    max-height:94vh;
+    padding:16px;
+  }
+  .myth-modal-card .integrated-event,
+  .story-path-card .story-path-event{
+    grid-template-columns:27px minmax(0,1fr);
+    gap:9px;
+    padding:12px;
+  }
+  .myth-modal-card .integrated-event h4,
+  .story-path-card .story-path-event h4{font-size:14px;line-height:1.65}
+  .myth-modal-card .integrated-event p,
+  .story-path-card .story-path-event p{font-size:12px;line-height:1.9}
+  .story-path-card .story-path-number{width:25px;height:25px;font-size:11px}
+  .story-path-card #storyPathBody>h3,
+  .story-path-card .story-path-sources>h3{font-size:15px!important}
+}
+</style>
+<style>
+/* Final editorial pass: cleaner hierarchy, balanced spacing, consistent cards. */
+.myth-modal-card,
+.story-path-card{
+  width:min(980px,100%);
+  height:min(88vh,820px);
+  max-height:88vh;
+  padding:clamp(20px,3vw,32px);
+  border-radius:18px;
+  overflow-x:hidden;
+  overflow-y:auto;
+  scrollbar-gutter:stable;
+}
+.myth-modal-head,
+.story-path-head{
+  align-items:flex-start;
+  padding-bottom:14px;
+  border-bottom:1px solid var(--line);
+}
+.myth-modal-head h2,
+.story-path-head h2{
+  font-size:clamp(23px,2.6vw,30px);
+  line-height:1.42;
+  letter-spacing:0;
+  margin:6px 0 0;
+  max-width:760px;
+  overflow-wrap:anywhere;
+}
+.myth-modal-card .myth-modal-lead,
+.story-path-card .story-path-lead{
+  font-size:13px;
+  line-height:1.95;
+  padding:14px 16px;
+  margin:16px 0 20px;
+}
+.myth-modal-card #integratedTimelineHeading,
+.story-path-card #storyPathBody>h3,
+.story-path-card .story-path-sources>h3{
+  font-size:16px!important;
+  line-height:1.6;
+  letter-spacing:0;
+  margin:22px 0 12px!important;
+  padding:0 0 9px;
+  border-bottom:1px solid var(--line);
+}
+.myth-modal-card #integratedTimelineIntro{
+  margin:0 0 16px!important;
+  font-size:12px!important;
+  line-height:1.9!important;
+}
+.myth-modal-card .integrated-timeline{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  margin:16px 0 26px;
+  padding:0 0 0 25px;
+  border-left:2px solid var(--line);
+}
+/* The integrated timeline is a vertical narrative card, not a two-column grid. */
+.myth-modal-card .integrated-event{
+  display:block;
+  position:relative;
+  min-width:0;
+  padding:16px 18px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:var(--bg);
+  box-shadow:0 2px 8px #00000005;
+}
+.myth-modal-card .integrated-event:before{
+  left:-33px;
+  top:20px;
+  width:12px;
+  height:12px;
+}
+.myth-modal-card .integrated-period{
+  display:inline-block;
+  max-width:100%;
+  font:700 10px/1.7 system-ui,"Noto Sans SC",sans-serif;
+  letter-spacing:.06em;
+  color:var(--gold);
+  margin:0 0 6px;
+  overflow-wrap:anywhere;
+}
+.myth-modal-card .integrated-event h4{
+  font:600 16px/1.65 ui-serif,Georgia,"Noto Serif SC",serif;
+  color:var(--ink);
+  margin:0 0 9px;
+  text-align:left;
+  letter-spacing:0;
+  overflow-wrap:anywhere;
+}
+.myth-modal-card .integrated-event p{
+  font:13px/2 system-ui,"Noto Sans SC",sans-serif;
+  color:var(--muted);
+  margin:0;
+  text-align:left;
+  overflow-wrap:anywhere;
+}
+.myth-modal-card .integrated-evidence{
+  margin-top:12px;
+  padding:10px 12px;
+  border:0;
+  border-left:2px solid var(--blue);
+  border-radius:0 7px 7px 0;
+  background:light-dark(#f0f3f4,#252c39);
+  font:11px/1.85 system-ui,"Noto Sans SC",sans-serif;
+  color:var(--muted);
+  overflow-wrap:anywhere;
+}
+.myth-modal-card .integrated-evidence b{color:var(--blue)}
+.story-path-card .story-path-method{
+  font:11px/1.85 system-ui,"Noto Sans SC",sans-serif;
+  margin:0 0 18px;
+  padding:0 2px;
+}
+.story-path-card #storyPathBody>h3{margin-top:20px!important}
+.story-path-card .story-path-event{
+  display:grid;
+  grid-template-columns:34px minmax(0,1fr);
+  gap:13px;
+  align-items:start;
+  margin:11px 0;
+  padding:16px 17px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:var(--bg);
+}
+.story-path-card .story-path-number{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:30px;
+  height:30px;
+  border-radius:9px;
+  background:light-dark(#efe3cf,#353345);
+  color:var(--gold);
+  font:700 11px/1 system-ui,sans-serif;
+}
+.story-path-card .story-path-event h4{
+  font:600 16px/1.65 ui-serif,Georgia,"Noto Serif SC",serif;
+  margin:0 0 8px;
+  color:var(--ink);
+  letter-spacing:0;
+  text-align:left;
+  overflow-wrap:anywhere;
+}
+.story-path-card .story-path-event p{
+  font:13px/1.95 system-ui,"Noto Sans SC",sans-serif;
+  color:var(--muted);
+  margin:0;
+  text-align:left;
+  overflow-wrap:anywhere;
+}
+.story-path-card .story-path-annotation{
+  margin-top:11px;
+  padding:9px 11px;
+  border:0;
+  border-left:2px solid var(--blue);
+  border-radius:0 7px 7px 0;
+  background:light-dark(#f0f3f4,#252c39);
+  font:11px/1.85 system-ui,"Noto Sans SC",sans-serif;
+  color:var(--muted);
+  overflow-wrap:anywhere;
+}
+.story-path-card .story-path-annotation b{color:var(--blue)}
+.story-path-card .story-path-sources{
+  margin-top:24px;
+  padding-top:4px;
+  border-top:0;
+}
+.story-path-card .story-path-sources>p{
+  font:12px/1.9 system-ui,"Noto Sans SC",sans-serif;
+  color:var(--muted);
+  margin:0 0 12px;
+}
+.story-path-card .story-path-source{
+  margin:9px 0;
+  padding:13px 15px;
+  border-radius:10px;
+  background:var(--bg);
+}
+.story-path-card .story-path-source a{
+  display:block;
+  font:600 13px/1.7 system-ui,"Noto Sans SC",sans-serif;
+  color:var(--blue);
+  text-decoration:none;
+  overflow-wrap:anywhere;
+}
+.story-path-card .story-path-source p{
+  font:11px/1.85 system-ui,"Noto Sans SC",sans-serif;
+  margin:6px 0 0;
+  color:var(--muted);
+  overflow-wrap:anywhere;
+}
+.myth-close,.story-path-close{
+  padding:9px 13px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  background:var(--bg);
+  font-size:12px;
+}
+@media(max-width:650px){
+  .myth-modal,.story-path-modal{padding:8px}
+  .myth-modal-card,.story-path-card{
+    width:100%;
+    height:94vh;
+    max-height:94vh;
+    padding:16px;
+    border-radius:15px;
+  }
+  .myth-modal-head h2,.story-path-head h2{font-size:22px;line-height:1.45}
+  .myth-modal-card .myth-modal-lead,.story-path-card .story-path-lead{font-size:12px;line-height:1.9;padding:12px}
+  .myth-modal-card .integrated-timeline{padding-left:18px;gap:11px}
+  .myth-modal-card .integrated-event{padding:13px}
+  .myth-modal-card .integrated-event:before{left:-26px;width:10px;height:10px}
+  .myth-modal-card .integrated-event h4,.story-path-card .story-path-event h4{font-size:14px;line-height:1.65}
+  .myth-modal-card .integrated-event p,.story-path-card .story-path-event p{font-size:12px;line-height:1.9}
+  .story-path-card .story-path-event{grid-template-columns:27px minmax(0,1fr);gap:9px;padding:12px}
+  .story-path-card .story-path-number{width:25px;height:25px;border-radius:7px;font-size:10px}
+  .story-path-card .story-path-annotation{font-size:10px}
+}
+/* Paired actions on civilization cards should have identical dimensions. */
+#regionGrid .story-path-open,
+#regionGrid .timeline-open{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  align-self:stretch;
+  width:100%;
+  min-height:46px;
+  margin:10px 0 0;
+  padding:11px 14px;
+  border:1px solid var(--ink);
+  border-radius:9px;
+  box-sizing:border-box;
+  font:600 13px/1.5 system-ui,"Noto Sans SC",sans-serif;
+  text-align:center;
+  white-space:normal;
+}
+#regionGrid .story-path-open{
+  background:var(--ink);
+  color:var(--bg);
+}
+#regionGrid .timeline-open{
+  background:light-dark(#505057,#383b49);
+  color:light-dark(#fffdf8,#f3efe7);
+  border-color:light-dark(#505057,#50546a);
+}
+#regionGrid .story-path-open:hover,
+#regionGrid .timeline-open:hover{opacity:.88}
+</style>
+</body></html>
